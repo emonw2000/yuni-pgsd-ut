@@ -3,42 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin - Latihan Soal Formatif</title>
+  <title>Admin - Kelola Kursus</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Admin Panel</h1>
-    <p>Tambahkan atau perbarui data kursus dan modul</p>
+    <p>Kelola kursus dan modul beserta link Google Form</p>
   </header>
 
   <main>
+    <!-- Form untuk menambah atau memperbarui kursus -->
     <section id="course-form">
       <h2>Tambah/Perbarui Kursus</h2>
       <form id="add-course-form">
         <label for="course-name">Nama Kursus:</label>
         <input type="text" id="course-name" required>
+
         <label for="course-sks">SKS:</label>
-        <input type="number" id="course-sks" required>
+        <input type="number" id="course-sks" min="1" required>
+
         <button type="submit">Simpan Kursus</button>
       </form>
     </section>
 
+    <!-- Form untuk menambah modul ke kursus tertentu -->
     <section id="module-form" class="hidden">
-      <h2>Tambah Modul</h2>
+      <h2>Tambah/Perbarui Modul</h2>
       <form id="add-module-form">
         <label for="module-name">Nama Modul:</label>
         <input type="text" id="module-name" required>
-        <label for="module-iframe">Link Iframe:</label>
+
+        <label for="module-iframe">Link Google Form:</label>
         <input type="url" id="module-iframe" required>
+
         <button type="submit">Simpan Modul</button>
       </form>
     </section>
 
+    <!-- Daftar kursus -->
     <section id="courses-list">
       <h2>Daftar Kursus</h2>
       <ul id="courses"></ul>
     </section>
+
+    <!-- Tombol untuk mengunduh JSON -->
+    <button id="download-json">Unduh JSON</button>
   </main>
 
   <script src="admin.js"></script>

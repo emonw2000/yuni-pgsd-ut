@@ -52,6 +52,20 @@
     <p>&copy; 2025 Latihan Soal Formatif PGSD Universitas Terbuka milik Rosali Junita Kaligis</p>
   </footer>
 
+  <script>
+    // Proteksi Admin Link
+    document.getElementById('admin-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      const username = prompt('Masukkan Username:');
+      const password = prompt('Masukkan Password:');
+      
+      if (username === 'admin' && password === 'password123') {
+        window.location.href = 'admin.html';
+      } else {
+        alert('Username atau password salah!');
+      }
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
