@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Modul 11 Konsep Pendidikan Seni",
         "Modul 12 Pembelajaran Seni Terpadu"
       ]
+<<<<<<< HEAD
     },
     "Perspektif Global": {
       sks: 2,
@@ -69,6 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Modul 12 Prosedur Pengelolaan Program Bimbingan dan Konseling di SD"
       ]
     },
+=======
+    }
+>>>>>>> 1db37095623e0784fb1beba51f423bcb2b080399
   };
 
   const navLinks = document.querySelectorAll('nav ul li a');
@@ -80,6 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const iframeContent = document.getElementById('iframe-content');
   const modulNumber = document.getElementById('modul-number');
 
+<<<<<<< HEAD
+=======
+  const defaultIframeURL = "https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?embedded=true";
+
+>>>>>>> 1db37095623e0784fb1beba51f423bcb2b080399
   navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -96,7 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const a = document.createElement('a');
         a.textContent = modul;
         a.href = '#';
+<<<<<<< HEAD
         a.dataset.modul = index + 1;
+=======
+        a.dataset.url = defaultIframeURL;
+>>>>>>> 1db37095623e0784fb1beba51f423bcb2b080399
         li.appendChild(a);
         modulItems.appendChild(li);
       });
@@ -107,11 +120,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.tagName === 'A') {
       e.preventDefault();
       const modul = e.target.textContent;
+<<<<<<< HEAD
       const modulIndex = e.target.dataset.modul;
 
       iframeContainer.classList.remove('hidden');
       modulList.classList.add('hidden');
       iframeContent.src = `https://example.com/modul${modulIndex}`;
+=======
+      const url = e.target.dataset.url;
+
+      iframeContainer.classList.remove('hidden');
+      modulList.classList.add('hidden');
+      iframeContent.src = url;
+>>>>>>> 1db37095623e0784fb1beba51f423bcb2b080399
       modulNumber.textContent = modul;
     }
   });
