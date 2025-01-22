@@ -1,0 +1,74 @@
+{
+  "Pengantar Pendidikan": {
+    "sks": 3,
+    "modul": [
+      {
+        "name": "Modul 1 Hakikat Manusia dan Pendidikan",
+        "iframe": "https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?usp=sharing"
+      },
+      { "name": "Modul 2 Landasan Pendidikan", "iframe": "" },
+      { "name": "Modul 3 Lingkungan Pendidikan", "iframe": "" },
+      { "name": "Modul 4 Gerakan-gerakan Pendidikan", "iframe": "" },
+      { "name": "Modul 5 Kondisi Pendidikan di Indonesia", "iframe": "" },
+      { "name": "Modul 6 Antropologi Pendidikan", "iframe": "" },
+      { "name": "Modul 7 Perubahan Sosial Hubungannya dengan Pendidikan Formal, Non Formal, dan Informal", "iframe": "" },
+      { "name": "Modul 8 Sistem Pendidikan Nasional", "iframe": "" },
+      { "name": "Modul 9 Inovasi Pendidikan", "iframe": "" }
+    ]
+  },
+  "Pendidikan Seni di SD": {
+    "sks": 4,
+    "modul": [
+      { "name": "Modul 1 Wawasan Seni", "iframe": "" },
+      { "name": "Modul 2 Pengetahuan Dasar Seni", "iframe": "" },
+      { "name": "Modul 3 Kemampuan Dasar dan Karakteristik Seni Anak SD", "iframe": "" },
+      { "name": "Modul 4 Pemanfaatan Teknologi dalam Berkarya Seni", "iframe": "" },
+      { "name": "Modul 5 Olah Musik", "iframe": "" },
+      { "name": "Modul 6 Penciptaan Karya Musik Anak SD", "iframe": "" },
+      { "name": "Modul 7 Penciptaan Tari Anak SD", "iframe": "" },
+      { "name": "Modul 8 Penciptaan Karya Seni Rupa Anak SD", "iframe": "" },
+      { "name": "Modul 9 Apresiasi Musik dan Tari", "iframe": "" },
+      { "name": "Modul 10 Apresiasi Seni Rupa Anak", "iframe": "" },
+      { "name": "Modul 11 Konsep Pendidikan Seni", "iframe": "" },
+      { "name": "Modul 12 Pembelajaran Seni Terpadu", "iframe": "" }
+    ]
+  },
+  "Perspektif Global": {
+    "sks": 2,
+    "modul": [
+      { "name": "Modul 1 Hakikat dan Konsep Perspektif Global", "iframe": "" },
+      { "name": "Modul 2 Perspektif Global dilihat dari sudut ilmu-ilmu sosial dan ilmu lain yang terkait", "iframe": "" },
+      { "name": "Modul 3 Pentingnya Kesadaran dan Wawasan Perspektif Global", "iframe": "" },
+      { "name": "Modul 4 Isu-isu dan Masalah Global dalam Kaitannya dengan Kepentingan Nasional", "iframe": "" },
+      { "name": "Modul 5 Isu-isu dan Masalah Global dalam Kaitannya dengan Pembelajaran IPS SD", "iframe": "" },
+      { "name": "Modul 6 Model Pembelajaran dan Evaluasi Pembelajaran Perspektif Global", "iframe": "" }
+    ]
+  },
+  "Perkembangan Peserta Didik": {
+    "sks": 2,
+    "modul": [
+      { "name": "Modul 1 Pengenalan Teori dan Prinsip Dasar Perkembangan", "iframe": "" },
+      { "name": "Modul 2 Teori Perkembangan Kognitif dan Perspektif Sosial Budaya", "iframe": "" },
+      { "name": "Modul 3 Tahap Perkembangan Bahasa dan Kemampuan Berpikir Matematis", "iframe": "" },
+      { "name": "Modul 4 Pengenalan Teori dan Tahapan Perkembangan Sosial dan Emosional", "iframe": "" },
+      { "name": "Modul 5 Perkembangan Fisik Peserta Didik", "iframe": "" }
+    ]
+  },
+  "Pendidikan Anak di SD": {
+    "sks": 4,
+    "modul": [
+      { "name": "Modul 1 Hakikat Pendidikan di Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 2 Perkembangan Kognitif Anak Usia Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 3 Perkembangan Moral dan Sosial pada Anak Usia Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 4 Kebutuhan Anak Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 5 Proses Belajar Anak SD", "iframe": "" },
+      { "name": "Modul 6 Pendekatan Pembelajaran di Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 7 Pengembangan dan Inovasi Pendidikan di Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 8 Konvensi Hak Anak", "iframe": "" },
+      { "name": "Modul 9 Konvensi Hak Anak dan Pendidikan", "iframe": "" },
+      { "name": "Modul 10 Implikasi Hak Anak di Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 11 Konsep Dasar Bimbingan dan Konseling di Sekolah Dasar", "iframe": "" },
+      { "name": "Modul 12 Prosedur Pengelolaan Program Bimbingan dan Konseling di SD", "iframe": "" }
+    ]
+  }
+}
