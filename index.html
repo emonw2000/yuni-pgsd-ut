@@ -15,34 +15,33 @@
 
   <nav>
     <ul>
-      <li><a href="#" id="pengantar-pendidikan">Pengantar Pendidikan</a></li>
-      <li><a href="#" id="pendidikan-seni-di-sd">Pendidikan Seni di SD</a></li>
-      <li><a href="#" id="perspektif-global">Perspektif Global</a></li>
-      <li><a href="#" id="perkembangan-peserta-didik">Perkembangan Peserta Didik</a></li>
-      <li><a href="#" id="pendidikan-anak-di-sd">Pendidikan Anak di SD</a></li>
+      <li><a href="#" id="pengantar-pendidikan" class="nav-link">Pengantar Pendidikan</a></li>
+      <li><a href="#" id="pendidikan-seni-di-sd" class="nav-link">Pendidikan Seni di SD</a></li>
+      <li><a href="#" id="perspektif-global" class="nav-link">Perspektif Global</a></li>
+      <li><a href="#" id="perkembangan-peserta-didik" class="nav-link">Perkembangan Peserta Didik</a></li>
+      <li><a href="#" id="pendidikan-anak-di-sd" class="nav-link">Pendidikan Anak di SD</a></li>
     </ul>
+    <input type="text" id="search-input" placeholder="Cari modul...">
   </nav>
 
   <main>
-    <!-- Daftar modul akan ditampilkan di sini -->
     <section id="modul-list" class="hidden">
       <h3 id="course-title"></h3>
       <p id="course-desc"></p>
       <ul id="modul-items">
-        <!-- Daftar modul akan diisi secara dinamis -->
       </ul>
     </section>
 
-    <!-- Kontainer iframe untuk setiap modul -->
     <section id="iframe-container" class="hidden">
       <h3>Modul <span id="modul-number"></span></h3>
       <iframe id="iframe-content" 
               src="" 
-              width="640" 
+              width="100%" 
               height="800" 
               frameborder="0" 
               marginheight="0" 
               marginwidth="0">Memuat...</iframe>
+      <p id="iframe-error" class="hidden">Maaf, konten tidak dapat dimuat.</p>
     </section>
   </main>
 

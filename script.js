@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   };
 
-  const navLinks = document.querySelectorAll('nav ul li a');
+  const navLinks = document.querySelectorAll('.nav-link');
   const modulList = document.getElementById('modul-list');
   const iframeContainer = document.getElementById('iframe-container');
   const courseTitle = document.getElementById('course-title');
@@ -79,12 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const modulItems = document.getElementById('modul-items');
   const iframeContent = document.getElementById('iframe-content');
   const modulNumber = document.getElementById('modul-number');
+  const iframeError = document.getElementById('iframe-error');
+  const searchInput = document.getElementById('search-input');
 
   navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      const courseName = e.target.textContent;
+      navLinks.forEach(nav => nav.classList.remove('active'));
+      link.classList.add('active');
 
+      const courseName = e.target.textContent;
       modulList.classList.remove('hidden');
       iframeContainer.classList.add('hidden');
       courseTitle.textContent = courseName;
@@ -113,6 +117,40 @@ document.addEventListener('DOMContentLoaded', () => {
       modulList.classList.add('hidden');
       iframeContent.src = `https://example.com/modul${modulIndex}`;
       modulNumber.textContent = modul;
+
+      iframeContent.onerror = () => {
+        iframeContent.classList.add('hidden');
+        iframeError.classList.remove('hidden');
+      };
     }
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    const searchQuery = e.target.value.toLowerCase();
+    const filteredModules = [];
+
+    Object.keys(courses).forEach(courseName => {
+      const course = courses[courseName];
+      course.modul.forEach((modul, index) => {
+        if (modul.toLowerCase().includes(searchQuery)) {
+          filteredModules.push({
+            modul,
+            courseName,
+            index: index + 1
+          });
+        }
+      });
+    });
+
+    modulItems.innerHTML = '';
+    filteredModules.forEach(({ modul, courseName, index }) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.textContent = `${modul} (${courseName})`;
+      a.href = '#';
+      a.dataset.modul = index;
+      li.appendChild(a);
+      modulItems.appendChild(li);
+    });
   });
 });
