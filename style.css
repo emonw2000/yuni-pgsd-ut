@@ -1,10 +1,9 @@
-/* style.css */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f9; /* Warna latar belakang lembut */
   color: #333;
 }
 
@@ -23,9 +22,6 @@ nav {
   background: #333;
   color: #fff;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 nav ul {
@@ -33,30 +29,36 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column; /* Navigasi vertikal */
+  gap: 10px;
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 3px;
+  background: #4CAF50;
+  text-align: center;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  background: #4CAF50;
+  background: #357a38;
 }
 
 #search-input {
-  padding: 5px;
+  padding: 10px;
   font-size: 16px;
   border: none;
   border-radius: 3px;
   outline: none;
+  margin-top: 10px;
+  width: calc(100% - 20px); /* Responsif untuk perangkat kecil */
 }
 
 #course-desc {
@@ -78,6 +80,7 @@ nav ul li a.active {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
+  border-radius: 8px;
 }
 
 #iframe-error {
@@ -91,7 +94,17 @@ footer {
   padding: 10px;
   background: #333;
   color: #fff;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 5px;
+  }
+
+  #iframe-content {
+    height: 600px; /* Kurangi tinggi iframe untuk layar kecil */
+  }
 }

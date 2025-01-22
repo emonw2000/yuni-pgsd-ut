@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
   const courses = {
     "Pengantar Pendidikan": {
