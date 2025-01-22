@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     owner: 'emonw2000', // Ganti dengan username GitHub Anda
     repo: 'yuni-pgsd-ut',      // Nama repositori
     path: 'course.json',    // Jalur file JSON
-    token: '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', // GitHub Personal Access Token
+    token: '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',
   };
 
   const courseForm = document.getElementById('add-course-form');
