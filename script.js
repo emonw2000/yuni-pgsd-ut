@@ -30,7 +30,45 @@ document.addEventListener('DOMContentLoaded', () => {
         "Modul 11 Konsep Pendidikan Seni",
         "Modul 12 Pembelajaran Seni Terpadu"
       ]
-    }
+    },
+    "Perspektif Global": {
+      sks: 2,
+      modul: [
+        "Modul 1 Hakikat dan Konsep Perspektif Global",
+        "Modul 2 Perspektif Global dilihat dari sudut ilmu-ilmu sosial dan ilmu lain yang terkait",
+        "Modul 3 Pentingnya Kesadaran dan Wawasan Perspektif Global",
+        "Modul 4 Isu-isu dan Masalah Global dalam Kaitannya dengan Kepentingan Nasional",
+        "Modul 5 Isu-isu dan Masalah Global dalam Kaitannya dengan Pembelajaran IPS SD",
+        "Modul 6 Model Pembelajaran dan Evaluasi Pembelajaran Perspektif Global"
+      ]
+    },
+    "Perkembangan Peserta Didik": {
+      sks: 2,
+      modul: [
+        "Modul 1 Pengenalan Teori dan Prinsip Dasar Perkembangan",
+        "Modul 2 Teori Perkembangan Kognitif dan Perspektif Sosial Budaya",
+        "Modul 3 Tahap Perkembangan Bahasa dan Kemampuan Berpikir Matematis",
+        "Modul 4 Pengenalan Teori dan Tahapan Perkembangan Sosial dan Emosional",
+        "Modul 5 Perkembangan Fisik Peserta Didik"
+      ]
+    },
+    "Pendidikan Anak di SD": {
+      sks: 4,
+      modul: [
+        "Modul 1 Hakikat Pendidikan di Sekolah Dasar",
+        "Modul 2 Perkembangan Kognitif Anak Usia Sekolah Dasar",
+        "Modul 3 Perkembangan Moral dan Sosial pada Anak Usia Sekolah Dasar",
+        "Modul 4 Kebutuhan Anak Sekolah Dasar",
+        "Modul 5 Proses Belajar Anak SD",
+        "Modul 6 Pendekatan Pembelajaran di Sekolah Dasar",
+        "Modul 7 Pengembangan dan Inovasi Pendidikan di Sekolah Dasar",
+        "Modul 8 Konvensi Hak Anak",
+        "Modul 9 Konvensi Hak Anak dan Pendidikan",
+        "Modul 10 Implikasi Hak Anak di Sekolah Dasar",
+        "Modul 11 Konsep Dasar Bimbingan dan Konseling di Sekolah Dasar",
+        "Modul 12 Prosedur Pengelolaan Program Bimbingan dan Konseling di SD"
+      ]
+    },
   };
 
   const navLinks = document.querySelectorAll('nav ul li a');
@@ -41,8 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modulItems = document.getElementById('modul-items');
   const iframeContent = document.getElementById('iframe-content');
   const modulNumber = document.getElementById('modul-number');
-
-  const defaultIframeURL = "https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?embedded=true";
 
   navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -60,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const a = document.createElement('a');
         a.textContent = modul;
         a.href = '#';
-        a.dataset.url = defaultIframeURL;
+        a.dataset.modul = index + 1;
         li.appendChild(a);
         modulItems.appendChild(li);
       });
@@ -71,11 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.tagName === 'A') {
       e.preventDefault();
       const modul = e.target.textContent;
-      const url = e.target.dataset.url;
+      const modulIndex = e.target.dataset.modul;
 
       iframeContainer.classList.remove('hidden');
       modulList.classList.add('hidden');
-      iframeContent.src = url;
+      iframeContent.src = `https://example.com/modul${modulIndex}`;
       modulNumber.textContent = modul;
     }
   });
