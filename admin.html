@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Latihan Soal Formatif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <p>Tambahkan atau perbarui data kursus dan modul</p>
+  </header>
+
+  <main>
+    <section id="course-form">
+      <h2>Tambah/Perbarui Kursus</h2>
+      <form id="add-course-form">
+        <label for="course-name">Nama Kursus:</label>
+        <input type="text" id="course-name" required>
+        <label for="course-sks">SKS:</label>
+        <input type="number" id="course-sks" required>
+        <button type="submit">Simpan Kursus</button>
+      </form>
+    </section>
+
+    <section id="module-form" class="hidden">
+      <h2>Tambah Modul</h2>
+      <form id="add-module-form">
+        <label for="module-name">Nama Modul:</label>
+        <input type="text" id="module-name" required>
+        <label for="module-iframe">Link Iframe:</label>
+        <input type="url" id="module-iframe" required>
+        <button type="submit">Simpan Modul</button>
+      </form>
+    </section>
+
+    <section id="courses-list">
+      <h2>Daftar Kursus</h2>
+      <ul id="courses"></ul>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
