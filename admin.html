@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin - Kelola Kursus</title>
+  <title>Admin - Kelola Mata Kuliah</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Admin Panel</h1>
-    <p>Kelola kursus dan modul beserta link Google Form</p>
+    <p>Kelola Mata Kuliah dan modul beserta link Google Form</p>
   </header>
 
   <main>
-    <!-- Form untuk menambah atau memperbarui kursus -->
+    <!-- Form untuk menambah atau memperbarui mata kuliah -->
     <section id="course-form">
-      <h2>Tambah/Perbarui Kursus</h2>
+      <h2>Tambah/Perbarui Mata Kuliah</h2>
       <form id="add-course-form">
-        <label for="course-name">Nama Kursus:</label>
+        <label for="course-name">Nama Mata Kuliah:</label>
         <input type="text" id="course-name" required>
 
         <label for="course-sks">SKS:</label>
         <input type="number" id="course-sks" min="1" required>
 
-        <button type="submit">Simpan Kursus</button>
+        <button type="submit">Simpan Mata Kuliah</button>
       </form>
     </section>
 
@@ -41,9 +41,9 @@
       </form>
     </section>
 
-    <!-- Daftar kursus dan modul -->
+    <!-- Daftar matakuliah dan modul -->
     <section id="courses-list">
-      <h2>Daftar Kursus dan Modul</h2>
+      <h2>Daftar Mata Kuliah dan Modul</h2>
       <ul id="courses"></ul>
     </section>
   </main>
