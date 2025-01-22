@@ -1,14 +1,27 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #333;
+  --background-color: #f4f4f9;
+  --text-color: #333;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #eee;
+  --primary-color: #2E7D32;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9; /* Warna latar belakang lembut */
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 header {
-  background: #4CAF50;
+  background: var(--primary-color);
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -19,35 +32,32 @@ header .logo {
 }
 
 nav {
-  background: #333;
+  background: var(--secondary-color);
   color: #fff;
   padding: 10px;
 }
 
-nav ul {
+nav ol {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Navigasi vertikal */
+  flex-direction: column;
   gap: 10px;
 }
 
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
+nav ol li a {
   color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  background: #4CAF50;
+  background: var(--primary-color);
   text-align: center;
+  display: block;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav ol li a:hover,
+nav ol li a.active {
   background: #357a38;
 }
 
@@ -58,21 +68,7 @@ nav ul li a.active {
   border-radius: 3px;
   outline: none;
   margin-top: 10px;
-  width: calc(100% - 20px); /* Responsif untuk perangkat kecil */
-}
-
-#course-desc {
-  color: #065f46;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#modul-items {
-  padding-left: 20px;
-}
-
-#modul-items li {
-  margin-bottom: 5px;
+  width: calc(100% - 20px);
 }
 
 #iframe-container {
@@ -83,28 +79,12 @@ nav ul li a.active {
   border-radius: 8px;
 }
 
-#iframe-error {
-  color: red;
-  text-align: center;
-  margin-top: 10px;
-}
-
 footer {
   text-align: center;
   padding: 10px;
-  background: #333;
+  background: var(--secondary-color);
   color: #fff;
   position: relative;
   bottom: 0;
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    gap: 5px;
-  }
-
-  #iframe-content {
-    height: 600px; /* Kurangi tinggi iframe untuk layar kecil */
-  }
 }
