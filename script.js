@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
   const courses = {
     "Pengantar Pendidikan": {
@@ -69,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Modul 11 Konsep Dasar Bimbingan dan Konseling di Sekolah Dasar",
         "Modul 12 Prosedur Pengelolaan Program Bimbingan dan Konseling di SD"
       ]
-    },
+    }
   };
 
   const navLinks = document.querySelectorAll('.nav-link');
@@ -81,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const iframeContent = document.getElementById('iframe-content');
   const modulNumber = document.getElementById('modul-number');
   const iframeError = document.getElementById('iframe-error');
-  const searchInput = document.getElementById('search-input');
 
   // Highlight active link and display course modules
   navLinks.forEach((link) => {
@@ -109,9 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
         li.appendChild(a);
         modulItems.appendChild(li);
       });
-
-      // Save user preference in localStorage
-      localStorage.setItem('lastCourse', courseName);
     });
   });
 
@@ -139,44 +134,5 @@ document.addEventListener('DOMContentLoaded', () => {
         iframeError.classList.remove('hidden');
       };
     }
-  });
-
-  // Restore user preference
-  const lastCourse = localStorage.getItem('lastCourse');
-  if (lastCourse) {
-    const lastLink = Array.from(navLinks).find(link => link.textContent === lastCourse);
-    if (lastLink) {
-      lastLink.click();
-    }
-  }
-
-  // Search functionality
-  searchInput.addEventListener('input', (e) => {
-    const searchQuery = e.target.value.toLowerCase();
-    const filteredModules = [];
-
-    Object.keys(courses).forEach(courseName => {
-      const course = courses[courseName];
-      course.modul.forEach((modul, index) => {
-        if (modul.toLowerCase().includes(searchQuery)) {
-          filteredModules.push({
-            modul,
-            courseName,
-            index: index + 1
-          });
-        }
-      });
-    });
-
-    modulItems.innerHTML = '';
-    filteredModules.forEach(({ modul, courseName, index }) => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.textContent = `${modul} (${courseName})`;
-      a.href = '#';
-      a.dataset.modul = index;
-      li.appendChild(a);
-      modulItems.appendChild(li);
-    });
   });
 });
