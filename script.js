@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Load courses from JSON
   fetch('course.json')
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.json();
+    })
     .then((data) => {
       courses = data;
       initializeNavLinks();
@@ -24,10 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach((link) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        navLinks.forEach((nav) => nav.classList.remove('active'));
-        link.classList.add('active');
-
         const courseName = link.textContent.trim();
+
         if (courses[courseName]) {
           modulItems.innerHTML = '';
           modulList.classList.remove('hidden');
@@ -44,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
             li.appendChild(a);
             modulItems.appendChild(li);
           });
+        } else {
+          modulItems.innerHTML = '<li>Modul tidak tersedia.</li>';
         }
       });
     });
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const courseName = courseTitle.textContent;
         const modulIndex = e.target.dataset.index;
-        const modul = courses[courseName].modul[modulIndex];
+        const modul = courses[courseName]?.modul[modulIndex];
 
         if (modul) {
           iframeContent.src = modul.iframe || `https://example.com/modul${+modulIndex + 1}`;
