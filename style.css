@@ -4,11 +4,14 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #f0fdf4; /* Hijau muda lembut */
+  color: #333;
 }
 
+/* Header dengan logo */
 header {
   text-align: center;
-  background-color: #f4a261;
+  background-color: #65a30d; /* Hijau tua lembut */
   color: white;
   padding: 20px 0;
 }
@@ -19,12 +22,12 @@ header .logo {
 }
 
 nav {
-  background-color: #264653;
+  background-color: #bbf7d0; /* Hijau muda */
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -35,13 +38,22 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #065f46; /* Hijau gelap */
   text-decoration: none;
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 main {
   padding: 20px;
+}
+
+h3 {
+  text-align: left;
+  color: #065f46;
 }
 
 .hidden {
@@ -57,6 +69,6 @@ iframe {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #2a9d8f;
+  background-color: #65a30d;
   color: white;
 }
