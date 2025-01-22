@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Check specific module and course
       if (modul === "Modul 1 Hakikat Manusia dan Pendidikan" && courseTitle.textContent === "Pengantar Pendidikan") {
-        iframeContent.src = "https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?embedded=true";
+        iframeContent.src = "https://docs.google.com/forms/d/e/1FAIpQLSd8OUbNXNTTYhQ0MfUV26f62Dt7y92eRjr70mc1gNEyQ0XyrQ/viewform?embedded=true";
       } else {
         iframeContent.src = `https://example.com/modul${modulIndex}`;
       }
