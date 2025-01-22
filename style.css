@@ -13,6 +13,11 @@ header {
   padding: 20px 0;
 }
 
+header .logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
 nav {
   background-color: #264653;
 }
