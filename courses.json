@@ -1,0 +1,16 @@
+{
+  "Pengantar Pendidikan": {
+    "sks": 3,
+    "modul": [
+      { "name": "Modul 1 Hakikat Manusia dan Pendidikan", "iframe": "https://example.com/form1" },
+      { "name": "Modul 2 Landasan Pendidikan", "iframe": "" }
+    ]
+  },
+  "Pendidikan Seni di SD": {
+    "sks": 4,
+    "modul": [
+      { "name": "Modul 1 Wawasan Seni", "iframe": "" },
+      { "name": "Modul 2 Pengetahuan Dasar Seni", "iframe": "" }
+    ]
+  }
+}
