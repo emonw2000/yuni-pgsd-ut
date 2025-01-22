@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
   const courses = {
     "Pengantar Pendidikan": {
@@ -82,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const iframeError = document.getElementById('iframe-error');
   const searchInput = document.getElementById('search-input');
 
+  // Highlight active link
   navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -89,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.add('active');
 
       const courseName = e.target.textContent;
+
       modulList.classList.remove('hidden');
       iframeContainer.classList.add('hidden');
       courseTitle.textContent = courseName;
@@ -107,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Display module in iframe
   modulItems.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
       e.preventDefault();
@@ -115,9 +119,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       iframeContainer.classList.remove('hidden');
       modulList.classList.add('hidden');
-      iframeContent.src = `https://example.com/modul${modulIndex}`;
+
+      // Check specific module and course
+      if (modul === "Modul 1 Hakikat Manusia dan Pendidikan" && courseTitle.textContent === "Pengantar Pendidikan") {
+        iframeContent.src = "https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?embedded=true";
+      } else {
+        iframeContent.src = `https://example.com/modul${modulIndex}`;
+      }
+
       modulNumber.textContent = modul;
 
+      // Fallback for iframe loading error
       iframeContent.onerror = () => {
         iframeContent.classList.add('hidden');
         iframeError.classList.remove('hidden');
@@ -125,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Search functionality
   searchInput.addEventListener('input', (e) => {
     const searchQuery = e.target.value.toLowerCase();
     const filteredModules = [];
