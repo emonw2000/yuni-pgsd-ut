@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modulNumber = document.getElementById('modul-number');
   const iframeError = document.getElementById('iframe-error');
   const searchInput = document.getElementById('search-input');
-  const loadingSpinner = document.getElementById('loading-spinner');
 
   // Highlight active link and display course modules
   navLinks.forEach((link) => {
@@ -93,11 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const courseName = e.target.textContent;
 
+      // Clear existing modules before adding new ones
+      modulItems.innerHTML = '';
+
       modulList.classList.remove('hidden');
       iframeContainer.classList.add('hidden');
       courseTitle.textContent = courseName;
       courseDesc.textContent = `${courseName} (${courses[courseName].sks} SKS)`;
-      modulItems.innerHTML = '';
 
       courses[courseName].modul.forEach((modul, index) => {
         const li = document.createElement('li');
@@ -123,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       iframeContainer.classList.remove('hidden');
       modulList.classList.add('hidden');
-      loadingSpinner.classList.remove('hidden');
 
       // Check specific module and course
       if (modul === "Modul 1 Hakikat Manusia dan Pendidikan" && courseTitle.textContent === "Pengantar Pendidikan") {
@@ -134,13 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       modulNumber.textContent = modul;
 
-      iframeContent.onload = () => {
-        loadingSpinner.classList.add('hidden');
-      };
-
-      // Fallback for iframe loading error
       iframeContent.onerror = () => {
-        loadingSpinner.classList.add('hidden');
         iframeContent.classList.add('hidden');
         iframeError.classList.remove('hidden');
       };
