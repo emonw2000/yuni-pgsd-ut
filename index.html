@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latihan Soal Formatif untuk PGSD Universitas Terbuka</title>
+  <title>Latihan Soal Formatif - PGSD UT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,19 +14,37 @@
 
   <nav>
     <ul>
-      <li><a href="#pengantar-pendidikan">Pengantar Pendidikan</a></li>
+      <li><a href="#" id="pengantar-pendidikan">Pengantar Pendidikan</a></li>
     </ul>
   </nav>
 
   <main>
-    <section id="pengantar-pendidikan">
-      <h3>Pengantar Pendidikan</h3>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?embedded=true" 
+    <!-- Daftar modul akan ditampilkan di sini -->
+    <section id="modul-list" class="hidden">
+      <h3>Pilih Modul</h3>
+      <ul>
+        <li><a href="#" data-modul="1">Modul 1</a></li>
+        <li><a href="#" data-modul="2">Modul 2</a></li>
+        <li><a href="#" data-modul="3">Modul 3</a></li>
+        <li><a href="#" data-modul="4">Modul 4</a></li>
+        <li><a href="#" data-modul="5">Modul 5</a></li>
+        <li><a href="#" data-modul="6">Modul 6</a></li>
+        <li><a href="#" data-modul="7">Modul 7</a></li>
+        <li><a href="#" data-modul="8">Modul 8</a></li>
+        <li><a href="#" data-modul="9">Modul 9</a></li>
+      </ul>
+    </section>
+
+    <!-- Kontainer iframe untuk setiap modul -->
+    <section id="iframe-container" class="hidden">
+      <h3>Modul <span id="modul-number"></span></h3>
+      <iframe id="iframe-content" 
+              src="" 
               width="640" 
-              height="14568" 
+              height="800" 
               frameborder="0" 
               marginheight="0" 
-              marginwidth="0">Memuat…</iframe>
+              marginwidth="0">Memuat...</iframe>
     </section>
   </main>
 
