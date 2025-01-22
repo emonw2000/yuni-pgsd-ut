@@ -2,6 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const coursesUrl = 'course.json';
   let coursesData = {};
 
+  const githubConfig = {
+    owner: 'emonw2000', // Ganti dengan username GitHub Anda
+    repo: 'yuni-pgsd-ut',      // Nama repositori
+    path: 'course.json',    // Jalur file JSON
+    token: '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', // GitHub Personal Access Token
+  };
+
   const courseForm = document.getElementById('add-course-form');
   const moduleForm = document.getElementById('add-module-form');
   const courseNameInput = document.getElementById('course-name');
@@ -9,19 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const moduleNameInput = document.getElementById('module-name');
   const moduleIframeInput = document.getElementById('module-iframe');
   const coursesList = document.getElementById('courses');
+  const saveJsonButton = document.getElementById('save-json');
 
-  // Fetch existing courses data
   async function fetchCourses() {
     try {
-      const response = await fetch(coursesUrl);
+      const response = await fetch(
+        `https://raw.githubusercontent.com/${githubConfig.owner}/${githubConfig.repo}/main/${githubConfig.path}`
+      );
       coursesData = await response.json();
       renderCourses();
     } catch (error) {
       console.error('Error fetching courses:', error);
+      alert('Gagal memuat data kursus dari server.');
     }
   }
 
-  // Render courses and modules
   function renderCourses() {
     coursesList.innerHTML = '';
     for (const course in coursesData) {
@@ -48,9 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     attachEventListeners();
   }
 
-  // Attach event listeners
   function attachEventListeners() {
-    // Edit course
     document.querySelectorAll('.edit-course').forEach((button) =>
       button.addEventListener('click', (e) => {
         const course = e.target.dataset.course;
@@ -59,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     );
 
-    // Add module
     document.querySelectorAll('.add-module').forEach((button) =>
       button.addEventListener('click', (e) => {
         const course = e.target.dataset.course;
@@ -70,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     );
 
-    // Edit module
     document.querySelectorAll('.edit-module').forEach((button) =>
       button.addEventListener('click', (e) => {
         const course = e.target.dataset.course;
@@ -85,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   }
 
-  // Save or update course
   courseForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const courseName = courseNameInput.value.trim();
@@ -99,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Save or update module
   moduleForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const course = moduleForm.dataset.currentCourse;
@@ -113,10 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (index !== undefined) {
-      // Update existing module
       coursesData[course].modul[index] = { name: moduleName, iframe: moduleIframe };
     } else {
-      // Add new module
       coursesData[course].modul.push({ name: moduleName, iframe: moduleIframe });
     }
 
@@ -124,6 +125,53 @@ document.addEventListener('DOMContentLoaded', () => {
     moduleForm.classList.add('hidden');
     renderCourses();
   });
+
+  saveJsonButton.addEventListener('click', () => {
+    const content = JSON.stringify(coursesData, null, 2);
+    updateFileOnGitHub(content);
+  });
+
+  async function updateFileOnGitHub(content) {
+    try {
+      const sha = await getFileSHA();
+      const response = await fetch(
+        `https://api.github.com/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${githubConfig.path}`,
+        {
+          method: 'PUT',
+          headers: {
+            Authorization: `token ${githubConfig.token}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            message: 'Update course.json via admin panel',
+            content: btoa(unescape(encodeURIComponent(content))),
+            sha,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        alert('File berhasil diperbarui di GitHub!');
+      } else {
+        console.error('Failed to update file:', await response.json());
+        alert('Gagal memperbarui file di GitHub.');
+      }
+    } catch (error) {
+      console.error('Error updating file on GitHub:', error);
+      alert('Gagal memperbarui file di GitHub.');
+    }
+  }
+
+  async function getFileSHA() {
+    const response = await fetch(
+      `https://api.github.com/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${githubConfig.path}`,
+      {
+        headers: { Authorization: `token ${githubConfig.token}` },
+      }
+    );
+    const data = await response.json();
+    return data.sha;
+  }
 
   fetchCourses();
 });
