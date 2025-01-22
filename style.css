@@ -51,9 +51,41 @@ main {
   padding: 20px;
 }
 
-h3 {
-  text-align: left;
+/* Styling deskriptif untuk daftar modul */
+#course-desc {
   color: #065f46;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#modul-items {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #e6fffa; /* Latar belakang hijau muda */
+  border-radius: 5px;
+}
+
+#modul-items li {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f7fcf9;
+  transition: background-color 0.3s;
+}
+
+#modul-items li:hover {
+  background-color: #d1fae5;
+}
+
+#modul-items li a {
+  text-decoration: none;
+  color: #065f46;
+  font-weight: bold;
+}
+
+#modul-items li a:hover {
+  text-decoration: underline;
 }
 
 .hidden {
