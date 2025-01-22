@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
   const courses = {
     "Pengantar Pendidikan": {
@@ -68,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Modul 11 Konsep Dasar Bimbingan dan Konseling di Sekolah Dasar",
         "Modul 12 Prosedur Pengelolaan Program Bimbingan dan Konseling di SD"
       ]
-    }
+    },
   };
 
   const navLinks = document.querySelectorAll('.nav-link');
@@ -122,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Check specific module and course
       if (modul === "Modul 1 Hakikat Manusia dan Pendidikan" && courseTitle.textContent === "Pengantar Pendidikan") {
-        iframeContent.src = "https://docs.google.com/forms/d/e/1FAIpQLSd8OUbNXNTTYhQ0MfUV26f62Dt7y92eRjr70mc1gNEyQ0XyrQ/viewform?embedded=true";
+        iframeContent.src = "https://docs.google.com/forms/d/e/1FAIpQLSfRrNGMd3wzskNwSwWpr9WEPGNNu4joE74RP4a-bPJgSXzP-A/viewform?usp=sharing";
       } else {
         iframeContent.src = `https://example.com/modul${modulIndex}`;
       }
