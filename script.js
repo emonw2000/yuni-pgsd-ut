@@ -89,25 +89,27 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.forEach(nav => nav.classList.remove('active'));
       link.classList.add('active');
 
-      const courseName = e.target.textContent;
+      const courseName = link.textContent.trim(); // Ensures no extra spaces
 
-      // Clear existing modules before adding new ones
-      modulItems.innerHTML = '';
+      if (courses[courseName]) {
+        // Clear existing modules before adding new ones
+        modulItems.innerHTML = '';
 
-      modulList.classList.remove('hidden');
-      iframeContainer.classList.add('hidden');
-      courseTitle.textContent = courseName;
-      courseDesc.textContent = `${courseName} (${courses[courseName].sks} SKS)`;
+        modulList.classList.remove('hidden');
+        iframeContainer.classList.add('hidden');
+        courseTitle.textContent = courseName;
+        courseDesc.textContent = `${courseName} (${courses[courseName].sks} SKS)`;
 
-      courses[courseName].modul.forEach((modul, index) => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.textContent = modul;
-        a.href = '#';
-        a.dataset.modul = index + 1;
-        li.appendChild(a);
-        modulItems.appendChild(li);
-      });
+        courses[courseName].modul.forEach((modul, index) => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.textContent = modul;
+          a.href = '#';
+          a.dataset.modul = index + 1;
+          li.appendChild(a);
+          modulItems.appendChild(li);
+        });
+      }
     });
   });
 
