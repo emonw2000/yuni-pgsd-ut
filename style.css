@@ -1,57 +1,4 @@
-/* Reset dasar */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f0fdf4; /* Hijau muda lembut */
-  color: #333;
-}
-
-/* Header dengan logo */
-header {
-  text-align: center;
-  background-color: #65a30d; /* Hijau tua lembut */
-  color: white;
-  padding: 20px 0;
-}
-
-header .logo {
-  max-width: 100px;
-  margin-bottom: 10px;
-}
-
-nav {
-  background-color: #bbf7d0; /* Hijau muda */
-}
-
-nav ul {
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #065f46; /* Hijau gelap */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 20px;
-}
-
-/* Styling deskriptif untuk daftar modul */
+/* Tambahan styling deskriptif */
 #course-desc {
   color: #065f46;
   font-weight: bold;
@@ -59,48 +6,9 @@ main {
 }
 
 #modul-items {
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #e6fffa; /* Latar belakang hijau muda */
-  border-radius: 5px;
+  padding-left: 20px;
 }
 
 #modul-items li {
-  margin: 5px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-color: #f7fcf9;
-  transition: background-color 0.3s;
-}
-
-#modul-items li:hover {
-  background-color: #d1fae5;
-}
-
-#modul-items li a {
-  text-decoration: none;
-  color: #065f46;
-  font-weight: bold;
-}
-
-#modul-items li a:hover {
-  text-decoration: underline;
-}
-
-.hidden {
-  display: none;
-}
-
-iframe {
-  display: block;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #65a30d;
-  color: white;
+  margin-bottom: 5px;
 }
