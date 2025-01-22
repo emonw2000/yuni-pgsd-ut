@@ -10,13 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const moduleNameInput = document.getElementById('module-name');
   const moduleIframeInput = document.getElementById('module-iframe');
   const coursesList = document.getElementById('courses');
-  const saveJsonButton = document.getElementById('save-json');
+  const saveJsonButton = document.createElement('button'); // Tambahkan tombol dinamis
+  saveJsonButton.textContent = 'Simpan ke GitHub';
+  saveJsonButton.id = 'save-json';
+  document.body.appendChild(saveJsonButton); // Tempatkan tombol di akhir body
 
   const githubConfig = {
-    owner: 'emonw2000', // Ganti dengan username GitHub Anda
-    repo: 'yuni-pgsd-ut',      // Nama repositori
-    path: 'course.json',    // Jalur file JSON
-    token: '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',
+    owner: 'emonw2000', // Username GitHub Anda
+    repo: 'yuni-pgsd-ut', // Nama repositori
+    path: 'course.json', // Jalur file JSON
+    token: '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', // Token Anda
   };
 
   // Fetch data kursus dari JSON
