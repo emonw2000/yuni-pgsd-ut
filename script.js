@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
   const courses = {
     "Pengantar Pendidikan": {
@@ -81,8 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const modulNumber = document.getElementById('modul-number');
   const iframeError = document.getElementById('iframe-error');
   const searchInput = document.getElementById('search-input');
+  const loadingSpinner = document.getElementById('loading-spinner');
 
-  // Highlight active link
+  // Highlight active link and display course modules
   navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -106,10 +108,13 @@ document.addEventListener('DOMContentLoaded', () => {
         li.appendChild(a);
         modulItems.appendChild(li);
       });
+
+      // Save user preference in localStorage
+      localStorage.setItem('lastCourse', courseName);
     });
   });
 
-  // Display module in iframe
+  // Display selected module in iframe
   modulItems.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
       e.preventDefault();
@@ -118,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       iframeContainer.classList.remove('hidden');
       modulList.classList.add('hidden');
+      loadingSpinner.classList.remove('hidden');
 
       // Check specific module and course
       if (modul === "Modul 1 Hakikat Manusia dan Pendidikan" && courseTitle.textContent === "Pengantar Pendidikan") {
@@ -128,13 +134,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
       modulNumber.textContent = modul;
 
+      iframeContent.onload = () => {
+        loadingSpinner.classList.add('hidden');
+      };
+
       // Fallback for iframe loading error
       iframeContent.onerror = () => {
+        loadingSpinner.classList.add('hidden');
         iframeContent.classList.add('hidden');
         iframeError.classList.remove('hidden');
       };
     }
   });
+
+  // Restore user preference
+  const lastCourse = localStorage.getItem('lastCourse');
+  if (lastCourse) {
+    const lastLink = Array.from(navLinks).find(link => link.textContent === lastCourse);
+    if (lastLink) {
+      lastLink.click();
+    }
+  }
 
   // Search functionality
   searchInput.addEventListener('input', (e) => {
