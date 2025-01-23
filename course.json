@@ -36,7 +36,9 @@
   "Perspektif Global": {
     "sks": 2,
     "modul": [
-      { "name": "Modul 1 Hakikat dan Konsep Perspektif Global", "iframe": "" },
+      { "name": "Modul 1 Hakikat dan Konsep Perspektif Global", 
+        "iframe": "https://docs.google.com/forms/d/e/1FAIpQLSfBGxc8HFaQH-1YfDWGgZ8qcJ651pyP4i1QINQT-YVzrSARKw/viewform?usp=sharing" 
+      },
       { "name": "Modul 2 Perspektif Global dilihat dari sudut ilmu-ilmu sosial dan ilmu lain yang terkait", "iframe": "" },
       { "name": "Modul 3 Pentingnya Kesadaran dan Wawasan Perspektif Global", "iframe": "" },
       { "name": "Modul 4 Isu-isu dan Masalah Global dalam Kaitannya dengan Kepentingan Nasional", "iframe": "" },
