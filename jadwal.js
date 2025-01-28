@@ -1,5 +1,25 @@
 console.log("jadwal.js loaded"); // Debugging untuk memastikan file dimuat
 
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Dokumen sudah dimuat.");
+  console.log(document.querySelector('.result-body')); // Cek apakah ditemukan
+
+  // Jika .result-body tidak ada, buat secara otomatis
+  if (!document.querySelector('.result-body')) {
+    console.warn("Elemen .result-body belum ada! Membuat elemen...");
+    
+    const resultContainer = document.getElementById('modal-result');
+    if (resultContainer) {
+      const resultBody = document.createElement('div');
+      resultBody.classList.add('result-body');
+      resultContainer.appendChild(resultBody);
+      console.log("Elemen .result-body berhasil dibuat!");
+    } else {
+      console.error("Elemen #modal-result juga tidak ditemukan!");
+    }
+  }
+});
+
 let userAnswers = {}; // Menyimpan jawaban pengguna
 let currentCategory = ""; // Menyimpan kategori soal yang sedang aktif
 
@@ -100,7 +120,16 @@ async function checkAnswers() {
   const totalQuestions = categoryQuestions.length;
 
   const modalResult = document.getElementById('modal-result');
-  modalResult.innerHTML = ''; // Kosongkan hasil sebelumnya
+  let resultBody = document.querySelector('.result-body');
+
+  if (!resultBody) {
+    console.warn("Elemen .result-body tidak ditemukan! Membuat ulang...");
+    resultBody = document.createElement('div');
+    resultBody.classList.add('result-body');
+    modalResult.appendChild(resultBody);
+  }
+
+  resultBody.innerHTML = ''; // Kosongkan hasil sebelumnya
 
   // Periksa jawaban pengguna
   categoryQuestions.forEach((question, index) => {
@@ -109,13 +138,13 @@ async function checkAnswers() {
 
     if (userAnswer === correctAnswer) {
       score++; // Tambah skor jika jawaban benar
-      modalResult.innerHTML += `<p>Soal ${index + 1}: <span style="color: green;">Benar ✅</span></p>`;
+      resultBody.innerHTML += `<p>Soal ${index + 1}: <span style="color: green;">Benar ✅</span></p>`;
     } else {
-      modalResult.innerHTML += `<p>Soal ${index + 1}: <span style="color: red;">Salah ❌</span> (Jawaban benar: ${String.fromCharCode(65 + correctAnswer)})</p>`;
+      resultBody.innerHTML += `<p>Soal ${index + 1}: <span style="color: red;">Salah ❌</span> (Jawaban benar: ${String.fromCharCode(65 + correctAnswer)})</p>`;
     }
   });
 
   // Tampilkan skor akhir
-  modalResult.innerHTML += `<p><strong>Skor Anda: ${score} / ${totalQuestions}</strong></p>`;
+  resultBody.innerHTML += `<p><strong>Skor Anda: ${score} / ${totalQuestions}</strong></p>`;
   modalResult.style.display = 'block'; // Tampilkan hasil
 }

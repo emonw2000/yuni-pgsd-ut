@@ -10,6 +10,7 @@
       margin: 20px;
     }
     .table-container {
+      display: none; /* ❌ Semua tabel tersembunyi secara default */
       margin-bottom: 20px;
     }
     table {
@@ -25,39 +26,54 @@
       text-align: left;
     }
     .modal {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 20px;
-      width: 80%;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-    }
-    .modal-body {
-      max-height: 400px;  /* Batasi tinggi maksimum modal */
-      overflow-y: auto;   /* Aktifkan scroll vertikal */
-      overflow-x: hidden; /* Nonaktifkan scroll horizontal */
-      padding-right: 10px; /* Tambahkan padding untuk mencegah teks tertutup scrollbar */
-    }
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-    }
-    .result {
-      margin-top: 10px;
-      font-weight: bold;
-    }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-height: 90vh; /* ✅ Batasi tinggi modal agar tidak keluar dari layar */
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body {
+  max-height: 50vh; /* ✅ Hanya soal yang bisa di-scroll */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  flex-grow: 1;
+}
+
+.result {
+  max-height: 20vh; /* ✅ Batasi tinggi bagian jawaban */
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  background: #f9f9f9;
+  padding: 10px;
+  flex-shrink: 0; /* ✅ Mencegah bagian ini menyusut */
+}
+
+.result-body {
+  max-height: 15vh !important; /* ✅ Aktifkan scroll vertikal */
+  overflow-y: scroll !important; /* ✅ Paksa scrollbar agar selalu muncul */
+  padding-right: 5px;
+}
+
+.modal-footer {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
   </style>
 </head>
 <body>
@@ -66,298 +82,990 @@
     <p>Klik pada judul bulan untuk melihat data atau klik Kegiatan Belajar untuk menjawab soal.</p>
   </div>
 
-  <!-- Januari -->
-  <section>
-    <h2 onclick="toggleTable('januari')">Januari 2025</h2>
-    <div class="table-container">
-      <table id="januari" style="display: none;">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Hari</th>
-            <th>Nama Mata Kuliah</th>
-            <th>Modul</th>
-            <th>Kegiatan Belajar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2025-01-28</td>
-            <td>Selasa</td>
-            <td>Pendidikan Anak SD</td>
-            <td>Modul 01</td>
-            <td>
-              <span data-category="Definisi Pendidikan" onclick="handleCategoryClick(event)">1. Definisi Pendidikan</span><br>
-              <span data-category="Tujuan Pendidikan di SD" onclick="handleCategoryClick(event)">2. Tujuan Pendidikan di SD</span>
-            </td>
-          </tr>
-          <tr>
-            <td>2025-01-29</td>
-            <td>Rabu</td>
-            <td>Pendidikan Seni SD</td>
-            <td>Modul 01</td>
-            <td>
-              <span data-category="Hakikat Seni">Hakikat Seni</span><br>
-              <span data-category="Fungsi dan Kedudukan Seni">Fungsi dan Kedudukan Seni dalam Kehidupan Masyarakat</span>
-            </td>
-          </tr>
-          <tr>
-            <td>2025-01-30</td>
-            <td>Kamis</td>
-            <td>Pengantar Pendidikan</td>
-            <td>Modul 01</td>
-            <td>
-              <span data-category="Pengertian Pendidikan">Pengertian dan Aspek-Aspek Hakikat Manusia</span>
-            </td>
-          </tr>
-          <tr>
-            <td>2025-01-31</td>
-            <td>Jumat</td>
-            <td>Perkembangan Peserta Didik</td>
-            <td>Modul 01</td>
-            <td>
-              <span data-category="Perkembangan Peserta Didik">Perkembangan dan Aspek-Aspeknya</span>
-            </td>
-          </tr>
+<!-- Januari -->
+<section>
+  <h2 onclick="toggleTable('januari')">Januari 2025</h2>
+  <div id="januari" class="table-container" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Hari</th>
+          <th>Nama Mata Kuliah</th>
+          <th>Modul</th>
+          <th>Kegiatan Belajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-01-28</td>
+          <td>Selasa</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 01</td>
+          <td>
+            <span data-category="Definisi Pendidikan" onclick="handleCategoryClick(event)">1. Definisi Pendidikan</span><br>
+            <span data-category="Tujuan Pendidikan di SD" onclick="handleCategoryClick(event)">2. Tujuan Pendidikan di SD</span>
+          </td>
+        </tr>
+        <tr>
+          <td>2025-01-29</td>
+          <td>Rabu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 01</td>
+          <td>
+            <span data-category="Hakikat Seni" onclick="handleCategoryClick(event)">Hakikat Seni</span><br>
+            <span data-category="Fungsi dan Kedudukan Seni" onclick="handleCategoryClick(event)">Fungsi dan Kedudukan Seni dalam Kehidupan Masyarakat</span>
+          </td>
+        </tr>
+        <tr>
+          <td>2025-01-30</td>
+          <td>Kamis</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 01</td>
+          <td>
+            <span data-category="Pengertian Pendidikan" onclick="handleCategoryClick(event)">Pengertian dan Aspek-Aspek Hakikat Manusia</span>
+          </td>
+        </tr>
+        <tr>
+          <td>2025-01-31</td>
+          <td>Jumat</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 01</td>
+          <td>
+            <span data-category="Perkembangan Peserta Didik" onclick="handleCategoryClick(event)">Perkembangan dan Aspek-Aspeknya</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-        </tbody>
-      </table>
-    </div>
-  </section>
+ <!-- Februari -->
+<section>
+  <h2 onclick="toggleTable('februari')">Februari 2025</h2>
+  <div id="februari" class="table-container" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Hari</th>
+          <th>Nama Mata Kuliah</th>
+          <th>Modul</th>
+          <th>Kegiatan Belajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-02-02</td>
+          <td>Minggu</td>
+          <td>Perspektif Global</td>
+          <td>Modul 01</td>
+          <td>Hakikat dan Konsep Perspektif Global</td>
+        </tr>
+        <tr>
+          <td>2025-02-03</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 01</td>
+          <td>3. Fungsi Pendidikan di SD; 4. Prinsip-prinsip Pendidikan di SD</td>
+        </tr>
+        <tr>
+          <td>2025-02-04</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 01, Modul 02</td>
+          <td>Jenis-jenis Seni; Unsur-unsur Musik</td>
+        </tr>
+        <tr>
+          <td>2025-02-05</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 01</td>
+          <td>Hubungan Hakikat Manusia dengan Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-02-06</td>
+          <td>Kamis</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 01</td>
+          <td>Teori-Teori Perkembangan Manusia</td>
+        </tr>
+        <tr>
+          <td>2025-02-07</td>
+          <td>Jumat</td>
+          <td>Perspektif Global</td>
+          <td>Modul 01</td>
+          <td>Dimensi, Manfaat, Tujuan, dan Masalah Perspektif Global</td>
+        </tr>
+        <tr>
+          <td>2025-02-09</td>
+          <td>Minggu</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 02</td>
+          <td>1. Kemampuan Kognitif Anak Usia SD; 2. Bakat dan Kreativitas Anak Usia SD</td>
+        </tr>
+        <tr>
+          <td>2025-02-10</td>
+          <td>Senin</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 02</td>
+          <td>Unsur Dasar dan Elemen Komposisi Tari; Unsur dan Prinsip Seni Rupa</td>
+        </tr>
+        <tr>
+          <td>2025-02-11</td>
+          <td>Selasa</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 01</td>
+          <td>Pendidikan, Martabat, dan Hak Asasi Manusia</td>
+        </tr>
+        <tr>
+          <td>2025-02-12</td>
+          <td>Rabu</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 02</td>
+          <td>Teori-Teori Perkembangan Kognitif dari Perspektif Sosial Budaya</td>
+        </tr>
+        <tr>
+          <td>2025-02-13</td>
+          <td>Kamis</td>
+          <td>Perspektif Global</td>
+          <td>Modul 02</td>
+          <td>Perspektif Global dari Visi Geografi, Sejarah, dan Ekonomi</td>
+        </tr>
+        <tr>
+          <td>2025-02-14</td>
+          <td>Jumat</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 02, Modul 03</td>
+          <td>3. Peran Kecerdasan Intelektual dan Emosional pada Anak SD; 1. Perkembangan Moral pada Anak Usia SD</td>
+        </tr>
+        <tr>
+          <td>2025-02-16</td>
+          <td>Minggu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 03</td>
+          <td>Kemampuan Dasar Anak Sekolah Dasar; Karakteristik Seni Anak Sekolah Dasar</td>
+        </tr>
+        <tr>
+          <td>2025-02-17</td>
+          <td>Senin</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 02</td>
+          <td>Landasan Yuridis dan Landasan Filosofis Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-02-18</td>
+          <td>Selasa</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 02</td>
+          <td>Perkembangan Kognitif dari Perspektif Proses Informasi</td>
+        </tr>
+        <tr>
+          <td>2025-02-19</td>
+          <td>Rabu</td>
+          <td>Perspektif Global</td>
+          <td>Modul 02</td>
+          <td>Perspektif Global dari Visi Politik, Sosiologi, dan Antropologi</td>
+        </tr>
+        <tr>
+          <td>2025-02-20</td>
+          <td>Kamis</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 03</td>
+          <td>2. Penyesuaian Diri dan Penerimaan Sosial; 3. Perkembangan Peran Gender pada Anak Usia SD</td>
+        </tr>
+        <tr>
+          <td>2025-02-21</td>
+          <td>Jumat</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 04</td>
+          <td>Pendekatan Teknologi Penciptaan Karya Seni; Ruang Lingkup Penggunaan Teknologi</td>
+        </tr>
+        <tr>
+          <td>2025-02-23</td>
+          <td>Minggu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 02</td>
+          <td>Landasan Ilmiah Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-02-24</td>
+          <td>Senin</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 03</td>
+          <td>Tahap Perkembangan Bahasa</td>
+        </tr>
+        <tr>
+          <td>2025-02-25</td>
+          <td>Selasa</td>
+          <td>Perspektif Global</td>
+          <td>Modul 02</td>
+          <td>Perspektif Global dari Iptek, Transportasi, Komunikasi, dan Internasional</td>
+        </tr>
+        <tr>
+          <td>2025-02-26</td>
+          <td>Rabu</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 04</td>
+          <td>1. Gizi dan Permasalahannya pada Anak Usia SD; 2. Kesehatan dan Prestasi Belajar</td>
+        </tr>
+        <tr>
+          <td>2025-02-27</td>
+          <td>Kamis</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 04, Modul 05</td>
+          <td>Rencana dan Laporan Kerja; Bernyanyi</td>
+        </tr>
+        <tr>
+          <td>2025-02-28</td>
+          <td>Jumat</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 03</td>
+          <td>Lingkungan Pendidikan Tri Pusat Pendidikan: Keluarga, Sekolah, dan Masyarakat</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-  <!-- Februari -->
-  <section>
-    <h2 onclick="toggleTable('februari')">Februari 2025</h2>
-    <div class="table-container">
-      <table id="februari">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Hari</th>
-            <th>Nama Mata Kuliah</th>
-            <th>Modul</th>
-            <th>Kegiatan Belajar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2025-02-02</td><td>Minggu</td><td>Perspektif Global</td><td>Modul 01</td><td>Hakikat dan Konsep Perspektif Global</td></tr>
-          <tr><td>2025-02-03</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Modul 01</td><td>3. Fungsi Pendidikan di SD; 4. Prinsip-prinsip Pendidikan di SD</td></tr>
-          <tr><td>2025-02-04</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Modul 01, Modul 02</td><td>Jenis-jenis Seni; Unsur-unsur Musik</td></tr>
-          <tr><td>2025-02-05</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Modul 01</td><td>Hubungan Hakikat Manusia dengan Pendidikan</td></tr>
-          <tr><td>2025-02-06</td><td>Kamis</td><td>Perkembangan Peserta Didik</td><td>Modul 01</td><td>Teori-Teori Perkembangan Manusia</td></tr>
-          <tr><td>2025-02-07</td><td>Jumat</td><td>Perspektif Global</td><td>Modul 01</td><td>Dimensi, Manfaat, Tujuan, dan Masalah Perspektif Global</td></tr>
-          <tr><td>2025-02-09</td><td>Minggu</td><td>Pendidikan Anak SD</td><td>Modul 02</td><td>1. Kemampuan Kognitif Anak Usia SD; 2. Bakat dan Kreativitas Anak Usia SD</td></tr>
-          <tr><td>2025-02-10</td><td>Senin</td><td>Pendidikan Seni SD</td><td>Modul 02</td><td>Unsur Dasar dan Elemen Komposisi Tari; Unsur dan Prinsip Seni Rupa</td></tr>
-          <tr><td>2025-02-11</td><td>Selasa</td><td>Pengantar Pendidikan</td><td>Modul 01</td><td>Pendidikan, Martabat, dan Hak Asasi Manusia</td></tr>
-          <tr><td>2025-02-12</td><td>Rabu</td><td>Perkembangan Peserta Didik</td><td>Modul 02</td><td>Teori-Teori Perkembangan Kognitif dari Perspektif Sosial Budaya</td></tr>
-          <tr><td>2025-02-13</td><td>Kamis</td><td>Perspektif Global</td><td>Modul 02</td><td>Perspektif Global dari Visi Geografi, Sejarah, dan Ekonomi</td></tr>
-          <tr><td>2025-02-14</td><td>Jumat</td><td>Pendidikan Anak SD</td><td>Modul 02, Modul 03</td><td>3. Peran Kecerdasan Intelektual dan Emosional pada Anak SD; 1. Perkembangan Moral pada Anak Usia SD</td></tr>
-          <tr><td>2025-02-16</td><td>Minggu</td><td>Pendidikan Seni SD</td><td>Modul 03</td><td>Kemampuan Dasar Anak Sekolah Dasar; Karakteristik Seni Anak Sekolah Dasar</td></tr>
-          <tr><td>2025-02-17</td><td>Senin</td><td>Pengantar Pendidikan</td><td>Modul 02</td><td>Landasan Yuridis dan Landasan Filosofis Pendidikan</td></tr>
-          <tr><td>2025-02-18</td><td>Selasa</td><td>Perkembangan Peserta Didik</td><td>Modul 02</td><td>Perkembangan Kognitif dari Perspektif Proses Informasi</td></tr>
-          <tr><td>2025-02-19</td><td>Rabu</td><td>Perspektif Global</td><td>Modul 02</td><td>Perspektif Global dari Visi Politik, Sosiologi, dan Antropologi</td></tr>
-          <tr><td>2025-02-20</td><td>Kamis</td><td>Pendidikan Anak SD</td><td>Modul 03</td><td>2. Penyesuaian Diri dan Penerimaan Sosial; 3. Perkembangan Peran Gender pada Anak Usia SD</td></tr>
-          <tr><td>2025-02-21</td><td>Jumat</td><td>Pendidikan Seni SD</td><td>Modul 04</td><td>Pendekatan Teknologi Penciptaan Karya Seni; Ruang Lingkup Penggunaan Teknologi</td></tr>
-          <tr><td>2025-02-23</td><td>Minggu</td><td>Pengantar Pendidikan</td><td>Modul 02</td><td>Landasan Ilmiah Pendidikan</td></tr>
-          <tr><td>2025-02-24</td><td>Senin</td><td>Perkembangan Peserta Didik</td><td>Modul 03</td><td>Tahap Perkembangan Bahasa</td></tr>
-          <tr><td>2025-02-25</td><td>Selasa</td><td>Perspektif Global</td><td>Modul 02</td><td>Perspektif Global dari Iptek, Transportasi, Komunikasi, dan Internasional</td></tr>
-          <tr><td>2025-02-26</td><td>Rabu</td><td>Pendidikan Anak SD</td><td>Modul 04</td><td>1. Gizi dan Permasalahannya pada Anak Usia SD; 2. Kesehatan dan Prestasi Belajar</td></tr>
-          <tr><td>2025-02-27</td><td>Kamis</td><td>Pendidikan Seni SD</td><td>Modul 04, Modul 05</td><td>Rencana dan Laporan Kerja; Bernyanyi</td></tr>
-          <tr><td>2025-02-28</td><td>Jumat</td><td>Pengantar Pendidikan</td><td>Modul 03</td><td>Lingkungan Pendidikan Tri Pusat Pendidikan: Keluarga, Sekolah, dan Masyarakat</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
 
-  <!-- Maret -->
-  <section>
-    <h2 onclick="toggleTable('maret')">Maret 2025</h2>
-    <div class="table-container">
-      <table id="maret">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Hari</th>
-            <th>Nama Mata Kuliah</th>
-            <th>Modul</th>
-            <th>Kegiatan Belajar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2025-03-02</td><td>Minggu</td><td>Perkembangan Peserta Didik</td><td>Modul 03</td><td>Kemampuan Berpikir Matematis</td></tr>
-          <tr><td>2025-03-03</td><td>Senin</td><td>Perspektif Global</td><td>Modul 03</td><td>Pentingnya Kesadaran dalam Perspektif Global</td></tr>
-          <tr><td>2025-03-04</td><td>Selasa</td><td>Pendidikan Anak SD</td><td>Modul 04, Modul 05</td><td>3. Teori Kebutuhan dan Penerapannya bagi Anak Usia SD; 1. Pengertian dan Karakteristik Belajar</td></tr>
-          <tr><td>2025-03-05</td><td>Rabu</td><td>Pendidikan Seni SD</td><td>Modul 05</td><td>Mendireksi; Bermusik</td></tr>
-          <tr><td>2025-03-06</td><td>Kamis</td><td>Pengantar Pendidikan</td><td>Modul 03</td><td>Pendidikan sebagai Suatu Proses</td></tr>
-          <tr><td>2025-03-07</td><td>Jumat</td><td>Perkembangan Peserta Didik</td><td>Modul 04</td><td>Perkembangan Emosi, Temperamen, dan Keterikatan (Attachment)</td></tr>
-          <tr><td>2025-03-09</td><td>Minggu</td><td>Perspektif Global</td><td>Modul 03</td><td>Pentingnya Wawasan dalam Perspektif Global</td></tr>
-          <tr><td>2025-03-10</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Modul 05</td><td>2. Prinsip-prinsip Belajar; 3. Faktor-faktor yang Mempengaruhi Proses dan Hasil Belajar Anak di Sekolah</td></tr>
-          <tr><td>2025-03-11</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Modul 06</td><td>Penciptaan Nyanyian untuk Anak SD; Penciptaan Iringan Lagu Anak SD</td></tr>
-          <tr><td>2025-03-12</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Modul 04</td><td>Progresivisme dan Esensialisme</td></tr>
-          <tr><td>2025-03-13</td><td>Kamis</td><td>Perkembangan Peserta Didik</td><td>Modul 04</td><td>Konsep Diri vs Hasil Belajar</td></tr>
-          <tr><td>2025-03-14</td><td>Jumat</td><td>Perspektif Global</td><td>Modul 04</td><td>Isu-isu dalam Kaitannya dengan Kepentingan Nasional</td></tr>
-          <tr><td>2025-03-16</td><td>Minggu</td><td>Pendidikan Anak SD</td><td>Modul 05, Modul 06</td><td>4. Kesulitan Belajar Anak SD; 1. Pendekatan Pembelajaran Holistik dan Konstruktivisme</td></tr>
-          <tr><td>2025-03-17</td><td>Senin</td><td>Pendidikan Seni SD</td><td>Modul 07</td><td>Proses Penciptaan Tari; Konsep Garapan Tari</td></tr>
-          <tr><td>2025-03-18</td><td>Selasa</td><td>Pengantar Pendidikan</td><td>Modul 04</td><td>Perenialisme dan Konstruktivisme</td></tr>
-          <tr><td>2025-03-19</td><td>Rabu</td><td>Perkembangan Peserta Didik</td><td>Modul 04</td><td>Perkembangan Identitas Diri, Moral, dan Prososial</td></tr>
-          <tr><td>2025-03-20</td><td>Kamis</td><td>Perspektif Global</td><td>Modul 04</td><td>Masalah-masalah Global dalam Kaitannya dengan Kepentingan Nasional</td></tr>
-          <tr><td>2025-03-21</td><td>Jumat</td><td>Pendidikan Anak SD</td><td>Modul 06, Modul 07</td><td>2. Pendekatan Belajar Experiential Learning dan Multiple Intelligence; 1. Pengembangan Pendidikan Anak di Sekolah Dasar</td></tr>
-          <tr><td>2025-03-23</td><td>Minggu</td><td>Pendidikan Seni SD</td><td>Modul 07</td><td>Sumber Tema; Menyusun Karya Tari</td></tr>
-          <tr><td>2025-03-24</td><td>Senin</td><td>Pengantar Pendidikan</td><td>Modul 05</td><td>Sejarah Pendidikan di Indonesia</td></tr>
-          <tr><td>2025-03-25</td><td>Selasa</td><td>Perkembangan Peserta Didik</td><td>Modul 05</td><td>Proses Perkembangan Otak, Tubuh, Motorik, dan Seksual</td></tr>
-          <tr><td>2025-03-26</td><td>Rabu</td><td>Perspektif Global</td><td>Modul 05</td><td>Isu-isu Global dalam Pembelajaran IPS SD</td></tr>
-          <tr><td>2025-03-27</td><td>Kamis</td><td>Pendidikan Anak SD</td><td>Modul 07, Modul 08</td><td>2. Inovasi Pendidikan Sekolah Dasar; 1. Konvensi Hak Anak</td></tr>
-          <tr><td>2025-03-28</td><td>Jumat</td><td>Pendidikan Seni SD</td><td>Modul 08</td><td>Mencipta Karya Seni Rupa Dwimatra; Mencipta Karya Seni Rupa Trimatra</td></tr>
-          <tr><td>2025-03-30</td><td>Minggu</td><td>Pengantar Pendidikan</td><td>Modul 05</td><td>Sejarah Pendidikan Nonformal dan Informal</td></tr>
-          <tr><td>2025-03-31</td><td>Senin</td><td>Perkembangan Peserta Didik</td><td>Modul 05</td><td>Perkembangan Kognitif dan Sosioemosional</td></tr>
-        </tbody>
-        
-      </table>
-    </div>
-  </section>
+ <!-- Maret -->
+<section>
+  <h2 onclick="toggleTable('maret')">Maret 2025</h2>
+  <div id="maret" class="table-container" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Hari</th>
+          <th>Nama Mata Kuliah</th>
+          <th>Modul</th>
+          <th>Kegiatan Belajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-03-02</td>
+          <td>Minggu</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 03</td>
+          <td>Kemampuan Berpikir Matematis</td>
+        </tr>
+        <tr>
+          <td>2025-03-03</td>
+          <td>Senin</td>
+          <td>Perspektif Global</td>
+          <td>Modul 03</td>
+          <td>Pentingnya Kesadaran dalam Perspektif Global</td>
+        </tr>
+        <tr>
+          <td>2025-03-04</td>
+          <td>Selasa</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 04, Modul 05</td>
+          <td>3. Teori Kebutuhan dan Penerapannya bagi Anak Usia SD; 1. Pengertian dan Karakteristik Belajar</td>
+        </tr>
+        <tr>
+          <td>2025-03-05</td>
+          <td>Rabu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 05</td>
+          <td>Mendireksi; Bermusik</td>
+        </tr>
+        <tr>
+          <td>2025-03-06</td>
+          <td>Kamis</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 03</td>
+          <td>Pendidikan sebagai Suatu Proses</td>
+        </tr>
+        <tr>
+          <td>2025-03-07</td>
+          <td>Jumat</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 04</td>
+          <td>Perkembangan Emosi, Temperamen, dan Keterikatan (Attachment)</td>
+        </tr>
+        <tr>
+          <td>2025-03-09</td>
+          <td>Minggu</td>
+          <td>Perspektif Global</td>
+          <td>Modul 03</td>
+          <td>Pentingnya Wawasan dalam Perspektif Global</td>
+        </tr>
+        <tr>
+          <td>2025-03-10</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 05</td>
+          <td>2. Prinsip-prinsip Belajar; 3. Faktor-faktor yang Mempengaruhi Proses dan Hasil Belajar Anak di Sekolah</td>
+        </tr>
+        <tr>
+          <td>2025-03-11</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 06</td>
+          <td>Penciptaan Nyanyian untuk Anak SD; Penciptaan Iringan Lagu Anak SD</td>
+        </tr>
+        <tr>
+          <td>2025-03-12</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 04</td>
+          <td>Progresivisme dan Esensialisme</td>
+        </tr>
+        <tr>
+          <td>2025-03-13</td>
+          <td>Kamis</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 04</td>
+          <td>Konsep Diri vs Hasil Belajar</td>
+        </tr>
+        <tr>
+          <td>2025-03-14</td>
+          <td>Jumat</td>
+          <td>Perspektif Global</td>
+          <td>Modul 04</td>
+          <td>Isu-isu dalam Kaitannya dengan Kepentingan Nasional</td>
+        </tr>
+        <tr>
+          <td>2025-03-16</td>
+          <td>Minggu</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 05, Modul 06</td>
+          <td>4. Kesulitan Belajar Anak SD; 1. Pendekatan Pembelajaran Holistik dan Konstruktivisme</td>
+        </tr>
+        <tr>
+          <td>2025-03-17</td>
+          <td>Senin</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 07</td>
+          <td>Proses Penciptaan Tari; Konsep Garapan Tari</td>
+        </tr>
+        <tr>
+          <td>2025-03-18</td>
+          <td>Selasa</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 04</td>
+          <td>Perenialisme dan Konstruktivisme</td>
+        </tr>
+        <tr>
+          <td>2025-03-19</td>
+          <td>Rabu</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 04</td>
+          <td>Perkembangan Identitas Diri, Moral, dan Prososial</td>
+        </tr>
+        <tr>
+          <td>2025-03-20</td>
+          <td>Kamis</td>
+          <td>Perspektif Global</td>
+          <td>Modul 04</td>
+          <td>Masalah-masalah Global dalam Kaitannya dengan Kepentingan Nasional</td>
+        </tr>
+        <tr>
+          <td>2025-03-21</td>
+          <td>Jumat</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 06, Modul 07</td>
+          <td>2. Pendekatan Belajar Experiential Learning dan Multiple Intelligence; 1. Pengembangan Pendidikan Anak di Sekolah Dasar</td>
+        </tr>
+        <tr>
+          <td>2025-03-23</td>
+          <td>Minggu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 07</td>
+          <td>Sumber Tema; Menyusun Karya Tari</td>
+        </tr>
+        <tr>
+          <td>2025-03-24</td>
+          <td>Senin</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 05</td>
+          <td>Sejarah Pendidikan di Indonesia</td>
+        </tr>
+        <tr>
+          <td>2025-03-25</td>
+          <td>Selasa</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 05</td>
+          <td>Proses Perkembangan Otak, Tubuh, Motorik, dan Seksual</td>
+        </tr>
+        <tr>
+          <td>2025-03-26</td>
+          <td>Rabu</td>
+          <td>Perspektif Global</td>
+          <td>Modul 05</td>
+          <td>Isu-isu Global dalam Pembelajaran IPS SD</td>
+        </tr>
+        <tr>
+          <td>2025-03-27</td>
+          <td>Kamis</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 07, Modul 08</td>
+          <td>2. Inovasi Pendidikan Sekolah Dasar; 1. Konvensi Hak Anak</td>
+        </tr>
+        <tr>
+          <td>2025-03-28</td>
+          <td>Jumat</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 08</td>
+          <td>Mencipta Karya Seni Rupa Dwimatra; Mencipta Karya Seni Rupa Trimatra</td>
+        </tr>
+        <tr>
+          <td>2025-03-30</td>
+          <td>Minggu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 05</td>
+          <td>Sejarah Pendidikan Nonformal dan Informal</td>
+        </tr>
+        <tr>
+          <td>2025-03-31</td>
+          <td>Senin</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 05</td>
+          <td>Perkembangan Kognitif dan Sosioemosional</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-  <!-- April -->
-  <section>
-    <h2 onclick="toggleTable('april')">April 2025</h2>
-    <div class="table-container">
-      <table id="april">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Hari</th>
-            <th>Nama Mata Kuliah</th>
-            <th>Modul</th>
-            <th>Kegiatan Belajar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2025-04-01</td><td>Selasa</td><td>Perspektif Global</td><td>Modul 05</td><td>Masalah-masalah Global dalam Pembelajaran IPS SD</td></tr>
-          <tr><td>2025-04-02</td><td>Rabu</td><td>Pendidikan Anak SD</td><td>Modul 08, Modul 09</td><td>2. Latar Belakang Konvensi Hak Anak; 1. Jenis-jenis Hak Anak</td></tr>
-          <tr><td>2025-04-03</td><td>Kamis</td><td>Pendidikan Seni SD</td><td>Modul 08, Modul 09</td><td>Menyusun Tugas Mencipta Karya Seni Rupa untuk Anak SD; Apresiasi Musik Anak</td></tr>
-          <tr><td>2025-04-04</td><td>Jumat</td><td>Pengantar Pendidikan</td><td>Modul 05</td><td>Aliran Pendidikan Nonformal sebagai Aliran Pokok Pendidikan</td></tr>
-          <tr><td>2025-04-06</td><td>Minggu</td><td>Perkembangan Peserta Didik</td><td>Modul 06</td><td>Aplikasi Teori Perkembangan dalam Pendidikan</td></tr>
-          <tr><td>2025-04-07</td><td>Senin</td><td>Perspektif Global</td><td>Modul 06</td><td>Model Pembelajaran Perspektif Global dalam IPS SD</td></tr>
-          <tr><td>2025-04-08</td><td>Selasa</td><td>Pendidikan Anak SD</td><td>Modul 09, Modul 10</td><td>2. Konvensi Hak Anak dan Pendidikan; 1. Implikasi Pelaksanaan Hak Anak pada Pembelajaran SD</td></tr>
-          <tr><td>2025-04-09</td><td>Rabu</td><td>Pendidikan Seni SD</td><td>Modul 09, Modul 10</td><td>Apresiasi Tari Anak; Manfaat Belajar Seni bagi Anak Usia SD</td></tr>
-          <tr><td>2025-04-10</td><td>Kamis</td><td>Pengantar Pendidikan</td><td>Modul 06</td><td>Manusia dan Kebudayaan</td></tr>
-          <tr><td>2025-04-11</td><td>Jumat</td><td>Perkembangan Peserta Didik</td><td>Modul 06</td><td>Aplikasi Teori Psikologi dalam Kegiatan Belajar</td></tr>
-          <tr><td>2025-04-13</td><td>Minggu</td><td>Perspektif Global</td><td>Modul 06</td><td>Evaluasi Pembelajaran Perspektif Global dalam IPS SD</td></tr>
-          <tr><td>2025-04-14</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Modul 10, Modul 11</td><td>2. Contoh-contoh Pelanggaran Hak Anak di Sekolah Dasar; 1. Hakikat Bimbingan dan Konseling di SD</td></tr>
-          <tr><td>2025-04-15</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Modul 10</td><td>Karakteristik Seni Rupa Anak; Periodisasi Gambar Anak</td></tr>
-          <tr><td>2025-04-16</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Modul 06</td><td>Hakikat Kebudayaan</td></tr>
-          <tr><td>2025-04-17</td><td>Kamis</td><td>Pendidikan Anak SD</td><td>Modul 11</td><td>2. Peran Guru dalam Bimbingan dan Konseling di SD; 3. Peran Orang Tua dalam Bimbingan dan Konseling di SD</td></tr>
-          <tr><td>2025-04-18</td><td>Jumat</td><td>Pendidikan Seni SD</td><td>Modul 11</td><td>Konsep Pendidikan Seni di Sekolah Dasar; Fungsi Pendidikan Seni</td></tr>
-          <tr><td>2025-04-20</td><td>Minggu</td><td>Pengantar Pendidikan</td><td>Modul 07</td><td>Eksistensi Perubahan Sosial dan Pendidikan Formal, Nonformal, dan Informal</td></tr>
-          <tr><td>2025-04-21</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Modul 12</td><td>1. Jenis-jenis Perangkat Bimbingan dan Konseling di SD; 2. Perencanaan Bimbingan dan Konseling di SD</td></tr>
-          <tr><td>2025-04-22</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Modul 11</td><td>Ruang Lingkup Pendidikan Seni; Karakteristik Pendidikan Seni di SD</td></tr>
-          <tr><td>2025-04-23</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Modul 07</td><td>Globalisasi, Ilmu Pengetahuan dan Teknologi, Serta Demokratisasi Pendidikan Hubungannya dengan Perubahan Sosial</td></tr>
-          <tr><td>2025-04-24</td><td>Kamis</td><td>Pendidikan Anak SD</td><td>Modul 12</td><td>3. Pelaksanaan Bimbingan dan Konseling di SD; 4. Evaluasi Pelaksanaan Program Bimbingan</td></tr>
-          <tr><td>2025-04-25</td><td>Jumat</td><td>Pendidikan Seni SD</td><td>Modul 12</td><td>Dasar-dasar Pembelajaran Terpadu; Prinsip Pembelajaran Seni</td></tr>
-          <tr><td>2025-04-27</td><td>Minggu</td><td>Pengantar Pendidikan</td><td>Modul 08</td><td>Hakikat Sistem Pendidikan Nasional</td></tr>
-          <tr><td>2025-04-28</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Latihan Soal Tuton</td><td>Tuton 1</td></tr>
-          <tr><td>2025-04-29</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Modul 12</td><td>Merancang Pembelajaran Seni Terpadu</td></tr>
-          <tr><td>2025-04-30</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Modul 08</td><td>Masalah-masalah Pendidikan Nasional dan Solusinya</td></tr>
-        </tbody>
-        
-      </table>
-    </div>
-  </section>
+
+ <!-- April -->
+<section>
+  <h2 onclick="toggleTable('april')">April 2025</h2>
+  <div id="april" class="table-container" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Hari</th>
+          <th>Nama Mata Kuliah</th>
+          <th>Modul</th>
+          <th>Kegiatan Belajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-04-01</td>
+          <td>Selasa</td>
+          <td>Perspektif Global</td>
+          <td>Modul 05</td>
+          <td>Masalah-masalah Global dalam Pembelajaran IPS SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-02</td>
+          <td>Rabu</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 08, Modul 09</td>
+          <td>2. Latar Belakang Konvensi Hak Anak; 1. Jenis-jenis Hak Anak</td>
+        </tr>
+        <tr>
+          <td>2025-04-03</td>
+          <td>Kamis</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 08, Modul 09</td>
+          <td>Menyusun Tugas Mencipta Karya Seni Rupa untuk Anak SD; Apresiasi Musik Anak</td>
+        </tr>
+        <tr>
+          <td>2025-04-04</td>
+          <td>Jumat</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 05</td>
+          <td>Aliran Pendidikan Nonformal sebagai Aliran Pokok Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-04-06</td>
+          <td>Minggu</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 06</td>
+          <td>Aplikasi Teori Perkembangan dalam Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-04-07</td>
+          <td>Senin</td>
+          <td>Perspektif Global</td>
+          <td>Modul 06</td>
+          <td>Model Pembelajaran Perspektif Global dalam IPS SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-08</td>
+          <td>Selasa</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 09, Modul 10</td>
+          <td>2. Konvensi Hak Anak dan Pendidikan; 1. Implikasi Pelaksanaan Hak Anak pada Pembelajaran SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-09</td>
+          <td>Rabu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 09, Modul 10</td>
+          <td>Apresiasi Tari Anak; Manfaat Belajar Seni bagi Anak Usia SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-10</td>
+          <td>Kamis</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 06</td>
+          <td>Manusia dan Kebudayaan</td>
+        </tr>
+        <tr>
+          <td>2025-04-11</td>
+          <td>Jumat</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Modul 06</td>
+          <td>Aplikasi Teori Psikologi dalam Kegiatan Belajar</td>
+        </tr>
+        <tr>
+          <td>2025-04-13</td>
+          <td>Minggu</td>
+          <td>Perspektif Global</td>
+          <td>Modul 06</td>
+          <td>Evaluasi Pembelajaran Perspektif Global dalam IPS SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-14</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 10, Modul 11</td>
+          <td>2. Contoh-contoh Pelanggaran Hak Anak di Sekolah Dasar; 1. Hakikat Bimbingan dan Konseling di SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-15</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 10</td>
+          <td>Karakteristik Seni Rupa Anak; Periodisasi Gambar Anak</td>
+        </tr>
+        <tr>
+          <td>2025-04-16</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 06</td>
+          <td>Hakikat Kebudayaan</td>
+        </tr>
+        <tr>
+          <td>2025-04-17</td>
+          <td>Kamis</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 11</td>
+          <td>2. Peran Guru dalam Bimbingan dan Konseling di SD; 3. Peran Orang Tua dalam Bimbingan dan Konseling di SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-18</td>
+          <td>Jumat</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 11</td>
+          <td>Konsep Pendidikan Seni di Sekolah Dasar; Fungsi Pendidikan Seni</td>
+        </tr>
+        <tr>
+          <td>2025-04-20</td>
+          <td>Minggu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 07</td>
+          <td>Eksistensi Perubahan Sosial dan Pendidikan Formal, Nonformal, dan Informal</td>
+        </tr>
+        <tr>
+          <td>2025-04-21</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 12</td>
+          <td>1. Jenis-jenis Perangkat Bimbingan dan Konseling di SD; 2. Perencanaan Bimbingan dan Konseling di SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-22</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 11</td>
+          <td>Ruang Lingkup Pendidikan Seni; Karakteristik Pendidikan Seni di SD</td>
+        </tr>
+        <tr>
+          <td>2025-04-23</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 07</td>
+          <td>Globalisasi, Ilmu Pengetahuan dan Teknologi, Serta Demokratisasi Pendidikan Hubungannya dengan Perubahan Sosial</td>
+        </tr>
+        <tr>
+          <td>2025-04-24</td>
+          <td>Kamis</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Modul 12</td>
+          <td>3. Pelaksanaan Bimbingan dan Konseling di SD; 4. Evaluasi Pelaksanaan Program Bimbingan</td>
+        </tr>
+        <tr>
+          <td>2025-04-25</td>
+          <td>Jumat</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 12</td>
+          <td>Dasar-dasar Pembelajaran Terpadu; Prinsip Pembelajaran Seni</td>
+        </tr>
+        <tr>
+          <td>2025-04-27</td>
+          <td>Minggu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 08</td>
+          <td>Hakikat Sistem Pendidikan Nasional</td>
+        </tr>
+        <tr>
+          <td>2025-04-28</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 1</td>
+        </tr>
+        <tr>
+          <td>2025-04-29</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Modul 12</td>
+          <td>Merancang Pembelajaran Seni Terpadu</td>
+        </tr>
+        <tr>
+          <td>2025-04-30</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 08</td>
+          <td>Masalah-masalah Pendidikan Nasional dan Solusinya</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 
   <!-- Mei -->
-  <section>
-    <h2 onclick="toggleTable('mei')">Mei 2025</h2>
-    <div class="table-container">
-      <table id="mei">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Hari</th>
-            <th>Nama Mata Kuliah</th>
-            <th>Modul</th>
-            <th>Kegiatan Belajar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2025-05-01</td><td>Kamis</td><td>Pendidikan Anak SD</td><td>Latihan Soal Tuton</td><td>Tuton 2</td></tr>
-          <tr><td>2025-05-02</td><td>Jumat</td><td>Pendidikan Seni SD</td><td>Latihan Soal Tuton</td><td>Tuton 1</td></tr>
-          <tr><td>2025-05-04</td><td>Minggu</td><td>Pengantar Pendidikan</td><td>Modul 09</td><td>Hakikat Inovasi Pendidikan</td></tr>
-          <tr><td>2025-05-05</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Latihan Soal Tuton</td><td>Tuton 3</td></tr>
-          <tr><td>2025-05-06</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Latihan Soal Tuton</td><td>Tuton 2,3</td></tr>
-          <tr><td>2025-05-07</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Modul 09</td><td>Difusi Inovasi Pendidikan</td></tr>
-          <tr><td>2025-05-08</td><td>Kamis</td><td>Pengantar Pendidikan</td><td>Modul 09</td><td>Faktor-faktor yang Memengaruhi Difusi Inovasi</td></tr>
-          <tr><td>2025-05-09</td><td>Jumat</td><td>Pendidikan Anak SD</td><td>Latihan Soal Tuton</td><td>Tuton 4</td></tr>
-          <tr><td>2025-05-11</td><td>Minggu</td><td>Pendidikan Seni SD</td><td>Latihan Soal Tuton</td><td>Tuton 4,5</td></tr>
-          <tr><td>2025-05-12</td><td>Senin</td><td>Pengantar Pendidikan</td><td>Modul 09</td><td>Faktor Pendukung dan Penghambat Inovasi</td></tr>
-          <tr><td>2025-05-13</td><td>Selasa</td><td>Perkembangan Peserta Didik</td><td>Latihan Soal Tuton</td><td>Tuton 1,2</td></tr>
-          <tr><td>2025-05-14</td><td>Rabu</td><td>Perkembangan Peserta Didik</td><td>Latihan Soal Tuton</td><td>Tuton 3,4</td></tr>
-          <tr><td>2025-05-15</td><td>Kamis</td><td>Perspektif Global</td><td>Latihan Soal Tuton</td><td>Tuton 1,2</td></tr>
-          <tr><td>2025-05-16</td><td>Jumat</td><td>Perspektif Global</td><td>Latihan Soal Tuton</td><td>Tuton 3,4</td></tr>
-          <tr><td>2025-05-18</td><td>Minggu</td><td>Pendidikan Anak SD</td><td>Latihan Soal Tuton</td><td>Tuton 5,6</td></tr>
-          <tr><td>2025-05-19</td><td>Senin</td><td>Pendidikan Seni SD</td><td>Latihan Soal Tuton</td><td>Tuton 6,7</td></tr>
-          <tr><td>2025-05-20</td><td>Selasa</td><td>Pengantar Pendidikan</td><td>Latihan Soal Tuton</td><td>Tuton 1,2</td></tr>
-          <tr><td>2025-05-21</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Latihan Soal Tuton</td><td>Tuton 3,4</td></tr>
-          <tr><td>2025-05-22</td><td>Kamis</td><td>Perkembangan Peserta Didik</td><td>Latihan Soal Tuton</td><td>Tuton 5,6</td></tr>
-          <tr><td>2025-05-23</td><td>Jumat</td><td>Perkembangan Peserta Didik</td><td>Latihan Soal Tuton</td><td>Tuton 7,8</td></tr>
-          <tr><td>2025-05-25</td><td>Minggu</td><td>Perspektif Global</td><td>Latihan Soal Tuton</td><td>Tuton 5-6</td></tr>
-          <tr><td>2025-05-26</td><td>Senin</td><td>Perspektif Global</td><td>Latihan Soal Tuton</td><td>Tuton 7,8</td></tr>
-          <tr><td>2025-05-27</td><td>Selasa</td><td>Pendidikan Anak SD</td><td>Latihan Soal Tuton</td><td>Tuton 7,8</td></tr>
-          <tr><td>2025-05-28</td><td>Rabu</td><td>Pendidikan Seni SD</td><td>Latihan Soal Tuton</td><td>Tuton 8</td></tr>
-          <tr><td>2025-05-29</td><td>Kamis</td><td>Pengantar Pendidikan</td><td>Latihan Soal Tuton</td><td>Tuton 5,6</td></tr>
-          <tr><td>2025-05-30</td><td>Jumat</td><td>Pengantar Pendidikan</td><td>Latihan Soal Tuton</td><td>Tuton 7,8</td></tr>
-        </tbody>
-        
-      </table>
-    </div>
-  </section>
-
-  <!-- Juni -->
-  <section>
-    <h2 onclick="toggleTable('juni')">Juni 2025</h2>
-    <div class="table-container">
-      <table id="juni">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Hari</th>
-            <th>Nama Mata Kuliah</th>
-            <th>Modul</th>
-            <th>Kegiatan Belajar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2025-06-01</td><td>Minggu</td><td>Perkembangan Peserta Didik</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-02</td><td>Senin</td><td>Perspektif Global</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-03</td><td>Selasa</td><td>Pendidikan Anak SD</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-04</td><td>Rabu</td><td>Pendidikan Seni SD</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-05</td><td>Kamis</td><td>Pengantar Pendidikan</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-06</td><td>Jumat</td><td>Perkembangan Peserta Didik</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-08</td><td>Minggu</td><td>Perspektif Global</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-09</td><td>Senin</td><td>Pendidikan Anak SD</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-10</td><td>Selasa</td><td>Pendidikan Seni SD</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-11</td><td>Rabu</td><td>Pengantar Pendidikan</td><td>Latihan Soal</td><td>Sumatif</td></tr>
-          <tr><td>2025-06-12</td><td>Kamis</td><td>-</td><td>-</td><td>-</td></tr>
-          <tr><td>2025-06-13</td><td>Jumat</td><td>-</td><td>-</td><td>-</td></tr>
-        </tbody>
-        
-      </table>
-    </div>
-  </section>
-
-
-  <!-- Modal Popup untuk soal -->
-  <div id="modal" class="modal">
-    <h3 id="question-title"></h3>
-    <div class="modal-body">
-      <ul id="modal-questions">
-        <!-- Soal akan dimuat di sini -->
-      </ul>
-    </div>
-    <!-- Elemen ini digunakan untuk menampilkan hasil -->
-  <div id="modal-result" class="result" style="display: none;"></div>
-    <button onclick="checkAnswers()">Periksa Jawaban</button>
-    <button onclick="closeModal()">Tutup</button>
+<section>
+  <h2 onclick="toggleTable('mei')">Mei 2025</h2>
+  <div id="mei" class="table-container" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Hari</th>
+          <th>Nama Mata Kuliah</th>
+          <th>Modul</th>
+          <th>Kegiatan Belajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-05-01</td>
+          <td>Kamis</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 2</td>
+        </tr>
+        <tr>
+          <td>2025-05-02</td>
+          <td>Jumat</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 1</td>
+        </tr>
+        <tr>
+          <td>2025-05-04</td>
+          <td>Minggu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 09</td>
+          <td>Hakikat Inovasi Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-05-05</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 3</td>
+        </tr>
+        <tr>
+          <td>2025-05-06</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 2,3</td>
+        </tr>
+        <tr>
+          <td>2025-05-07</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 09</td>
+          <td>Difusi Inovasi Pendidikan</td>
+        </tr>
+        <tr>
+          <td>2025-05-08</td>
+          <td>Kamis</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 09</td>
+          <td>Faktor-faktor yang Memengaruhi Difusi Inovasi</td>
+        </tr>
+        <tr>
+          <td>2025-05-09</td>
+          <td>Jumat</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 4</td>
+        </tr>
+        <tr>
+          <td>2025-05-11</td>
+          <td>Minggu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 4,5</td>
+        </tr>
+        <tr>
+          <td>2025-05-12</td>
+          <td>Senin</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Modul 09</td>
+          <td>Faktor Pendukung dan Penghambat Inovasi</td>
+        </tr>
+        <tr>
+          <td>2025-05-13</td>
+          <td>Selasa</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 1,2</td>
+        </tr>
+        <tr>
+          <td>2025-05-14</td>
+          <td>Rabu</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 3,4</td>
+        </tr>
+        <tr>
+          <td>2025-05-15</td>
+          <td>Kamis</td>
+          <td>Perspektif Global</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 1,2</td>
+        </tr>
+        <tr>
+          <td>2025-05-16</td>
+          <td>Jumat</td>
+          <td>Perspektif Global</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 3,4</td>
+        </tr>
+        <tr>
+          <td>2025-05-18</td>
+          <td>Minggu</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 5,6</td>
+        </tr>
+        <tr>
+          <td>2025-05-19</td>
+          <td>Senin</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 6,7</td>
+        </tr>
+        <tr>
+          <td>2025-05-20</td>
+          <td>Selasa</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 1,2</td>
+        </tr>
+        <tr>
+          <td>2025-05-21</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 3,4</td>
+        </tr>
+        <tr>
+          <td>2025-05-22</td>
+          <td>Kamis</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 5,6</td>
+        </tr>
+        <tr>
+          <td>2025-05-23</td>
+          <td>Jumat</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 7,8</td>
+        </tr>
+        <tr>
+          <td>2025-05-25</td>
+          <td>Minggu</td>
+          <td>Perspektif Global</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 5-6</td>
+        </tr>
+        <tr>
+          <td>2025-05-26</td>
+          <td>Senin</td>
+          <td>Perspektif Global</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 7,8</td>
+        </tr>
+        <tr>
+          <td>2025-05-27</td>
+          <td>Selasa</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 7,8</td>
+        </tr>
+        <tr>
+          <td>2025-05-28</td>
+          <td>Rabu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 8</td>
+        </tr>
+        <tr>
+          <td>2025-05-29</td>
+          <td>Kamis</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 5,6</td>
+        </tr>
+        <tr>
+          <td>2025-05-30</td>
+          <td>Jumat</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Latihan Soal Tuton</td>
+          <td>Tuton 7,8</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div id="overlay" class="overlay" onclick="closeModal()"></div>
+</section>
+
+
+<!-- Juni -->
+<section>
+  <h2 onclick="toggleTable('juni')">Juni 2025</h2>
+  <div id="juni" class="table-container" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Hari</th>
+          <th>Nama Mata Kuliah</th>
+          <th>Modul</th>
+          <th>Kegiatan Belajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-06-01</td>
+          <td>Minggu</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-02</td>
+          <td>Senin</td>
+          <td>Perspektif Global</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-03</td>
+          <td>Selasa</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-04</td>
+          <td>Rabu</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-05</td>
+          <td>Kamis</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-06</td>
+          <td>Jumat</td>
+          <td>Perkembangan Peserta Didik</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-08</td>
+          <td>Minggu</td>
+          <td>Perspektif Global</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-09</td>
+          <td>Senin</td>
+          <td>Pendidikan Anak SD</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-10</td>
+          <td>Selasa</td>
+          <td>Pendidikan Seni SD</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-11</td>
+          <td>Rabu</td>
+          <td>Pengantar Pendidikan</td>
+          <td>Latihan Soal</td>
+          <td>Sumatif</td>
+        </tr>
+        <tr>
+          <td>2025-06-12</td>
+          <td>Kamis</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2025-06-13</td>
+          <td>Jumat</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+  <div id="modal" class="modal">
+    <h3 id="question-title">Soal untuk: <span id="category-title"></span></h3>
+    
+    <!-- Bagian soal dengan scroll -->
+    <div class="modal-body">
+      <ul id="modal-questions"></ul>
+    </div>
+  
+    <!-- Bagian hasil yang bisa di-scroll -->
+    <div id="modal-result" class="result">
+      <div class="result-body">
+        <!-- Hasil akan dimasukkan di sini -->
+      </div>
+    </div>
+  
+    <!-- Bagian tombol di bagian bawah modal -->
+    <div class="modal-footer">
+      <button onclick="checkAnswers()">Periksa Jawaban</button>
+      <button onclick="closeModal()">Tutup</button>
+    </div>
+  </div>
+  
 
   <script src="jadwal.js"></script>
 </body>
