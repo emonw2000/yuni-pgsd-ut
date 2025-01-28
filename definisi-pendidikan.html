@@ -4,17 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Definisi Pendidikan</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .correct { color: green; font-weight: bold; }
+    .incorrect { color: red; font-weight: bold; }
+    .highlight { background-color: #d4edda; } /* Hijau muda */
+    .wrong { background-color: #f8d7da; } /* Merah muda */
+    .result { margin-top: 20px; font-weight: bold; color: blue; }
+    .feedback { margin-top: 10px; font-style: italic; }
+    .back-button { 
+      margin-top: 20px; 
+      display: inline-block; 
+      padding: 10px 20px; 
+      background-color: #007bff; 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 5px; 
+      display: none; /* Disembunyikan saat halaman dimuat */
+    }
+    .back-button:hover { background-color: #0056b3; }
+  </style>
 </head>
 <body>
   <h1>Definisi Pendidikan</h1>
   <p>Pilihlah jawaban yang benar dari soal berikut:</p>
-  <form>
-    <p>1. Apa yang dimaksud dengan pendidikan?</p>
-    <label><input type="radio" name="soal1" value="A"> A. Proses pembelajaran sepanjang hayat</label><br>
-    <label><input type="radio" name="soal1" value="B"> B. Proses mendewasakan manusia</label><br>
-    <label><input type="radio" name="soal1" value="C"> C. Proses formal di sekolah</label><br>
-    <label><input type="radio" name="soal1" value="D"> D. Proses mengembangkan ilmu pengetahuan</label><br>
-    <button type="submit">Submit</button>
+  <form id="quizForm">
+    <!-- Pertanyaan 1 -->
+    <div id="question1">
+      <p>1. Apa yang dimaksud dengan pendidikan?</p>
+      <label><input type="radio" name="soal1" value="A"> A. Proses pembelajaran sepanjang hayat</label><br>
+      <label><input type="radio" name="soal1" value="B"> B. Proses mendewasakan manusia</label><br>
+      <label><input type="radio" name="soal1" value="C"> C. Proses formal di sekolah</label><br>
+      <label><input type="radio" name="soal1" value="D"> D. Proses mengembangkan ilmu pengetahuan</label><br>
+      <div class="feedback" id="feedback1"></div>
+    </div>
+
+    <!-- Pertanyaan 2 -->
+    <div id="question2">
+      <p>2. Apa tujuan utama dari pendidikan?</p>
+      <label><input type="radio" name="soal2" value="A"> A. Mendapatkan pekerjaan</label><br>
+      <label><input type="radio" name="soal2" value="B"> B. Meningkatkan kecerdasan manusia</label><br>
+      <label><input type="radio" name="soal2" value="C"> C. Menyelesaikan tugas sekolah</label><br>
+      <label><input type="radio" name="soal2" value="D"> D. Mengembangkan potensi individu secara optimal</label><br>
+      <div class="feedback" id="feedback2"></div>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit</button>
   </form>
+
+  <!-- Tombol kembali ke menu -->
+  <a href="menu-utama.html" id="backButton" class="back-button">Kembali ke Menu Sebelumnya</a>
+
+  <script>
+    function submitQuiz() {
+      // Kunci jawaban dan feedback
+      const correctAnswers = {
+        soal1: { answer: "A", feedback: "Pendidikan adalah proses pembelajaran sepanjang hayat yang dilakukan oleh manusia untuk berkembang." },
+        soal2: { answer: "D", feedback: "Tujuan utama pendidikan adalah untuk mengembangkan potensi individu secara optimal." }
+      };
+
+      // Ambil semua jawaban pengguna
+      const form = document.getElementById('quizForm');
+      const formData = new FormData(form);
+      let correctCount = 0; // Jumlah jawaban benar
+      let totalQuestions = Object.keys(correctAnswers).length; // Total jumlah soal
+
+      // Reset semua feedback dan highlight sebelumnya
+      const labels = form.querySelectorAll('label');
+      labels.forEach(label => label.classList.remove('highlight', 'wrong'));
+      const feedbacks = form.querySelectorAll('.feedback');
+      feedbacks.forEach(feedback => feedback.textContent = '');
+
+      // Periksa setiap soal
+      for (let key in correctAnswers) {
+        const selectedAnswer = formData.get(key); // Jawaban yang dipilih pengguna
+        const correctAnswer = correctAnswers[key].answer; // Jawaban yang benar
+        const feedbackDiv = document.getElementById(`feedback${key.slice(-1)}`); // Feedback untuk soal ini
+
+        // Highlight jawaban yang benar dan salah
+        const options = form.querySelectorAll(`input[name="${key}"]`);
+        options.forEach(option => {
+          const label = option.parentElement;
+          if (option.value === correctAnswer) {
+            // Highlight jawaban yang benar (hijau)
+            label.classList.add('highlight');
+          }
+          if (option.checked) {
+            if (option.value === correctAnswer) {
+              correctCount++; // Tambahkan skor jika benar
+            } else {
+              // Highlight jawaban yang salah (merah)
+              label.classList.add('wrong');
+              // Tambahkan feedback untuk jawaban salah
+              feedbackDiv.textContent = `Jawaban Anda salah. Jawaban yang benar adalah: ${correctAnswer}. ${correctAnswers[key].feedback}`;
+              feedbackDiv.classList.add('incorrect');
+            }
+          }
+        });
+
+        // Jika jawaban benar, tambahkan pesan feedback positif
+        if (selectedAnswer === correctAnswer) {
+          feedbackDiv.textContent = "Jawaban Anda benar! 🎉";
+          feedbackDiv.classList.add('correct');
+        }
+      }
+
+      // Tampilkan hasil skor
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = `Skor Anda: ${correctCount}/${totalQuestions}`;
+
+      // Tampilkan tombol kembali ke menu setelah submit
+      document.getElementById('backButton').style.display = 'inline-block';
+    }
+  </script>
 </body>
 </html>
