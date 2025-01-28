@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuis Pendidikan SD</title>
+  <title>Definisi Pendidikan</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     .correct { color: green; font-weight: bold; }
     .incorrect { color: red; font-weight: bold; }
-    .hidden { display: none; }
+    .highlight { background-color: #d4edda; } /* Hijau muda */
+    .wrong { background-color: #f8d7da; } /* Merah muda */
     .result { margin-top: 20px; font-weight: bold; color: blue; }
+    .feedback { margin-top: 10px; font-style: italic; }
     .back-button { 
       margin-top: 20px; 
       display: inline-block; 
@@ -18,119 +20,40 @@
       color: white; 
       text-decoration: none; 
       border-radius: 5px; 
-      display: none; 
+      display: none; /* Disembunyikan saat halaman dimuat */
     }
     .back-button:hover { background-color: #0056b3; }
   </style>
 </head>
 <body>
-  <h1>Kuis Pendidikan SD</h1>
-  <p>Jawablah pertanyaan berikut dengan memilih opsi yang menurut Anda benar:</p>
+  <h1>Definisi Pendidikan</h1>
+  <p>Pilihlah jawaban yang benar dari soal berikut:</p>
   <form id="quizForm">
-    <!-- Soal 1 -->
-    <section id="question1">
-      <p>1. Pendidikan di Sekolah Dasar sering disebut sebagai pendidikan transisional (peralihan) karena merupakan peralihan dari ....</p>
-      <label><input type="radio" name="soal1" value="A"> A. pendidikan informal ke pendidikan formal</label><br>
-      <label><input type="radio" name="soal1" value="B"> B. rumah ke situasi sekolah</label><br>
-      <label><input type="radio" name="soal1" value="C"> C. rumah ke masyarakat</label><br>
-      <label><input type="radio" name="soal1" value="D"> D. rumah ke pendidikan dan pengajaran</label><br>
-      <div class="feedback hidden" id="feedback1" aria-live="polite"></div>
-    </section>
+    <!-- Pertanyaan 1 -->
+    <div id="question1">
+      <p>1. Apa yang dimaksud dengan pendidikan?</p>
+      <label><input type="radio" name="soal1" value="A"> A. Proses pembelajaran sepanjang hayat</label><br>
+      <label><input type="radio" name="soal1" value="B"> B. Proses mendewasakan manusia</label><br>
+      <label><input type="radio" name="soal1" value="C"> C. Proses formal di sekolah</label><br>
+      <label><input type="radio" name="soal1" value="D"> D. Proses mengembangkan ilmu pengetahuan</label><br>
+      <div class="feedback" id="feedback1"></div>
+    </div>
 
-    <!-- Soal 2 -->
-    <section id="question2">
-      <p>2. Perbedaan antara SD dan SLTP terletak dalam hal ....</p>
-      <label><input type="radio" name="soal2" value="A"> A. pengelolaan sekolah</label><br>
-      <label><input type="radio" name="soal2" value="B"> B. sistem penggunaan guru</label><br>
-      <label><input type="radio" name="soal2" value="C"> C. administrasi kurikulum</label><br>
-      <label><input type="radio" name="soal2" value="D"> D. metode mengajar</label><br>
-      <div class="feedback hidden" id="feedback2" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 3 -->
-    <section id="question3">
-      <p>3. Persamaan antara SD dan SMP terletak dalam hal ....</p>
-      <label><input type="radio" name="soal3" value="A"> A. tingkat perkembangan peserta didik</label><br>
-      <label><input type="radio" name="soal3" value="B"> B. kurikulum yang dikembangkan</label><br>
-      <label><input type="radio" name="soal3" value="C"> C. berada dalam satu jenjang</label><br>
-      <label><input type="radio" name="soal3" value="D"> D. sistem pendidikan dan pengajaran</label><br>
-      <div class="feedback hidden" id="feedback3" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 4 -->
-    <section id="question4">
-      <p>4. Pernyataan yang lebih dekat dengan pendidikan di SD bahwa pendidikan adalah proses ....</p>
-      <label><input type="radio" name="soal4" value="A"> A. pengajaran</label><br>
-      <label><input type="radio" name="soal4" value="B"> B. memberikan bekal pengetahuan dan keterampilan yang diperlukan siswa SD</label><br>
-      <label><input type="radio" name="soal4" value="C"> C. menciptakan situasi kondusif bagi perkembangan siswa SD secara optimal</label><br>
-      <label><input type="radio" name="soal4" value="D"> D. pemberian pengalaman kepada mahasiswa</label><br>
-      <div class="feedback hidden" id="feedback4" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 5 -->
-    <section id="question5">
-      <p>5. Seorang guru SD sering disebut sebagai peletak dasar pendidikan formal karena dia ....</p>
-      <label><input type="radio" name="soal5" value="A"> A. mendidik anak yang baru datang dari lingkungan keluarga</label><br>
-      <label><input type="radio" name="soal5" value="B"> B. mengajar berbagai mata pelajaran</label><br>
-      <label><input type="radio" name="soal5" value="C"> C. memberikan bekal pengetahuan dan keterampilan dasar untuk melanjutkan sekolah</label><br>
-      <label><input type="radio" name="soal5" value="D"> D. mempersiapkan siswa agar melanjutkan ke SLTP</label><br>
-      <div class="feedback hidden" id="feedback5" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 6 -->
-    <section id="question6">
-      <p>6. Apa tujuan utama pendidikan di SD menurut Undang-Undang No. 20 Tahun 2003?</p>
-      <label><input type="radio" name="soal6" value="A"> A. Meningkatkan kesehatan jasmani dan rohani saja</label><br>
-      <label><input type="radio" name="soal6" value="B"> B. Menciptakan suasana belajar kondusif bagi siswa</label><br>
-      <label><input type="radio" name="soal6" value="C"> C. Mewujudkan suasana belajar agar siswa aktif mengembangkan potensi dirinya</label><br>
-      <label><input type="radio" name="soal6" value="D"> D. Memberikan bekal keterampilan kerja di usia dini</label><br>
-      <div class="feedback hidden" id="feedback6" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 7 -->
-    <section id="question7">
-      <p>7. Mengapa pendidikan dianggap sebagai proses sepanjang hayat?</p>
-      <label><input type="radio" name="soal7" value="A"> A. Karena pendidikan hanya untuk usia sekolah</label><br>
-      <label><input type="radio" name="soal7" value="B"> B. Karena proses pendidikan berakhir setelah lulus sekolah</label><br>
-      <label><input type="radio" name="soal7" value="C"> C. Karena pendidikan mendukung perkembangan individu sepanjang hidup</label><br>
-      <label><input type="radio" name="soal7" value="D"> D. Karena manusia hanya belajar dari pengalaman formal</label><br>
-      <div class="feedback hidden" id="feedback7" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 8 -->
-    <section id="question8">
-      <p>8. Apa saja aspek perkembangan yang saling berkaitan dalam pendidikan di SD?</p>
-      <label><input type="radio" name="soal8" value="A"> A. Fisik, intelektual, emosional</label><br>
-      <label><input type="radio" name="soal8" value="B"> B. Sosial, moral, dan intelektual</label><br>
-      <label><input type="radio" name="soal8" value="C"> C. Semua aspek saling terhubung dan berpengaruh</label><br>
-      <label><input type="radio" name="soal8" value="D"> D. Aspek moral hanya mendukung sebagian perkembangan</label><br>
-      <div class="feedback hidden" id="feedback8" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 9 -->
-    <section id="question9">
-      <p>9. Prinsip pendidikan di SD harus memperhatikan ....</p>
-      <label><input type="radio" name="soal9" value="A"> A. Kebutuhan guru di sekolah</label><br>
-      <label><input type="radio" name="soal9" value="B"> B. Perkembangan teknologi terbaru</label><br>
-      <label><input type="radio" name="soal9" value="C"> C. Karakteristik siswa secara individual</label><br>
-      <label><input type="radio" name="soal9" value="D"> D. Sistem yang dipilih oleh guru</label><br>
-      <div class="feedback hidden" id="feedback9" aria-live="polite"></div>
-    </section>
-
-    <!-- Soal 10 -->
-    <section id="question10">
-      <p>10. Perkembangan siswa di SD melibatkan proses ....</p>
-      <label><input type="radio" name="soal10" value="A"> A. Statis dan tidak berubah</label><br>
-      <label><input type="radio" name="soal10" value="B"> B. Dinamis dan berubah seiring kemajuan ilmu</label><br>
-      <label><input type="radio" name="soal10" value="C"> C. Linear tanpa pengaruh eksternal</label><br>
-      <label><input type="radio" name="soal10" value="D"> D. Tidak dapat diprediksi</label><br>
-      <div class="feedback hidden" id="feedback10" aria-live="polite"></div>
-    </section>
+    <!-- Pertanyaan 2 -->
+    <div id="question2">
+      <p>2. Apa tujuan utama dari pendidikan?</p>
+      <label><input type="radio" name="soal2" value="A"> A. Mendapatkan pekerjaan</label><br>
+      <label><input type="radio" name="soal2" value="B"> B. Meningkatkan kecerdasan manusia</label><br>
+      <label><input type="radio" name="soal2" value="C"> C. Menyelesaikan tugas sekolah</label><br>
+      <label><input type="radio" name="soal2" value="D"> D. Mengembangkan potensi individu secara optimal</label><br>
+      <div class="feedback" id="feedback2"></div>
+    </div>
 
     <button type="button" onclick="submitQuiz()">Submit</button>
   </form>
 
-  <a href="jadwal.html" id="backButton" class="back-button">Kembali ke Jadwal</a>
+  <!-- Tombol kembali ke menu -->
+  <a href="menu-utama.html" id="backButton" class="back-button">Kembali ke Menu Sebelumnya</a>
 
   <script>
     function submitQuiz() {
