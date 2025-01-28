@@ -29,38 +29,76 @@
         "Guru, siswa, dan orang tua"
       ],
       "correct": 3
-    }
-  ],
-  "Tujuan Pendidikan di SD": [
-    {
-      "title": "Apa fokus utama pendidikan di SD?",
-      "options": [
-        "Mengembangkan keterampilan sosial",
-        "Menghafal pelajaran",
-        "Belajar membaca saja",
-        "Menanamkan nilai budaya"
-      ],
-      "correct": 0
     },
     {
-      "title": "Bagaimana cara mendidik anak SD dengan baik?",
+      "title": "Apa yang membedakan pendidikan formal dan informal?",
       "options": [
-        "Memaksa anak belajar terus-menerus",
-        "Membuat anak memahami konsep dasar",
-        "Memberikan banyak PR",
-        "Hanya fokus pada akademik"
+        "Lokasi belajar",
+        "Metode pengajaran",
+        "Adanya kurikulum dan sertifikat",
+        "Usia peserta didik"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Pendidikan sepanjang hayat berarti?",
+      "options": [
+        "Belajar hanya di sekolah",
+        "Belajar dari lahir hingga dewasa",
+        "Belajar hanya di universitas",
+        "Belajar hanya dari guru"
       ],
       "correct": 1
     },
     {
-      "title": "Apa yang harus diajarkan di SD?",
+      "title": "Bagaimana cara efektif meningkatkan kualitas pendidikan?",
       "options": [
-        "Hanya pelajaran akademik",
-        "Hanya seni dan olahraga",
-        "Keseimbangan antara ilmu, seni, dan nilai-nilai sosial",
-        "Hanya fokus pada ujian"
+        "Memberikan banyak ujian",
+        "Mengurangi waktu bermain siswa",
+        "Meningkatkan kompetensi guru",
+        "Hanya fokus pada nilai akademik"
       ],
       "correct": 2
+    },
+    {
+      "title": "Faktor utama yang mempengaruhi keberhasilan pendidikan?",
+      "options": [
+        "Fasilitas sekolah",
+        "Motivasi siswa dan dukungan lingkungan",
+        "Jumlah murid di kelas",
+        "Jumlah guru dalam satu sekolah"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Apa yang dimaksud dengan pendidikan inklusif?",
+      "options": [
+        "Pendidikan khusus bagi anak-anak berbakat",
+        "Pendidikan yang hanya untuk siswa berprestasi",
+        "Pendidikan yang menerima semua siswa termasuk penyandang disabilitas",
+        "Pendidikan yang hanya dilakukan di rumah"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Mengapa literasi penting dalam pendidikan?",
+      "options": [
+        "Agar siswa bisa membaca lebih cepat",
+        "Agar siswa bisa menjawab ujian dengan baik",
+        "Sebagai dasar pemahaman ilmu dan berpikir kritis",
+        "Untuk menghafal banyak kata"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa peran utama guru dalam pendidikan?",
+      "options": [
+        "Hanya menyampaikan materi pelajaran",
+        "Mengarahkan, membimbing, dan menginspirasi siswa",
+        "Menilai siswa berdasarkan nilai ujian",
+        "Mengawasi siswa agar tetap disiplin"
+      ],
+      "correct": 1
     }
   ]
 }
