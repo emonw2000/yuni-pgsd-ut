@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Definisi Pendidikan</title>
+  <title>Kuis Pendidikan SD</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     .correct { color: green; font-weight: bold; }
     .incorrect { color: red; font-weight: bold; }
-    .highlight { background-color: #d4edda; }
-    .wrong { background-color: #f8d7da; }
-    .result { margin-top: 20px; font-weight: bold; color: blue; }
-    .feedback { margin-top: 10px; font-style: italic; }
     .hidden { display: none; }
+    .result { margin-top: 20px; font-weight: bold; color: blue; }
     .back-button { 
       margin-top: 20px; 
       display: inline-block; 
@@ -27,10 +24,10 @@
   </style>
 </head>
 <body>
-  <h1>Definisi Pendidikan</h1>
-  <p>Pilihlah jawaban yang benar dari soal berikut:</p>
+  <h1>Kuis Pendidikan SD</h1>
+  <p>Jawablah pertanyaan berikut dengan memilih opsi yang menurut Anda benar:</p>
   <form id="quizForm">
-    <!-- Soal nomor 1 baru -->
+    <!-- Soal 1 -->
     <section id="question1">
       <p>1. Pendidikan di Sekolah Dasar sering disebut sebagai pendidikan transisional (peralihan) karena merupakan peralihan dari ....</p>
       <label><input type="radio" name="soal1" value="A"> A. pendidikan informal ke pendidikan formal</label><br>
@@ -40,8 +37,7 @@
       <div class="feedback hidden" id="feedback1" aria-live="polite"></div>
     </section>
 
-    <!-- Tambahkan soal lainnya dengan pola yang sama -->
-    <!-- Soal nomor 2 -->
+    <!-- Soal 2 -->
     <section id="question2">
       <p>2. Perbedaan antara SD dan SLTP terletak dalam hal ....</p>
       <label><input type="radio" name="soal2" value="A"> A. pengelolaan sekolah</label><br>
@@ -51,8 +47,7 @@
       <div class="feedback hidden" id="feedback2" aria-live="polite"></div>
     </section>
 
-    <!-- Lanjutkan pola ini untuk soal 3 hingga soal terakhir -->
-    <!-- Soal nomor 3 -->
+    <!-- Soal 3 -->
     <section id="question3">
       <p>3. Persamaan antara SD dan SMP terletak dalam hal ....</p>
       <label><input type="radio" name="soal3" value="A"> A. tingkat perkembangan peserta didik</label><br>
@@ -62,8 +57,8 @@
       <div class="feedback hidden" id="feedback3" aria-live="polite"></div>
     </section>
 
-     <!-- Soal nomor 4 -->
-     <section id="question4">
+    <!-- Soal 4 -->
+    <section id="question4">
       <p>4. Pernyataan yang lebih dekat dengan pendidikan di SD bahwa pendidikan adalah proses ....</p>
       <label><input type="radio" name="soal4" value="A"> A. pengajaran</label><br>
       <label><input type="radio" name="soal4" value="B"> B. memberikan bekal pengetahuan dan keterampilan yang diperlukan siswa SD</label><br>
@@ -72,7 +67,7 @@
       <div class="feedback hidden" id="feedback4" aria-live="polite"></div>
     </section>
 
-    <!-- Soal nomor 5 -->
+    <!-- Soal 5 -->
     <section id="question5">
       <p>5. Seorang guru SD sering disebut sebagai peletak dasar pendidikan formal karena dia ....</p>
       <label><input type="radio" name="soal5" value="A"> A. mendidik anak yang baru datang dari lingkungan keluarga</label><br>
@@ -82,7 +77,7 @@
       <div class="feedback hidden" id="feedback5" aria-live="polite"></div>
     </section>
 
-    <!-- Soal nomor 6 -->
+    <!-- Soal 6 -->
     <section id="question6">
       <p>6. Apa tujuan utama pendidikan di SD menurut Undang-Undang No. 20 Tahun 2003?</p>
       <label><input type="radio" name="soal6" value="A"> A. Meningkatkan kesehatan jasmani dan rohani saja</label><br>
@@ -92,7 +87,7 @@
       <div class="feedback hidden" id="feedback6" aria-live="polite"></div>
     </section>
 
-    <!-- Soal nomor 7 -->
+    <!-- Soal 7 -->
     <section id="question7">
       <p>7. Mengapa pendidikan dianggap sebagai proses sepanjang hayat?</p>
       <label><input type="radio" name="soal7" value="A"> A. Karena pendidikan hanya untuk usia sekolah</label><br>
@@ -102,7 +97,7 @@
       <div class="feedback hidden" id="feedback7" aria-live="polite"></div>
     </section>
 
-    <!-- Soal nomor 8 -->
+    <!-- Soal 8 -->
     <section id="question8">
       <p>8. Apa saja aspek perkembangan yang saling berkaitan dalam pendidikan di SD?</p>
       <label><input type="radio" name="soal8" value="A"> A. Fisik, intelektual, emosional</label><br>
@@ -112,7 +107,7 @@
       <div class="feedback hidden" id="feedback8" aria-live="polite"></div>
     </section>
 
-    <!-- Soal nomor 9 -->
+    <!-- Soal 9 -->
     <section id="question9">
       <p>9. Prinsip pendidikan di SD harus memperhatikan ....</p>
       <label><input type="radio" name="soal9" value="A"> A. Kebutuhan guru di sekolah</label><br>
@@ -122,7 +117,7 @@
       <div class="feedback hidden" id="feedback9" aria-live="polite"></div>
     </section>
 
-    <!-- Soal nomor 10 -->
+    <!-- Soal 10 -->
     <section id="question10">
       <p>10. Perkembangan siswa di SD melibatkan proses ....</p>
       <label><input type="radio" name="soal10" value="A"> A. Statis dan tidak berubah</label><br>
@@ -131,10 +126,11 @@
       <label><input type="radio" name="soal10" value="D"> D. Tidak dapat diprediksi</label><br>
       <div class="feedback hidden" id="feedback10" aria-live="polite"></div>
     </section>
+
     <button type="button" onclick="submitQuiz()">Submit</button>
   </form>
 
-  <a href="jadwal.html" id="backButton" class="back-button">Kembali ke Menu Sebelumnya</a>
+  <a href="jadwal.html" id="backButton" class="back-button">Kembali ke Jadwal</a>
 
   <script>
     function submitQuiz() {
@@ -142,56 +138,58 @@
         soal1: { answer: "C", feedback: "Benar, SD adalah transisi dari rumah ke masyarakat untuk belajar sosial." },
         soal2: { answer: "B", feedback: "Benar, sistem penggunaan guru berbeda antara SD dan SLTP." },
         soal3: { answer: "C", feedback: "Benar, keduanya berada dalam satu jenjang pendidikan dasar." },
-        // Tambahkan kunci jawaban lainnya
+        soal4: { answer: "C", feedback: "Benar, pendidikan SD menciptakan kondisi optimal bagi perkembangan siswa." },
+        soal5: { answer: "C", feedback: "Benar, ini peran utama guru SD dalam memberikan bekal dasar." },
+        soal6: { answer: "C", feedback: "Benar, pendidikan di SD bertujuan agar siswa mengembangkan potensi mereka secara aktif." },
+        soal7: { answer: "C", feedback: "Benar, pendidikan membantu individu berkembang sepanjang hidupnya." },
+        soal8: { answer: "C", feedback: "Benar, semua aspek perkembangan saling berkaitan dalam pendidikan di SD." },
+        soal9: { answer: "C", feedback: "Benar, pendidikan harus mempertimbangkan karakteristik siswa secara individual." },
+        soal10: { answer: "B", feedback: "Benar, perkembangan siswa di SD bersifat dinamis dan berubah." },
       };
 
       const form = document.getElementById('quizForm');
       const formData = new FormData(form);
       let correctCount = 0;
-      let totalQuestions = Object.keys(correctAnswers).length;
-      let allAnswered = true;
+      const totalQuestions = Object.keys(correctAnswers).length;
 
       Object.keys(correctAnswers).forEach(key => {
         const feedbackDiv = document.getElementById(`feedback${key.slice(-1)}`);
-        feedbackDiv.classList.add('hidden');
-        feedbackDiv.textContent = '';
-        const labels = document.querySelectorAll(`input[name="${key}"] + label`);
-        labels.forEach(label => label.classList.remove('highlight', 'wrong'));
-      });
-
-      for (let key in correctAnswers) {
         const selectedAnswer = formData.get(key);
-        const feedbackDiv = document.getElementById(`feedback${key.slice(-1)}`);
         const correctAnswer = correctAnswers[key].answer;
 
+        if (feedbackDiv) {
+          feedbackDiv.classList.add('hidden');
+          feedbackDiv.textContent = '';
+        }
+
         if (!selectedAnswer) {
-          allAnswered = false;
-          feedbackDiv.textContent = "Harap pilih jawaban untuk soal ini.";
-          feedbackDiv.classList.remove('hidden');
-          continue;
-        }
-
-        if (selectedAnswer === correctAnswer) {
+          if (feedbackDiv) {
+            feedbackDiv.textContent = "Anda belum menjawab soal ini.";
+            feedbackDiv.classList.remove('hidden');
+          }
+        } else if (selectedAnswer === correctAnswer) {
           correctCount++;
-          feedbackDiv.textContent = "Jawaban Anda benar!";
-          feedbackDiv.classList.add('correct');
+          if (feedbackDiv) {
+            feedbackDiv.textContent = "Jawaban Anda benar!";
+            feedbackDiv.classList.add('correct');
+            feedbackDiv.classList.remove('hidden');
+          }
         } else {
-          feedbackDiv.textContent = `Jawaban Anda salah. Jawaban yang benar adalah ${correctAnswer}. ${correctAnswers[key].feedback}`;
-          feedbackDiv.classList.add('incorrect');
+          if (feedbackDiv) {
+            feedbackDiv.textContent = `Jawaban Anda salah. Jawaban benar: ${correctAnswer}. ${correctAnswers[key].feedback}`;
+            feedbackDiv.classList.add('incorrect');
+            feedbackDiv.classList.remove('hidden');
+          }
         }
-        feedbackDiv.classList.remove('hidden');
-      }
+      });
 
-      if (!allAnswered) {
-        alert("Harap jawab semua pertanyaan sebelum submit!");
-        return;
-      }
-
+      // Hasil akhir
       const result = document.createElement('div');
       result.classList.add('result');
       result.textContent = `Skor Anda: ${correctCount} dari ${totalQuestions}`;
       document.body.appendChild(result);
 
+      // Tampilkan tombol kembali
       document.getElementById('backButton').style.display = 'inline-block';
     }
   </script>
