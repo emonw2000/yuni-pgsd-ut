@@ -1,7 +1,7 @@
 console.log("jadwal.js loaded"); // Debugging untuk memastikan file dimuat
 
-let userAnswers = {};
-let currentCategory = "";
+let userAnswers = {}; // Menyimpan jawaban pengguna
+let currentCategory = ""; // Menyimpan kategori soal yang sedang aktif
 
 function toggleTable(tableId) {
   const table = document.getElementById(tableId);
@@ -30,6 +30,7 @@ async function handleCategoryClick(event) {
 
   const questions = await loadQuestions();
   if (questions[category]) {
+    currentCategory = category; // Simpan kategori soal yang sedang dibuka
     openModal(category, questions[category]);
   } else {
     console.error(`Kategori "${category}" tidak ditemukan dalam questions.json`);
@@ -50,6 +51,7 @@ function openModal(title, questions) {
 
   modalTitle.textContent = `Soal untuk: ${title}`;
   modalQuestions.innerHTML = '';
+  userAnswers = {}; // Reset jawaban pengguna
 
   questions.forEach((question, index) => {
     const li = document.createElement('li');
@@ -80,4 +82,40 @@ function closeModal() {
 
 function recordAnswer(questionIndex, answerIndex) {
   userAnswers[questionIndex] = answerIndex;
+  console.log(`Jawaban untuk soal ${questionIndex + 1}: ${answerIndex}`);
+}
+
+async function checkAnswers() {
+  console.log("checkAnswers() dipanggil"); // Debugging untuk memastikan fungsi dipanggil
+
+  const questions = await loadQuestions();
+  const categoryQuestions = questions[currentCategory];
+
+  if (!categoryQuestions) {
+    console.error("Soal tidak ditemukan untuk kategori:", currentCategory);
+    return;
+  }
+
+  let score = 0; // Inisialisasi skor
+  const totalQuestions = categoryQuestions.length;
+
+  const modalResult = document.getElementById('modal-result');
+  modalResult.innerHTML = ''; // Kosongkan hasil sebelumnya
+
+  // Periksa jawaban pengguna
+  categoryQuestions.forEach((question, index) => {
+    const correctAnswer = question.correct; // Jawaban benar dari file JSON
+    const userAnswer = userAnswers[index]; // Jawaban pengguna
+
+    if (userAnswer === correctAnswer) {
+      score++; // Tambah skor jika jawaban benar
+      modalResult.innerHTML += `<p>Soal ${index + 1}: <span style="color: green;">Benar ✅</span></p>`;
+    } else {
+      modalResult.innerHTML += `<p>Soal ${index + 1}: <span style="color: red;">Salah ❌</span> (Jawaban benar: ${String.fromCharCode(65 + correctAnswer)})</p>`;
+    }
+  });
+
+  // Tampilkan skor akhir
+  modalResult.innerHTML += `<p><strong>Skor Anda: ${score} / ${totalQuestions}</strong></p>`;
+  modalResult.style.display = 'block'; // Tampilkan hasil
 }
