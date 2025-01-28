@@ -99,6 +99,16 @@
         "Mengawasi siswa agar tetap disiplin"
       ],
       "correct": 1
+    },
+    {
+      "title": "Apa peran utama guru dalam pendidikan?",
+      "options": [
+        "Hanya menyampaikan materi pelajaran",
+        "Mengarahkan, membimbing, dan menginspirasi siswa",
+        "Menilai siswa berdasarkan nilai ujian",
+        "Mengawasi siswa agar tetap disiplin"
+      ],
+      "correct": 1
     }
   ]
 }

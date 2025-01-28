@@ -39,8 +39,10 @@
       z-index: 1000;
     }
     .modal-body {
-      max-height: 400px;  /* ✅ Tinggi maksimum modal */
-      overflow-y: auto;   /* ✅ Aktifkan scrolling jika konten panjang */
+      max-height: 400px;  /* Batasi tinggi maksimum modal */
+      overflow-y: auto;   /* Aktifkan scroll vertikal */
+      overflow-x: hidden; /* Nonaktifkan scroll horizontal */
+      padding-right: 10px; /* Tambahkan padding untuk mencegah teks tertutup scrollbar */
     }
     .overlay {
       display: none;
@@ -97,9 +99,12 @@
   <!-- Modal Popup untuk soal -->
   <div id="modal" class="modal">
     <h3 id="question-title"></h3>
-    <ul id="modal-questions"></ul>
+    <div class="modal-body">
+      <ul id="modal-questions">
+        <!-- Soal akan dimuat di sini -->
+      </ul>
+    </div>
     <button onclick="checkAnswers()">Periksa Jawaban</button>
-    <div id="modal-result" class="result" style="display: none;"></div>
     <button onclick="closeModal()">Tutup</button>
   </div>
   <div id="overlay" class="overlay" onclick="closeModal()"></div>
