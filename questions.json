@@ -1,0 +1,66 @@
+{
+  "Definisi Pendidikan": [
+    {
+      "title": "Apa itu pendidikan?",
+      "options": [
+        "Proses pembelajaran formal di sekolah",
+        "Proses pembelajaran sepanjang hayat",
+        "Proses mendapatkan gelar akademik",
+        "Proses mempersiapkan ujian"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Apa tujuan utama pendidikan?",
+      "options": [
+        "Mendapatkan pekerjaan",
+        "Menghafal pelajaran",
+        "Meningkatkan potensi individu",
+        "Mencapai nilai tertinggi"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Siapa saja yang terlibat dalam pendidikan?",
+      "options": [
+        "Guru saja",
+        "Orang tua saja",
+        "Siswa saja",
+        "Guru, siswa, dan orang tua"
+      ],
+      "correct": 3
+    }
+  ],
+  "Tujuan Pendidikan di SD": [
+    {
+      "title": "Apa fokus utama pendidikan di SD?",
+      "options": [
+        "Mengembangkan keterampilan sosial",
+        "Menghafal pelajaran",
+        "Belajar membaca saja",
+        "Menanamkan nilai budaya"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Bagaimana cara mendidik anak SD dengan baik?",
+      "options": [
+        "Memaksa anak belajar terus-menerus",
+        "Membuat anak memahami konsep dasar",
+        "Memberikan banyak PR",
+        "Hanya fokus pada akademik"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Apa yang harus diajarkan di SD?",
+      "options": [
+        "Hanya pelajaran akademik",
+        "Hanya seni dan olahraga",
+        "Keseimbangan antara ilmu, seni, dan nilai-nilai sosial",
+        "Hanya fokus pada ujian"
+      ],
+      "correct": 2
+    }
+  ]
+}
