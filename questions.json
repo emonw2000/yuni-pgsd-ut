@@ -100,5 +100,107 @@
       ],
       "correct": 1
     }
+  ],
+  "Tujuan Pendidikan di SD": [
+    {
+      "title": "Berikut ini adalah acuan-acuan tujuan pendidikan SD, kecuali ....",
+      "options": [
+        "Tujuan pendidikan nasional",
+        "Kebutuhan masyarakat sekitar sekolah",
+        "Tujuan pendidikan dasar",
+        "Karakteristik perkembangan siswa"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Fungsi edukatif dalam pendidikan SD harus lebih menonjol daripada fungsi pengajaran karena pendidikan SD ....",
+      "options": [
+        "Dititikberatkan pada pengembangan dasar kepribadian",
+        "Ditekankan pada pembekalan kemampuan dasar",
+        "Bukan merupakan pendidikan terminal",
+        "Menggunakan sistem guru kelas"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Yang bukan merupakan tujuan pendidikan SD adalah ....",
+      "options": [
+        "Memberikan bekal kemampuan dasar calistung",
+        "Menyiapkan siswa untuk melanjutkan pendidikan ke SLTP",
+        "Menyiapkan kemampuan intelektual, sosial dan pribadi sesuai dengan karakteristik perkembangan",
+        "Melestarikan nilai-nilai budaya nasional"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Memberi pengetahuan dan keterampilan dasar yang dibutuhkan oleh siswa untuk hidup dalam masyarakat. Kalimat ini merupakan rumusan tujuan pendidikan ....",
+      "options": [
+        "Nasional",
+        "Sekolah Dasar",
+        "Dasar",
+        "Institusional"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Guru mengadakan pengajaran remedial untuk membantu siswa yang mengalami kesulitan tertentu dalam mata pelajaran berhitung. Kegiatan guru ini merupakan perwujudan dari fungsi ....",
+      "options": [
+        "Pengembangan kemampuan",
+        "Pencegahan",
+        "Kuratif",
+        "Transformatif"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa tujuan utama pendidikan dasar menurut Undang-Undang No. 20 Tahun 2003?",
+      "options": [
+        "Mempersiapkan siswa untuk pendidikan tinggi.",
+        "Membentuk warga negara yang baik dan produktif.",
+        "Membentuk dasar kepribadian siswa sebagai individu yang utuh.",
+        "Meningkatkan pemahaman siswa tentang nilai-nilai global."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Mengapa pendidikan SD dianggap sebagai pendidikan transisional?",
+      "options": [
+        "Karena siswa mulai belajar di lingkungan formal.",
+        "Karena siswa mulai memahami lingkungan sosial.",
+        "Karena siswa mulai memahami konsep-konsep abstrak.",
+        "Karena siswa mulai belajar keterampilan teknis."
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Apa saja aspek tujuan pendidikan di SD yang terintegrasi dengan pendidikan nasional?",
+      "options": [
+        "Meningkatkan keterampilan membaca, menulis, dan berhitung.",
+        "Mencakup aspek intelektual, sosial, moral, dan spiritual.",
+        "Mencakup tujuan lokal dan regional pendidikan.",
+        "Hanya fokus pada aspek moralitas pendidikan."
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Pendidikan di SD memiliki fungsi transisional karena ....",
+      "options": [
+        "Pendidikan SD adalah jenjang akhir dari pendidikan dasar.",
+        "Pendidikan SD membekali siswa dengan keterampilan dasar.",
+        "Pendidikan SD merupakan tahap awal untuk SLTP.",
+        "Pendidikan SD melatih siswa untuk bekerja mandiri."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa yang menjadi fokus utama tujuan operasional pendidikan SD?",
+      "options": [
+        "Memberikan pendidikan karakter secara mendalam.",
+        "Memberikan bekal keterampilan dasar calistung.",
+        "Membantu siswa memahami hak dan kewajiban.",
+        "Melestarikan nilai-nilai budaya lokal siswa."
+      ],
+      "correct": 1
+    }
   ]
 }
