@@ -144,7 +144,7 @@
         soal7: { answer: "C", feedback: "Benar, pendidikan membantu individu berkembang sepanjang hidupnya." },
         soal8: { answer: "C", feedback: "Benar, semua aspek perkembangan saling berkaitan dalam pendidikan di SD." },
         soal9: { answer: "C", feedback: "Benar, pendidikan harus mempertimbangkan karakteristik siswa secara individual." },
-        soal10: { answer: "B", feedback: "Benar, perkembangan siswa di SD bersifat dinamis dan berubah." },
+        soal10: { answer: "B", feedback: "Benar, perkembangan siswa di SD bersifat dinamis dan berubah." } // ✅ Memastikan soal10 masuk
       };
 
       const form = document.getElementById('quizForm');
@@ -154,44 +154,54 @@
 
       Object.keys(correctAnswers).forEach(key => {
         const feedbackDiv = document.getElementById(`feedback${key.slice(-1)}`);
-        const selectedAnswer = formData.get(key);
-        const correctAnswer = correctAnswers[key].answer;
-
         if (feedbackDiv) {
           feedbackDiv.classList.add('hidden');
           feedbackDiv.textContent = '';
         }
+      });
+
+      for (let key in correctAnswers) {
+        const selectedAnswer = formData.get(key);
+        const feedbackDiv = document.getElementById(`feedback${key.slice(-1)}`);
+        const correctAnswer = correctAnswers[key].answer;
+
+        if (!feedbackDiv) {
+          console.warn(`Element feedback untuk ${key} tidak ditemukan!`);
+          continue;
+        }
 
         if (!selectedAnswer) {
-          if (feedbackDiv) {
-            feedbackDiv.textContent = "Anda belum menjawab soal ini.";
-            feedbackDiv.classList.remove('hidden');
-          }
+          feedbackDiv.textContent = "Anda belum menjawab soal ini.";
+          feedbackDiv.classList.remove('hidden');
         } else if (selectedAnswer === correctAnswer) {
           correctCount++;
-          if (feedbackDiv) {
-            feedbackDiv.textContent = "Jawaban Anda benar!";
-            feedbackDiv.classList.add('correct');
-            feedbackDiv.classList.remove('hidden');
-          }
+          feedbackDiv.textContent = `Jawaban Anda benar! ${correctAnswers[key].feedback}`;
+          feedbackDiv.classList.add('correct');
+          feedbackDiv.classList.remove('hidden');
         } else {
-          if (feedbackDiv) {
-            feedbackDiv.textContent = `Jawaban Anda salah. Jawaban benar: ${correctAnswer}. ${correctAnswers[key].feedback}`;
-            feedbackDiv.classList.add('incorrect');
-            feedbackDiv.classList.remove('hidden');
-          }
+          feedbackDiv.textContent = `Jawaban Anda salah. Jawaban benar: ${correctAnswer}. ${correctAnswers[key].feedback}`;
+          feedbackDiv.classList.add('incorrect');
+          feedbackDiv.classList.remove('hidden');
         }
-      });
+      }
 
       // Hasil akhir
       const result = document.createElement('div');
       result.classList.add('result');
       result.textContent = `Skor Anda: ${correctCount} dari ${totalQuestions}`;
+      
+      // Hapus hasil lama jika ada
+      const oldResult = document.querySelector('.result');
+      if (oldResult) {
+        oldResult.remove();
+      }
+
       document.body.appendChild(result);
 
       // Tampilkan tombol kembali
       document.getElementById('backButton').style.display = 'inline-block';
     }
-  </script>
+</script>
+
 </body>
 </html>
