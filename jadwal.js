@@ -1,6 +1,48 @@
 let userAnswers = {}; // Menyimpan jawaban pengguna
 let currentCategory = ""; // Menyimpan kategori soal saat ini
 
+// Fungsi untuk membuka modal popup
+function openModal(title, questions) {
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('overlay');
+  const modalTitle = document.getElementById('modal-title');
+  const modalQuestions = document.getElementById('modal-questions');
+
+  modalTitle.textContent = `Soal untuk: ${title}`;
+  modalQuestions.innerHTML = ''; // Kosongkan soal sebelumnya
+
+  questions.forEach((question, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <strong>${index + 1}. ${question.title}</strong>
+      <ul>
+        ${question.options.map((option, i) => `
+          <li>
+            <label>
+              <input type="radio" name="question-${index}" value="${i}" onchange="recordAnswer(${index}, ${i})">
+              ${String.fromCharCode(65 + i)}. ${option}
+            </label>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+    modalQuestions.appendChild(li);
+  });
+
+  modal.style.display = 'block';
+  overlay.style.display = 'block';
+}
+
+// Fungsi untuk menutup modal popup
+function closeModal() {
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('overlay');
+
+  modal.style.display = 'none';
+  overlay.style.display = 'none';
+}
+
+
 // Fungsi untuk toggle (menampilkan/menyembunyikan) tabel
 function toggleTable(tableId) {
   const table = document.getElementById(tableId);
@@ -11,15 +53,31 @@ function toggleTable(tableId) {
   }
 }
 
-// Fungsi untuk memuat soal dari file JSON
 async function loadQuestions() {
   try {
-    const response = await fetch('questions.json'); // Muat file JSON soal
-    const questions = await response.json(); // Parse JSON menjadi objek
-    return questions;
+    const response = await fetch('questions.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
   } catch (error) {
     console.error("Gagal memuat soal:", error);
+    alert("Gagal memuat soal. Periksa apakah file questions.json tersedia.");
     return {};
+  }
+}
+
+
+async function handleCategoryClick(event) {
+  const category = event.target.getAttribute('data-category'); // Ambil kategori soal
+  console.log(`Kategori yang dipilih: ${category}`); // Debugging
+  const questions = await loadQuestions(); // Muat soal dari file JSON
+
+  if (questions[category]) {
+    openModal(category, questions[category]); // Tampilkan soal dalam modal
+  } else {
+    console.error(`Kategori "${category}" tidak ditemukan.`);
+    alert(`Kategori "${category}" tidak ditemukan.`);
   }
 }
 
@@ -71,4 +129,27 @@ function recordAnswer(questionIndex, answerIndex) {
 
 // Fungsi untuk memeriksa jawaban
 async function checkAnswers() {
-  const questions = 
+  const questions = await loadQuestions(); // Muat soal dari file JSON
+  const categoryQuestions = questions[currentCategory]; // Ambil soal untuk kategori aktif
+  const resultContainer = document.getElementById('result'); // Kontainer hasil
+  let correctCount = 0;
+
+  if (!categoryQuestions) {
+    console.error("Tidak ada soal untuk kategori ini.");
+    return;
+  }
+
+  // Periksa semua jawaban
+  const totalQuestions = categoryQuestions.length;
+  for (let i = 0; i < totalQuestions; i++) {
+    if (userAnswers[i] === categoryQuestions[i].correct) {
+      correctCount++;
+    }
+  }
+
+  // Tampilkan hasil
+  resultContainer.style.display = 'block';
+  resultContainer.innerHTML = `
+    <p>Anda menjawab ${correctCount} dari ${totalQuestions} soal dengan benar.</p>
+  `;
+}

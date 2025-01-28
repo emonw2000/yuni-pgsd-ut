@@ -9,56 +9,78 @@
       font-family: Arial, sans-serif;
       margin: 20px;
     }
-
-    h2 {
-      margin-top: 20px;
-      cursor: pointer;
-      color: #007BFF;
+    .header {
+      margin-bottom: 20px;
     }
-
-    h2:hover {
-      text-decoration: underline;
+    .table-container {
+      margin-bottom: 20px;
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
-      display: none; /* Tabel tersembunyi secara default */
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    th {
-      background-color: #f4f4f4;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-
-    .header {
-      text-align: center;
       margin-bottom: 20px;
     }
-
-    .table-container {
-      overflow-x: auto;
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-header h3 {
+      margin: 0;
+    }
+    .modal-header button {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .modal-body ul {
+      padding-left: 20px;
+    }
+    .modal-body li {
+      margin-bottom: 10px;
+    }
+    .overlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="header">
     <h1>Jadwal Mata Kuliah</h1>
-    <p>Klik pada judul bulan untuk melihat data.</p>
+    <p>Klik pada judul bulan untuk melihat data atau klik kategori untuk menjawab soal.</p>
     <a href="index.html">Kembali ke Halaman Utama</a>
   </div>
 
@@ -66,7 +88,7 @@
   <section>
     <h2 onclick="toggleTable('januari')">Januari 2025</h2>
     <div class="table-container">
-      <table id="januari">
+      <table id="januari" style="display: none;">
         <thead>
           <tr>
             <th>Tanggal</th>
@@ -75,109 +97,68 @@
             <th>Modul</th>
             <th>Kegiatan Belajar</th>
           </tr>
-          <tbody>
-            <tr>
-              <td>2025-01-28</td>
-              <td>Selasa</td>
-              <td>Pendidikan Anak SD</td>
-              <td>Modul 01</td>
-              <td>
-                <span data-category="Definisi Pendidikan">1. Definisi Pendidikan</span><br>
-                <span data-category="Tujuan Pendidikan di SD">2. Tujuan Pendidikan di SD</span>
-              </td>
-            </tr>
-            <tr>
-              <td>2025-01-29</td>
-              <td>Rabu</td>
-              <td>Pendidikan Seni SD</td>
-              <td>Modul 01</td>
-              <td>
-                <span data-category="Hakikat Seni">Hakikat Seni</span><br>
-                <span data-category="Fungsi dan Kedudukan Seni">Fungsi dan Kedudukan Seni dalam Kehidupan Masyarakat</span>
-              </td>
-            </tr>
-            <tr>
-              <td>2025-01-30</td>
-              <td>Kamis</td>
-              <td>Pengantar Pendidikan</td>
-              <td>Modul 01</td>
-              <td>
-                <span data-category="Pengertian Pendidikan">Pengertian dan Aspek-Aspek Hakikat Manusia</span>
-              </td>
-            </tr>
-            <tr>
-              <td>2025-01-31</td>
-              <td>Jumat</td>
-              <td>Perkembangan Peserta Didik</td>
-              <td>Modul 01</td>
-              <td>
-                <span data-category="Perkembangan Peserta Didik">Perkembangan dan Aspek-Aspeknya</span>
-              </td>
-            </tr>
-          </tbody>
-          
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-01-28</td>
+            <td>Selasa</td>
+            <td>Pendidikan Anak SD</td>
+            <td>Modul 01</td>
+            <td>
+              <span data-category="Definisi Pendidikan" onclick="handleCategoryClick(event)">1. Definisi Pendidikan</span><br>
+              <span data-category="Tujuan Pendidikan di SD" onclick="handleCategoryClick(event)">2. Tujuan Pendidikan di SD</span>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </section>
 
-   <script>
-    // Fungsi untuk toggle (menampilkan/menyembunyikan) tabel
-    function toggleTable(tableId) {
-      const table = document.getElementById(tableId);
-      if (table.style.display === "none" || table.style.display === "") {
-        table.style.display = "table"; // Tampilkan tabel
-      } else {
-        table.style.display = "none"; // Sembunyikan tabel
-      }
-    }
-    // Fungsi untuk memuat soal berdasarkan kategori
-async function loadQuestions() {
-  try {
-    const response = await fetch('questions.json'); // Muat file JSON soal
-    const questions = await response.json(); // Parse JSON menjadi objek
-    return questions;
-  } catch (error) {
-    console.error("Gagal memuat soal:", error);
-    return {};
-  }
-}
+  <!-- Februari -->
+  <section>
+    <h2 onclick="toggleTable('februari')">Februari 2025</h2>
+    <div class="table-container">
+      <table id="februari" style="display: none;">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Hari</th>
+            <th>Nama Mata Kuliah</th>
+            <th>Modul</th>
+            <th>Kegiatan Belajar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-02-02</td>
+            <td>Minggu</td>
+            <td>Pendidikan Bahasa Indonesia</td>
+            <td>Modul 02</td>
+            <td>
+              <span data-category="Kaidah Bahasa" onclick="handleCategoryClick(event)">Kaidah Bahasa</span><br>
+              <span data-category="Puisi dan Prosa" onclick="handleCategoryClick(event)">Puisi dan Prosa</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-// Fungsi untuk menangani klik kategori soal
-async function handleCategoryClick(event) {
-  const category = event.target.getAttribute('data-category'); // Ambil kategori
-  const questions = await loadQuestions(); // Muat soal dari file JSON
+  <!-- Modal Popup untuk soal -->
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h3 id="modal-title"></h3>
+      <button onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <ul id="modal-questions"></ul>
+      <button onclick="checkAnswers()">Periksa Jawaban</button>
+      <div id="modal-result" class="result" style="display: none;"></div>
+    </div>
+  </div>
+  <div id="overlay" class="overlay" onclick="closeModal()"></div>
 
-  if (questions[category]) {
-    // Ambil container untuk menampilkan soal
-    const questionContainer = document.getElementById('question-container');
-    const questionList = document.getElementById('question-list');
-    const questionTitle = document.getElementById('question-title');
-
-    // Tampilkan soal terkait kategori
-    questionTitle.textContent = `Soal untuk: ${category}`;
-    questionList.innerHTML = ''; // Kosongkan soal sebelumnya
-
-    questions[category].forEach((question, index) => {
-      const li = document.createElement('li');
-      li.innerHTML = `
-        <strong>${index + 1}. ${question.title}</strong>
-        <ul>
-          ${question.options.map((option, i) => `<li>${String.fromCharCode(65 + i)}. ${option}</li>`).join('')}
-        </ul>
-      `;
-      questionList.appendChild(li);
-    });
-
-    questionContainer.style.display = 'block'; // Tampilkan container soal
-  } else {
-    console.error(`Kategori "${category}" tidak ditemukan.`);
-  }
-}
-
-// Tambahkan event listener ke elemen dengan `data-category`
-document.querySelectorAll('[data-category]').forEach(element => {
-  element.addEventListener('click', handleCategoryClick);
-});
-  </script>
+  <!-- Hubungkan file jadwal.js -->
+  <script src="jadwal.js"></script>
 </body>
 </html>
