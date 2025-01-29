@@ -396,7 +396,111 @@
     ],
     "correct": 2
   }
-]
+],
+
+  "Pengertian dan Aspek-Aspek Hakikat Manusia": [
+    {
+      "title": "Dibawah ini yang bukan merupakan asas antropologis yang mendasari kesimpulan bahwa manusia mungkin didik atau dapat didik adalah asas?",
+      "options": [
+        "dinamika",
+        "potensialitas",
+        "individualitas dan sosialitas",
+        "tidak ada jawaban yang benar"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Pendidikan bersifat normatif artinya adalah?",
+      "options": [
+        "pendidikan sepanjang hayat",
+        "dilaksanakan secara terpadu dan terintegrasi",
+        "berdasarkan keinginan pemerintah dan masyarakat",
+        "hanya untuk membantu masyarakat miskin"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Manusia belum selesai menjadi manusia, ia dibebani keharusan untuk menjadi manusia, tetapi ia tidak sendirinya menjadi manusia. Adapun untuk menjadi manusia ia memerlukan pendidikan atau harus didik. 'Man can become man through education only.' Teori pendidikan di atas merupakan pernyataan dari ....",
+      "options": [
+        "M.J. Langeveld",
+        "Immanuel Kant",
+        "Henderson",
+        "Gehlen"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Dalam istilah Martin Heidegger, benda-benda disebut sebagai yang berada (Seinde) dan bahwa benda-benda itu hanya 'vorhanden', artinya adalah ....",
+      "options": [
+        "hanya terletak begitu saja di depan orang dan adanya hubungan dengan orang itu",
+        "hanya terletak begitu saja di depan orang, tanpa adanya hubungan dengan orang itu",
+        "hanya terletak begitu saja tanpa diperhatikan oleh orang itu",
+        "manusia memiliki peran dan tanggung jawab atas keberadaan dirinya dan benda-benda di sekitarnya"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Sebagai insan sosial manusia hidup bersama dengan sesamanya, ia butuh bergaul dengan orang lain. Pernyataan di atas merupakan asas antropogis, yaitu ....",
+      "options": [
+        "asas moralitas",
+        "asas sosialitas",
+        "asas individualitas",
+        "asas potensialitas"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Asas-asas perlunya pendidikan bagi manusia sebagai implikasi dari hakikat manusia terhadap perlunya pendidikan, kecuali ....",
+      "options": [
+        "manusia sebagai makhluk yang belum selesai",
+        "tugas dan tujuan manusia adalah menjadi manusia",
+        "perkembangan manusia bersifat terbuka",
+        "perkembangan manusia bersifat tertutup"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Istilah 'etnologi' diberikan kepada ahli ilmu?",
+      "options": [
+        "ilmu kesehatan",
+        "ilmu psikologi",
+        "ilmu geologi",
+        "ilmu bangsa-bangsa"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Berikut ini makna manusia sebagai makhluk yang belum selesai, kecuali ....",
+      "options": [
+        "manusia tidak mampu menciptakan dirinya sendiri",
+        "manusia membutuhkan manusia lain untuk bersosialisasi",
+        "manusia memiliki tanggung jawab atas keberadaan dirinya",
+        "manusia secara aktif mengadakan dirinya untuk memenuhi kebutuhan hidupnya"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Kemampuan bersosialisasi, kesadaran akan tujuan hidup, dan kemampuan untuk hidup tidak dibawa manusia sejak kelahirannya melainkan harus diperoleh melalui ....",
+      "options": [
+        "proses politik",
+        "proses ekonomi",
+        "proses akulturasi budaya",
+        "proses pendidikan"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Manusia itu sebagai animal educandum dan ia memang adalah animal educabile, pernyataan di atas merupakan hasil dari studi fenomenologis yang dilakukan oleh ....",
+      "options": [
+        "M.J. Langeveld",
+        "Immanuel Kant",
+        "C.A. Van Peursen",
+        "Henderson"
+      ],
+      "correct": 0
+    }
+  ]
+
 
 
 }
