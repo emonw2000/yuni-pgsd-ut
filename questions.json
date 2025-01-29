@@ -202,5 +202,201 @@
       ],
       "correct": 1
     }
-  ]
+  ],
+  "Hakikat Seni": [
+  {
+    "title": "Salah satu siswa Anda dapat menarikan sebuah tarian tradisional dengan pakem yang benar. Ini termasuk pemahaman seni sebagai ...",
+    "options": [
+      "benda",
+      "kemahiran",
+      "kegiatan",
+      "karya"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Patung yang terdapat pada sebuah gapura sebuah rumah kolektor benda-benda antik termasuk karya seni ...",
+    "options": [
+      "rupa",
+      "antik",
+      "murni",
+      "terapan"
+    ],
+    "correct": 2
+  },
+  {
+    "title": "Ekspresi wajah dan gerakan yang lucu dan konyol dari aktor komedi Mandra mengundang gelak tawa para penonton, adalah salah satu contoh seni sebagai ...",
+    "options": [
+      "benda",
+      "kemahiran",
+      "kegiatan",
+      "karya"
+    ],
+    "correct": 3
+  },
+  {
+    "title": "Seni adalah semua perbuatan manusia yang timbul dari hidup perasaannya dan bersifat indah, sehingga dapat menggerakkan jiwa perasaan manusia, adalah pendapat dari....",
+    "options": [
+      "K.H. Dewantara",
+      "Akhdiat K. Miharja",
+      "Joganatha",
+      "Tolstoy"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Jiwa dari seni suatu etnis berakar pada ....",
+    "options": [
+      "seni kreasinya",
+      "tradisi budayanya",
+      "kemajuan budayanya",
+      "pengaruh budaya asing"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Seni yang diciptakan untuk tujuan estetika tanpa memperhatikan fungsi praktis disebut ....",
+    "options": [
+      "seni murni",
+      "seni terapan",
+      "seni rupa",
+      "seni pertunjukan"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Menurut Ki Hajar Dewantara, seni memiliki sifat utama yaitu ....",
+    "options": [
+      "ekspresi",
+      "indah",
+      "sederhana",
+      "simbolik"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Seni dalam kehidupan sehari-hari, seperti memilih pakaian yang cocok untuk acara, termasuk dalam ....",
+    "options": [
+      "seni sebagai benda",
+      "seni sebagai kemahiran",
+      "seni sebagai kegiatan",
+      "seni sebagai karya"
+    ],
+    "correct": 2
+  },
+  {
+    "title": "Lukisan dinding gua dari zaman prasejarah yang memiliki nilai religi-magis termasuk seni sebagai ....",
+    "options": [
+      "karya seni",
+      "kegiatan manusia",
+      "simbol budaya",
+      "alat komunikasi"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Aktivitas seni yang melibatkan refleksi kehidupan manusia melalui media visual termasuk ....",
+    "options": [
+      "seni pertunjukan",
+      "seni rupa",
+      "seni sastra",
+      "seni musik"
+    ],
+    "correct": 1
+  }
+],
+"Fungsi dan Kedudukan Seni": [
+  {
+    "title": "Keragaman seni budaya nusantara sering disebut multilingual.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Yang membedakan antara seni untuk upacara dengan hiburan adalah pada aspek koreografinya.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Tari Serampang Dua Belas termasuk kategori tarian untuk upacara.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Secara garis besar fungsi penyajian dalam seni ada tiga (upacara, hiburan, aktualisasi diri).",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Fungsi seni dalam kehidupan masyarakat karena tradisi yang turun-temurun.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Fungsi seni dalam masyarakat tradisional sering digunakan untuk ....",
+    "options": [
+      "legitimasi di istana",
+      "media promosi",
+      "hiburan modern",
+      "pengembangan teknologi"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Seni sebagai media terapi digunakan untuk ....",
+    "options": [
+      "meningkatkan kreativitas anak",
+      "memberikan ketenangan batin",
+      "mempromosikan produk",
+      "hiburan massal"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Salah satu fungsi seni dalam masyarakat modern adalah ....",
+    "options": [
+      "hanya untuk ritual",
+      "media komunikasi",
+      "mendominasi budaya tradisional",
+      "meningkatkan perpecahan"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Tari Barong di Bali merupakan contoh seni yang berfungsi sebagai ....",
+    "options": [
+      "tontonan hiburan",
+      "media ritual",
+      "media pendidikan",
+      "media komersial"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Seni instalasi dalam masyarakat modern lebih menekankan pada fungsi ....",
+    "options": [
+      "komersial",
+      "ritual",
+      "ekspresi/aktualisasi diri",
+      "komunikasi"
+    ],
+    "correct": 2
+  }
+]
+
+
 }
