@@ -499,7 +499,156 @@
       ],
       "correct": 0
     }
-  ]
+  ],
+
+  "Perkembangan dan Aspek-Aspeknya": [
+  {
+    "title": "Jari Adi bengkak karena terpukul palu. Dengan demikian, dapat dikatakan bahwa membesarnya jari tersebut adalah tahap atau fase perkembangan fisik yang dialami Adi.",
+    "options": [
+      "betul",
+      "salah"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Seluruh manusia memiliki capaian perkembangan yang sama, tidak bergantung pada tempat tinggal ataupun keluarga yang membesarkannya.",
+    "options": [
+      "betul",
+      "salah"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Kebiasaan mengantre atau memberi salam harus dibangun saat anak berusia dini sebab jika sudah remaja, mereka tidak mampu lagi belajar untuk melakukan hal-hal tersebut.",
+    "options": [
+      "betul",
+      "salah"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Periode ... adalah masa perkembangan individu ketika dalam kandungan.",
+    "options": [
+      "prenatal",
+      "bayi",
+      "kanak-kanak awal",
+      "kanak-kanak"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Periode ... adalah transisi menuju periode dewasa dan hal ini menyebabkan manusia sering kali bingung dengan identitas dirinya.",
+    "options": [
+      "kanak-kanak awal",
+      "kanak-kanak",
+      "remaja",
+      "dewasa awal"
+    ],
+    "correct": 2
+  },
+  {
+    "title": "Salah satu karakteristik perkembangan adalah ... yang artinya perkembangan manusia terjadi sejak ia dalam kandungan hingga ia wafat.",
+    "options": [
+      "sepanjang hayat",
+      "kontekstual",
+      "terjadi dalam kecepatan yang berbeda-beda",
+      "multidimensi"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Secara umum, perkembangan manusia ....",
+    "options": [
+      "akan berhenti saat seseorang mencapai usia dewasa",
+      "terjadi akibat faktor genetik tanpa pengaruh dari lingkungan",
+      "bermula saat ia memasuki usia sekolah dasar",
+      "proses yang dapat diprediksi karena ada polanya"
+    ],
+    "correct": 3
+  },
+  {
+    "title": "Yang dimaksud dengan perkembangan manusia itu multiarah adalah ....",
+    "options": [
+      "anak yang tidak memiliki kesempatan belajar di sekolah kemungkinan besar akan memiliki perkembangan kognitif yang berbeda dengan mereka yang bersekolah",
+      "perkembangan bukan semata-mata tentang kondisi fisik saja, tetapi juga kognitif dan aspek lainnya",
+      "sejalan dengan peningkatan usia, sebagian aspek perkembangan berkembang atau meningkat, tetapi ada aspek lain yang justru memudar dan menghilang dari diri manusia",
+      "tidak ada jawaban yang benar"
+    ],
+    "correct": 2
+  },
+  {
+    "title": "Contoh perubahan yang merupakan perkembangan manusia adalah ....",
+    "options": [
+      "perkembangan ukuran jari tangan karena terpukul palu",
+      "perubahan suara karena sedang sakit flu",
+      "warna kulit lebih cerah setelah menggunakan perias wajah",
+      "meningkatnya perbendaharaan kosakata karena gemar membaca buku sejak kecil"
+    ],
+    "correct": 3
+  },
+  {
+    "title": "Tiga dimensi atau aspek utama perkembangan individu manusia pada umumnya adalah, kecuali",
+    "options": [
+      "biologis/fisik motorik",
+      "keluarga",
+      "sosioemosional",
+      "kognitif"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Kemampuan anak balita menggenggam barang yang semula hanya dapat menyentuhnya adalah bentuk perkembangan aspek ....",
+    "options": [
+      "biologis/fisik motorik",
+      "keluarga",
+      "sosioemosional",
+      "kognitif"
+    ],
+    "correct": 0
+  },
+  {
+    "title": "Dengan bertambahnya usia, manusia menunjukkan rasa marahnya dengan cara yang berbeda-beda karena adanya aspek perkembangan ....",
+    "options": [
+      "biologis/fisik motorik",
+      "keluarga",
+      "sosioemosional",
+      "kognitif"
+    ],
+    "correct": 2
+  },
+  {
+    "title": "Pada umumnya, tahapan perkembangan sejak masa konsepsi hingga akhir hayat dibagi menjadi ... tahap.",
+    "options": [
+      "dua",
+      "tiga",
+      "enam",
+      "delapan"
+    ],
+    "correct": 3
+  },
+  {
+    "title": "Periode perkembangan ... dikenal juga dengan tahap usia dini, yaitu anak-anak mulai mengembangkan kemampuan akademik yang mendasar.",
+    "options": [
+      "masa kanak-kanak",
+      "masa kanak-kanak awal",
+      "masa bayi",
+      "masa remaja"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "Secara alami, tanpa ada pengaruh pengasuhan (parenting) ataupun sekolah, setiap anak remaja di mana pun mereka berada akan memiliki kemampuan tumbuh kembang yang sama.",
+    "options": [
+      "Benar karena perkembangan manusia bergantung pada faktor genetik/keturunan saja.",
+      "Benar karena setiap manusia memiliki bakat untuk berkembang.",
+      "Tidak benar karena perkembangan manusia bergantung pada faktor lingkungan saja.",
+      "Tidak benar karena perkembangan manusia bergantung pada faktor genetik dan lingkungan."
+    ],
+    "correct": 3
+  }
+]
+
+
 
 
 
