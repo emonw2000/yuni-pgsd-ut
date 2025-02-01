@@ -723,6 +723,81 @@
       "title": "Berikut ini adalah masalah yang tidak berkaitan dengan masalah global ...",
       "options": ["pengungsi", "bunuh diri", "keluarga berencana", "hak asasi manusia"],
       "correct": 1
+    },
+    {
+      "title": "Apa yang dimaksud dengan global?",
+      "options": ["Berkaitan dengan satu negara", "Berkaitan dengan dunia", "Berkaitan dengan ekonomi", "Berkaitan dengan politik"],
+      "correct": 1
+    },
+    {
+      "title": "Menurut Longman Dictionary of Contemporary English, global diartikan sebagai ....",
+      "options": ["Tentang seluruh dunia", "Tentang seluruh komunitas lokal", "Tentang teknologi", "Tentang masyarakat kecil"],
+      "correct": 0
+    },
+    {
+      "title": "Faktor utama yang mendukung dunia menjadi lebih kecil adalah ....",
+      "options": ["Pertumbuhan penduduk", "Perkembangan teknologi informasi", "Kemajuan pertanian", "Meningkatnya konflik"],
+      "correct": 1
+    },
+    {
+      "title": "Contoh peristiwa yang menunjukkan dampak global dari masalah lingkungan adalah ....",
+      "options": ["Pembakaran hutan yang memengaruhi negara tetangga", "Polusi udara di satu kota kecil", "Pembangunan gedung tinggi", "Peristiwa olahraga lokal"],
+      "correct": 0
+    },
+    {
+      "title": "Perspektif global mengajarkan kita untuk ....",
+      "options": ["Mengabaikan isu lokal", "Berpikir sempit", "Berpikir untuk kepentingan global", "Fokus pada satu bangsa"],
+      "correct": 2
+    },
+    {
+      "title": "Dalam era globalisasi, masyarakat diminta untuk berpikir ....",
+      "options": ["Lokal", "Global", "Nasional", "Individual"],
+      "correct": 1
+    },
+    {
+      "title": "Pandangan modern dalam perspektif global menekankan pada ....",
+      "options": ["Perbedaan budaya", "Persamaan dan koneksi antarbudaya", "Isolasi antarnegara", "Perpecahan antara komunitas"],
+      "correct": 1
+    },
+    {
+      "title": "Cara berpikir \"Think globally, act locally\" berarti ....",
+      "options": ["Hanya bertindak secara lokal", "Berpikir global tetapi bertindak lokal", "Bertindak tanpa berpikir", "Tidak peduli pada isu global"],
+      "correct": 1
+    },
+    {
+      "title": "Istilah globalisasi sering diartikan sebagai ....",
+      "options": ["Proses yang menyatukan dunia", "Hasil dari perbedaan teknologi", "Tujuan utama negara maju", "Penurunan konektivitas global"],
+      "correct": 0
+    },
+    {
+      "title": "Pendidikan global bertujuan untuk ....",
+      "options": ["Mempersempit wawasan budaya", "Meningkatkan kesadaran lintas budaya", "Mendukung eksklusivitas budaya", "Menolak pengaruh budaya asing"],
+      "correct": 1
+    },
+    {
+      "title": "Dalam perspektif global, tindakan lokal dapat berdampak pada ....",
+      "options": ["Satu desa saja", "Komunitas kecil", "Skala global", "Satu negara"],
+      "correct": 2
+    },
+    {
+      "title": "Perspektif global menghindari cara berpikir yang ....",
+      "options": ["Sempit dan terisolasi", "Terbuka terhadap budaya lain", "Fleksibel", "Berwawasan luas"],
+      "correct": 0
+    },
+    {
+      "title": "Salah satu isu utama dalam perspektif global adalah ....",
+      "options": ["Pengangguran global", "Masalah kecil lokal", "Hubungan antarindividu", "Konflik internal negara"],
+      "correct": 0
+    },
+    {
+      "title": "Dalam konteks globalisasi, kesadaran sebagai warga dunia berarti ....",
+      "options": ["Hidup tanpa memikirkan orang lain", "Memahami hubungan antarnegara", "Fokus pada kebutuhan pribadi", "Mendukung isolasi budaya"],
+      "correct": 1
+    },
+    {
+      "title": "Pendidikan global memberikan pemahaman bahwa kita hidup di ....",
+      "options": ["Komunitas lokal", "Komunitas global", "Komunitas kecil", "Komunitas eksklusif"],
+      "correct": 1
     }
   ]
 
