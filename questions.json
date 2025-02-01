@@ -646,10 +646,85 @@
     ],
     "correct": 3
   }
-]
+],
 
-
-
+"Hakikat dan Konsep Perspektif Global": [
+    {
+      "title": "Globalisasi merupakan suatu ...",
+      "options": ["tujuan", "proses", "cita-cita", "hasil"],
+      "correct": 1
+    },
+    {
+      "title": "Perspektif global adalah ...",
+      "options": [
+        "cara pandang bahwa semuanya untuk kepentingan dunia",
+        "cara pandang dan cara pikir tentang suatu masalah dari sudut kepentingan global",
+        "proses penyempitan dunia disebabkan oleh kemajuan IPTEK",
+        "gambaran dunia yang sudah memudar"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Ciri-ciri globalisasi menurut HAR Tilaar adalah, kecuali ...",
+      "options": [
+        "dalam bidang ekonomi adanya pasar bebas",
+        "dalam bidang politik berkembangnya nilai demokrasi",
+        "adanya penghormatan terhadap HAM",
+        "kebebasan penghormatan pendapat"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Salah satu prinsip globalisasi adalah adanya persaingan yang sehat. Kompetisi di sini berkaitan dengan ...",
+      "options": ["mutu", "jumlah penduduk", "komoditi ekspor", "jumlah modal"],
+      "correct": 0
+    },
+    {
+      "title": "Menurut Hoopes, Pendidikan Global memiliki 3 tujuan, seperti berikut ini, kecuali ...",
+      "options": [
+        "memberi pengalaman yang mengurangi rasa kedaerahan dan kesukuan",
+        "memberi pengalaman yang mempersiapkan siswa untuk mendekatkan diri dengan keragaman global",
+        "mengajarkan pada siswa bahwa mereka adalah individu, warga negara, dan warga dunia",
+        "memberi pengalaman untuk melihat dunia secara keseluruhan"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Terjadinya pemboman di Hiroshima dan Nagasaki memiliki dampak global ke Indonesia, yaitu ...",
+      "options": [
+        "semua warga dunia kena radiasi",
+        "menyerahnya Jepang kepada Sekutu",
+        "Indonesia memproklamirkan kemerdekaan",
+        "Indonesia diberi kemerdekaan oleh Jepang"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Bentuk-bentuk kesadaran global adalah seperti berikut, kecuali ...",
+      "options": [
+        "kesadaran sebagai warga dunia",
+        "kesadaran bahwa kita memiliki ketergantungan dengan negara lain",
+        "kesadaran bahwa kita menempati planet yang sama dengan warga negara lain",
+        "kekayaan dunia harus dimanfaatkan"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Kemajuan teknologi informasi yang paling mendukung globalisasi adalah sebagai berikut, kecuali ...",
+      "options": ["teknologi dirgantara", "teknologi informasi", "teknologi komputer", "teknologi transportasi"],
+      "correct": 0
+    },
+    {
+      "title": "Menurut HAR Tilaar bahwa dampak positif dari globalisasi adalah terjadinya masyarakat mega-kompetisi, yaitu berlomba untuk ...",
+      "options": ["berbuat yang terbaik", "menguasai sumber alam", "menguasai negara lain", "menguasai sektor ekonomi"],
+      "correct": 0
+    },
+    {
+      "title": "Berikut ini adalah masalah yang tidak berkaitan dengan masalah global ...",
+      "options": ["pengungsi", "bunuh diri", "keluarga berencana", "hak asasi manusia"],
+      "correct": 1
+    }
+  ]
 
 
 }
