@@ -799,7 +799,210 @@
       "options": ["Komunitas lokal", "Komunitas global", "Komunitas kecil", "Komunitas eksklusif"],
       "correct": 1
     }
+  ],
+  "Fungsi Pendidikan di SD": [
+    {
+      "title": "Berikut ini adalah fungsi pendidikan pada umumnya, kecuali ....",
+      "options": [
+        "individuasi",
+        "sosialisasi",
+        "nasionalisasi",
+        "globalisasi"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Fungsi individuasi adalah fungsi pendidikan untuk mengembangkan anak agar menjadi ....",
+      "options": [
+        "manusia yang beradab",
+        "dirinya sendiri (mandiri dan bertanggung jawab)",
+        "warga masyarakat dunia",
+        "warga negara Indonesia yang baik"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Berikut adalah bukan merupakan fungsi pendidikan di SD ....",
+      "options": [
+        "pembentukan dan pengembangan dasar kepribadian anak",
+        "penyiapan warga masyarakat dan warga negara Republik Indonesia yang baik",
+        "penyiapan tenaga kerja yang terampil",
+        "pembekalan kemampuan dan keterampilan dasar untuk melanjutkan pendidikan di SLTP/Mts."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Berikut adalah bukan perwujudan dari fungsi pembentukan dasar kepribadian anak di SD, yaitu guru ....",
+      "options": [
+        "mengenalkan berbagai jenis kebudayaan yang ada di Indonesia",
+        "membantu anak untuk mengenal kelebihan dan kelemahan yang dimiliki oleh diri anak sendiri",
+        "membiasakan anak untuk berperilaku jujur, percaya diri, mandiri dan berdisiplin",
+        "mengajarkan bagaimana menjaga kesehatan dan kebersihan badan sehari-hari"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Guru mengadakan pengajaran remedial untuk membantu siswa yang belum menguasai pokok bahasan yang ditetapkan dalam mata pelajaran berhitung. Kegiatan guru ini merupakan perwujudan dari fungsi ....",
+      "options": [
+        "pembekalan melanjutkan pendidikan ke SMP/MTs",
+        "penyiapan warga negara yang baik",
+        "pembudayaan anak",
+        "pengembangan dasar kepribadian"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa tujuan utama dari fungsi individuasi dalam pendidikan di SD?",
+      "options": [
+        "Membentuk siswa menjadi bagian dari masyarakat.",
+        "Mengembangkan siswa menjadi individu yang mandiri.",
+        "Memberikan siswa pengalaman belajar di luar sekolah.",
+        "Membimbing siswa untuk menjadi siswa berprestasi akademik."
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Mengapa fungsi nasionalisasi dalam pendidikan penting untuk siswa SD?",
+      "options": [
+        "Menumbuhkan rasa cinta terhadap kebudayaan lokal.",
+        "Menanamkan kesadaran untuk hidup bersama dalam keberagaman.",
+        "Melatih siswa untuk menghargai hak asasi manusia.",
+        "Menyiapkan siswa untuk menjadi warga negara global."
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Apa saja peran guru dalam mengimplementasikan fungsi humanisasi?",
+      "options": [
+        "Memberikan materi pelajaran dengan jelas.",
+        "Mengajarkan nilai-nilai moral yang diajarkan di sekolah.",
+        "Membantu siswa untuk memahami lingkungan sekitar.",
+        "Memberikan tugas-tugas tambahan bagi siswa yang membutuhkan."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Pendidikan di SD sebagai jenjang awal dari pendidikan formal memiliki fungsi ....",
+      "options": [
+        "Membekali siswa dengan keterampilan teknis.",
+        "Mempersiapkan siswa untuk pekerjaan masa depan.",
+        "Membentuk dasar-dasar kepribadian siswa.",
+        "Menyelesaikan siswa agar lulus ujian sekolah dengan nilai tinggi."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Fungsi pembentukan kepribadian di SD bertujuan untuk ....",
+      "options": [
+        "Menyiapkan siswa untuk menghafal materi pelajaran.",
+        "Mengajarkan nilai-nilai keagamaan saja.",
+        "Membentuk siswa menjadi pribadi yang disiplin dan percaya diri.",
+        "Melatih siswa menjadi tenaga kerja produktif."
+      ],
+      "correct": 2
+    }
+  ],
+
+  "Prinsip-prinsip Pendidikan di SD": [
+    {
+      "title": "Dari pandangan perkembangan, aspek yang merupakan fokus utama pendidikan?",
+      "options": [
+        "Aturan dan ketentuan yang ditetapkan pemerintah.",
+        "Kurikulum dan silabus mata pelajaran.",
+        "Siswa dengan segala karakteristik perkembangannya.",
+        "Guru dengan segala kemampuan yang dimilikinya."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Berikut adalah prinsip-prinsip pendidikan di SD, kecuali bahwa ....",
+      "options": [
+        "Perkembangan anak harus menjadi arah pendidikan.",
+        "Pendidikan di SD harus memperhatikan keragaman siswa secara individual dalam aspek fisik, psikis, dan sosial.",
+        "Pendidikan di SD harus membuat anak menjadi pandai.",
+        "Program dan strategi pembelajaran di SD harus diorganisasikan agar merangsang, mempercepat dan menghindari ekses memperlambat laju perkembangan anak."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Menurut perspektif perkembangan individu, prinsip utama pembelajaran di SD adalah harus ....",
+      "options": [
+        "Disesuaikan dengan perkembangan siswa dalam aspek intelektual, sosial, moral, dan emosional siswa.",
+        "Memberikan semua materi pelajaran yang ditetapkan dalam kurikulum.",
+        "Terbuka, mengikuti keinginan orang tua.",
+        "Mengikuti keinginan anak."
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Perkembangan yang optimal berarti perkembangan yang ....",
+      "options": [
+        "Setinggi mungkin sesuai dengan karakteristik individu dan kesempatan yang dimilikinya.",
+        "Sesuai dengan keinginan individu.",
+        "Penuh dengan penguasaan pengetahuan.",
+        "Sesuai dengan keinginan orang tua."
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Guru harus memahami karakteristik siswa sebagai suatu keseluruhan yang terpadu karena ....",
+      "options": [
+        "Guru harus dapat menundukkan siswa.",
+        "Guru harus mampu menyesuaikan diri dengan karakteristik siswa.",
+        "Siswa harus mampu menyesuaikan diri dengan tuntutan guru.",
+        "Guru harus lebih tahu daripada siswa."
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Mengapa perkembangan anak menjadi fokus utama pendidikan di SD?",
+      "options": [
+        "Karena anak adalah makhluk sosial.",
+        "Karena perkembangan anak menentukan masa depan bangsa.",
+        "Karena perkembangan anak adalah proses yang berkesinambungan.",
+        "Karena anak harus belajar lebih banyak daripada orang dewasa."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa prinsip utama dalam menyusun program pembelajaran di SD?",
+      "options": [
+        "Menyusun materi sesuai kurikulum nasional.",
+        "Menggunakan buku pelajaran standar yang seragam.",
+        "Disesuaikan dengan perkembangan siswa.",
+        "Memberikan tugas tambahan di setiap akhir semester."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Dalam pendidikan di SD, strategi pembelajaran harus memperhatikan ....",
+      "options": [
+        "Materi pelajaran yang mudah dipahami.",
+        "Kondisi lingkungan sekolah.",
+        "Kebutuhan individu dan kelompok siswa.",
+        "Sistem nilai yang berlaku di masyarakat."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Bagaimana pendidikan di SD harus mendukung perkembangan anak?",
+      "options": [
+        "Dengan memberikan semua materi pelajaran secara lengkap.",
+        "Dengan mengarahkan siswa pada penguasaan teknis.",
+        "Dengan memperhatikan karakteristik perkembangan mereka.",
+        "Dengan memfokuskan pada hasil belajar yang tinggi."
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa tujuan utama program pembelajaran di SD?",
+      "options": [
+        "Untuk melatih siswa menguasai pengetahuan teoretis.",
+        "Untuk menyelesaikan kurikulum secepat mungkin.",
+        "Untuk mengembangkan potensi individu siswa secara optimal.",
+        "Untuk memenuhi kebutuhan pekerjaan di masa depan."
+      ],
+      "correct": 2
+    }
   ]
-
-
 }
