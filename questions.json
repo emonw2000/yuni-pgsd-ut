@@ -1147,6 +1147,159 @@
         ],
         "correct": 1
       }
-    ]
-  
+    ],
+
+    "Hubungan Hakikat Manusia dengan Pendidikan": [
+        {
+          "title": "Landasan berarti tumpuan dasar atau alas tempat bertumpu, titik tolak atau dasar pijakan, hal ini biasa bersifat material. Hal ini merupakan pengertian dari landasan pendidikan secara ....",
+          "options": [
+            "grammatikal",
+            "klasikal",
+            "leksikal",
+            "pragmatisme"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Asumsi-asumsi yang menjadi dasar pijakan atau sebagai titik tolak dalam rangka praktik pendidikan merupakan ....",
+          "options": [
+            "dasar pendidikan",
+            "fungsi pendidikan",
+            "landasan yuridis",
+            "landasan filosofi"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Asumsi-asumsi yang bersumbu dan berbagai cabang atau disiplin ilmu yang menjadi titik tolak dalam rangka praktik pendidikan merupakan salah satu jenis landasan pendidikan, yaitu landasan ....",
+          "options": [
+            "ilmiah",
+            "filosofi",
+            "religius",
+            "yuridis"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Berikut ini adalah Peraturan Pemerintah (PP) yang merupakan landasan yuridis sistem pendidikan nasional Indonesia, kecuali ....",
+          "options": [
+            "Peraturan Pemerintah No. 27 Tahun 1990 tentang Pendidikan Prasekolah",
+            "Peraturan Pemerintah No. 28 Tahun 1990 tentang Pendidikan Dasar",
+            "Peraturan Pemerintah No. 29 Tahun 1990 tentang Pendidikan Menengah",
+            "Peraturan Pemerintah No. 73 Tahun 1991 tentang Pendidikan Anak Usia Dini"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Pendidikan nasional harus berakar pada nilai-nilai agama, hal ini salah satunya dilandasi oleh isi Pembukaan UUD Negara Republik Indonesia Tahun 1945 yang menyatakan bahwa ....",
+          "options": [
+            "Negara berdasar atas Ketuhanan Yang Maha Esa",
+            "Negara memajukan kebudayaan nasional di tengah peradaban dunia dengan menjamin kebebasan masyarakat dalam memelihara dan mengembangkan nilai-nilai budayanya",
+            "Pancasila sebagai dasar Negara Republik Indonesia",
+            "Negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya masing-masing dan untuk beribadat menurut agamanya dan kepercayaannya itu"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Mengembangkan kemampuan dan membentuk watak serta peradaban bangsa yang bermartabat dalam rangka mencerdaskan kehidupan bangsa merupakan ....",
+          "options": [
+            "fungsi",
+            "tujuan",
+            "akar",
+            "sifat"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Untuk memahami landasan filosofis pendidikan adalah dengan menggunakan pendekatan filsafat ilmu yang meliputi tiga bidang kajian yaitu, kecuali ....",
+          "options": [
+            "metafisika",
+            "sosiologi",
+            "aksiologi",
+            "epistemologi"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Aspek religius yang terdapat dalam Pancasila tercermin dalam sila ke ....",
+          "options": [
+            "2",
+            "3",
+            "4, 5",
+            "tidak ada jawaban yang benar"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Kemampuan bersosialisasi, kesadaran akan tujuan hidup, dan kemampuan untuk hidup tidak dibawa manusia sejak kelahirannya melainkan harus diperoleh melalui ....",
+          "options": [
+            "metafisika",
+            "sosiologi",
+            "epistemologi",
+            "aksiologi"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Tujuan pendidikan untuk berkembangnya potensi peserta didik terdapat dalam ....",
+          "options": [
+            "Pasal 1 UU RI No. 20 Tahun 2003",
+            "Pasal 2 UU RI No. 20 Tahun 2003",
+            "Pasal 3 UU RI No. 20 Tahun 2003",
+            "Pasal 4 UU RI No. 20 Tahun 2003"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Salah satu alasan manusia perlu dididik adalah karena manusia adalah ....",
+          "options": [
+            "makhluk yang sudah sempurna",
+            "makhluk yang belum selesai",
+            "makhluk yang tidak memiliki akal",
+            "makhluk yang bergantung sepenuhnya pada insting"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Asas sosialitas dalam pendidikan menegaskan bahwa manusia ....",
+          "options": [
+            "dapat hidup sendiri",
+            "membutuhkan interaksi dengan sesama",
+            "tidak membutuhkan bantuan orang lain",
+            "hanya fokus pada dirinya sendiri"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Pendidikan bertujuan mengembangkan manusia sebagai makhluk yang belum selesai agar ....",
+          "options": [
+            "mampu memenuhi kebutuhannya sendiri",
+            "bergantung sepenuhnya pada lingkungannya",
+            "menjadi manusia yang bertanggung jawab",
+            "menghindari semua bentuk interaksi sosial"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Salah satu asas pendidikan adalah potensialitas. Hal ini berarti bahwa manusia ....",
+          "options": [
+            "tidak memiliki batas untuk berkembang",
+            "sudah selesai berkembang sejak lahir",
+            "hanya berkembang di bawah pengaruh budaya",
+            "sepenuhnya tergantung pada pendidikan formal"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Pendidikan dianggap penting bagi manusia karena manusia adalah makhluk yang ....",
+          "options": [
+            "tidak memiliki akal",
+            "dapat berkembang sendiri tanpa bimbingan",
+            "memerlukan panduan untuk menjadi dirinya sendiri",
+            "sudah sempurna sejak lahir"
+          ],
+          "correct": 2
+        }
+      ]
+      
 }
