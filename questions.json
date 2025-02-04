@@ -1004,5 +1004,149 @@
       ],
       "correct": 2
     }
-  ]
+  ],
+  
+  "Jenis-jenis Seni": [
+      {
+        "title": "Seni dalam proses penciptaannya diilhami oleh keadaan lingkungan alam sekitarnya.",
+        "options": [
+          "Benar",
+          "Salah"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Seni dapat memanfaatkan binatang sebagai sumber inspirasi penciptaan karyanya.",
+        "options": [
+          "Benar",
+          "Salah"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Jenis tari menurut koreografinya dapat dibedakan menjadi empat jenis.",
+        "options": [
+          "Benar",
+          "Salah"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Koreografi berpasangan tidak memerlukan kekompakan dalam penampilannya.",
+        "options": [
+          "Benar",
+          "Salah"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Seni keramik adalah contoh hasil karya seni yang mengeksplor alam.",
+        "options": [
+          "Benar",
+          "Salah"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Apa yang membedakan pertunjukan teater tradisional dengan teater modern?",
+        "options": [
+          "Teater tradisional menggunakan improvisasi, sedangkan modern tidak.",
+          "Teater modern selalu menggunakan naskah, tradisional tidak.",
+          "Teater tradisional lebih terikat pada konvensi, modern lebih bebas.",
+          "Teater modern tidak menggunakan naskah sama sekali."
+        ],
+        "correct": 2
+      },
+      {
+        "title": "Deskripsikan secara singkat pengertian seni rupa.",
+        "options": [
+          "Seni yang dinikmati melalui media suara.",
+          "Seni yang menghasilkan karya yang bersifat visual.",
+          "Seni yang mencakup semua jenis seni pertunjukan.",
+          "Seni yang hanya melibatkan gerakan."
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Jelaskan dengan singkat unsur-unsur musikal dalam musik.",
+        "options": [
+          "Komposer, pemain, dan pendengar.",
+          "Harmoni, melodi, dan ritme.",
+          "Naskah, improvisasi, dan tema.",
+          "Koreografi, kostum, dan latar."
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Mengapa produksi seni menekankan pada aspek kreativitas terhadap apa yang telah dimiliki siswa sebelumnya?",
+        "options": [
+          "Agar siswa dapat meniru karya seni yang ada.",
+          "Karena kreativitas membantu siswa mengembangkan ide baru.",
+          "Untuk memperkenalkan seni tradisional pada siswa.",
+          "Agar siswa hanya fokus pada aspek teknis seni."
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Bagaimana kedudukan musik dalam pertunjukan tari?",
+        "options": [
+          "Sebagai pengisi suasana dan dinamika.",
+          "Sebagai elemen visual dalam tari.",
+          "Sebagai pengganti gerakan tari.",
+          "Sebagai alat promosi tari."
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Apa yang dimaksud dengan seni pertunjukan?",
+        "options": [
+          "Seni yang disajikan di depan penonton dengan memerlukan ruang dan waktu.",
+          "Seni yang hanya memerlukan ruang tanpa waktu.",
+          "Seni yang dihasilkan melalui proses melukis.",
+          "Seni yang hanya bersifat ritual."
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Seni rupa dibedakan menjadi dua kelompok besar, yaitu ....",
+        "options": [
+          "seni patung dan seni lukis",
+          "seni murni dan seni terapan",
+          "seni visual dan seni sastra",
+          "seni kontemporer dan seni tradisional"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Panel dalam seni rupa menggambarkan ....",
+        "options": [
+          "gabungan antara seni pertunjukan dan seni sastra",
+          "sekuen dari sejumlah adegan dalam ruang waktu",
+          "lukisan tradisional dengan simbol religi",
+          "pola seni lukis yang naturalis"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Apa perbedaan antara seni murni dan seni terapan?",
+        "options": [
+          "Seni murni hanya untuk estetika, seni terapan untuk fungsi praktis.",
+          "Seni murni untuk ritual, seni terapan untuk hiburan.",
+          "Seni murni melibatkan gerakan, seni terapan melibatkan suara.",
+          "Seni murni hanya digunakan dalam tradisi, seni terapan dalam modernitas."
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Musik dalam seni pertunjukan sering kali digunakan sebagai ....",
+        "options": [
+          "elemen visual utama",
+          "pengisi suasana dan ilustrasi gerakan",
+          "elemen pengganti narasi",
+          "elemen dekorasi panggung"
+        ],
+        "correct": 1
+      }
+    ]
+  
 }
