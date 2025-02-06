@@ -1300,6 +1300,218 @@
           ],
           "correct": 2
         }
-      ]
+      ],
+      
+      "Teori-Teori Perkembangan Manusia": [
+          {
+            "title": "Di bawah ini, manakah yang merupakan contoh perkembangan tahap otonomi/mandiri vs malu dan ragu-ragu?",
+            "options": [
+              "Anak bayi yang mengemut/mengunyah mainan",
+              "Anak usia dini yang ingin menggunakan baju pilihannya sendiri, tanpa peduli baju tersebut warnanya tidak selaras",
+              "Anak SD yang menyelesaikan soal matematika yang sulit secara mandiri",
+              "Anak remaja yang mencoba gaya busana dan gaya rambut baru"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Tahap yang dialami seseorang antara usia lahir sampai dengan satu tahun adalah ....",
+            "options": [
+              "integritas vs putus asa",
+              "kepercayaan dasar vs ketidakpercayaan dasar",
+              "inisiatif vs rasa bersalah",
+              "identitas vs kebingungan identitas"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Tahap pertama dalam perkembangan kognitif anak, menurut Piaget, adalah ....",
+            "options": [
+              "sensorimotor",
+              "praoperasional",
+              "operasional konkret",
+              "operasional formal"
+            ],
+            "correct": 0
+          },
+          {
+            "title": "Ketika berada dalam tahap praoperasional, anak-anak ....",
+            "options": [
+              "mulai menggunakan logika",
+              "fokus pada pengindraan dan kemampuan motorik",
+              "remaja menggunakan proses berpikir kompleks untuk berargumen",
+              "belajar menggunakan bahasa lisan dan bahasa tubuh"
+            ],
+            "correct": 3
+          },
+          {
+            "title": "Dua gelas berbeda bentuk terisi air sama banyaknya. Namun, Rani menganggap bahwa gelas yang lebih tinggi dan lebih ramping berisi air lebih banyak. Hal ini disebabkan Rani belum sepenuhnya mencapai tahap ... dalam teori konstruktivisme Piaget.",
+            "options": [
+              "sensorimotor",
+              "praoperasional",
+              "operasional konkret",
+              "operasional formal"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Adi biasa menggunakan sendok untuk makan. Suatu hari ibunya memberikan garpu untuk menggantikan sendok dan ia menggunakannya serupa dengan cara menggunakan sendok. Proses yang dilalui Adi dalam menggunakan alat makan, menurut teori Piaget, adalah proses ....",
+            "options": [
+              "asimilasi",
+              "akomodasi",
+              "inisiasi",
+              "transformasi"
+            ],
+            "correct": 0
+          },
+          {
+            "title": "Menurut Piaget, anak yang berada dalam tahap praoperasional memiliki kesulitan untuk dapat melihat suatu keadaan dari perspektif orang lain. Hal ini dikenal dengan istilah ....",
+            "options": [
+              "egosentris",
+              "metakognitif",
+              "konstruktivisme",
+              "adaptasi"
+            ],
+            "correct": 0
+          },
+          {
+            "title": "Dalam tahap sensorimotor, anak ....",
+            "options": [
+              "anak memahami bahwa suatu benda ada walaupun tidak terlihat",
+              "mampu menggunakan simbol berkaitan dengan konsep abstrak, misalnya simbol-simbol matematika",
+              "dapat memahami konsep abstrak, hubungan sebab-akibat, dan konsep waktu",
+              "merangkak, berjalan, bergerak untuk mengenal lingkungan, dan membangun skema kognitif dalam pikiran mereka"
+            ],
+            "correct": 3
+          },
+          {
+            "title": "Menurut Bandura, jika anak melihat bahwa setelah kakaknya membersihkan kamar, ia mendapatkan hadiah yang menyenangkan. Maka itu, anak tersebut akan turut membersihkan kamar karena konsekuensi dari perilaku tersebut baik.",
+            "options": [
+              "benar",
+              "salah"
+            ],
+            "correct": 0
+          },
+          {
+            "title": "Konsep ... adalah rasa percaya diri seseorang tentang kemampuannya untuk menyelesaikan suatu tantangan atau tugas.",
+            "options": [
+              "motivasi",
+              "identitas",
+              "operasional konkret",
+              "self-efficacy"
+            ],
+            "correct": 3
+          },
+          {
+            "title": "Budi adalah anak yang pintar dan nilai matematikanya selalu tinggi. Namun, Budi tidak percaya diri bahwa dirinya layak untuk mewakili sekolahnya untuk mengikuti olimpiade matematika. Menurut teori Bandura, Budi memiliki ....",
+            "options": [
+              "self-efficacy yang tinggi",
+              "self-efficacy yang rendah",
+              "identitas yang belum terbangun",
+              "kemampuan modeling atau meniru yang baik"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Rina memilih sepatu yang warnanya tidak selaras dengan baju yang ia pakai. Ketika ibunya berusaha untuk membantunya memilihkan sepatu yang lebih sesuai, Rina marah dan memaksa tetap pada pilihannya. Menurut teori psikososial dari Erikson, Rina berada pada tahap perkembangan ....",
+            "options": [
+              "integritas vs putus asa",
+              "kepercayaan dasar vs ketidakpercayaan dasar",
+              "inisiatif vs rasa bersalah",
+              "otonomi/mandiri vs malu dan ragu-ragu"
+            ],
+            "correct": 3
+          },
+          {
+            "title": "Erikson membagi perkembangan psikososial ke dalam ... tahap.",
+            "options": [
+              "empat",
+              "delapan",
+              "sepuluh",
+              "dua belas"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Menurut Piaget, anak-anak secara ... mengonstruksikan pengetahuan dan pemahaman mereka tentang berbagai hal.",
+            "options": [
+              "aktif",
+              "pasif",
+              "netral",
+              "tidak tentu"
+            ],
+            "correct": 0
+          },
+          {
+            "title": "Memasukkan informasi baru dengan menambahkan atau memperkaya skema atau pemahaman yang sudah ada di dalam pikiran seseorang dikenal sebagai proses ... dalam teori Piaget.",
+            "options": [
+              "akomodasi",
+              "asimilasi",
+              "inisiasi",
+              "akulturasi"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Albert Bandura adalah pakar teori ....",
+            "options": [
+              "konstruktivisme",
+              "psikososial",
+              "belajar sosial",
+              "sistem ekologi"
+            ],
+            "correct": 2
+          },
+          {
+            "title": "Dari contoh berikut ini, yang menunjukkan self-efficacy yang tinggi adalah ....",
+            "options": [
+              "Dina tidak dapat memahami proses fotosintesis karena hal tersebut tidak konkret dan sulit dibayangkan oleh anak 7 tahun seperti dirinya",
+              "Adi tidak lagi cemas dengan identitas dirinya, ia berada dalam tahap mencari rasa nyaman melalui kemesraan dengan orang lain",
+              "Ratih gemar bernyanyi dan ia merasa percaya diri untuk tampil di acara sekolah dan terus berusaha belajar menyanyi karena yakin dirinya mampu berprestasi",
+              "Wawan tidak ingin belajar bermain gitar karena merasa percuma, dirinya tidak berbakat dan tidak akan pernah bisa memainkan alat musik"
+            ],
+            "correct": 2
+          },
+          {
+            "title": "Piaget adalah pakar teori ....",
+            "options": [
+              "konstruktivisme",
+              "psikososial",
+              "belajar sosial",
+              "sistem ekologi"
+            ],
+            "correct": 0
+          },
+          {
+            "title": "Menurut ... perkembangan kognitif anak terbagi menjadi empat tahap, mulai dari sensorimotor sampai dengan operasional formal.",
+            "options": [
+              "Vygotsky",
+              "Piaget",
+              "Bandura",
+              "Bronfenbrenner"
+            ],
+            "correct": 1
+          },
+          {
+            "title": "Menurut ... perkembangan anak dipengaruhi beberapa lapis budaya, mulai dari yang terdekat, yaitu mikrosistem sampai dengan makrosistem.",
+            "options": [
+              "Vygotsky",
+              "Piaget",
+              "Bandura",
+              "Bronfenbrenner"
+            ],
+            "correct": 3
+          },
+          {
+            "title": "Orang tua Danu tidak menerapkan pola asuh yang selaras dengan gaya pengasuhan yang digunakan nenek Danu yang mengurus Danu sehari-hari. Kadang Danu merasa bingung dengan peraturan yang sering kali bertentangan. Ibu Danu melarang makan permen, tetapi neneknya memberi permen ketika Danu meminta. Hal tersebut menunjukkan bahwa ... dari anak kurang mendukung perkembangan yang optimal.",
+            "options": [
+              "mikrosistem",
+              "mesosistem",
+              "eksosistem",
+              "makrosistem"
+            ],
+            "correct": 1
+          }
+        ]
+      
       
 }
