@@ -107,3 +107,42 @@ footer {
   background-color: #357a38;
 }
 
+.schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.schedule-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+}
+
+.schedule-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #e3f2fd;
+  border-radius: 5px;
+}
+
+.schedule-card a:hover {
+  background: #007bff;
+  color: white;
+}
+
+
