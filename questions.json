@@ -1511,7 +1511,261 @@
             ],
             "correct": 1
           }
-        ]
+        ],
+
+        "Dimensi, Manfaat, Tujuan, dan Masalah Perspektif Global": [
+            {
+              "title": "Salah satu tujuan dari diberikannya mata kuliah perspektif global adalah mendorong para guru untuk mempelajari tentang materi dan masalah yang berkaitan dengan masalah global. Ini berarti bahwa ....",
+              "options": [
+                "masalah lokal tidak perlu diberikan lagi",
+                "agar guru memiliki wawasan yang cukup mengenai masalah global",
+                "di SD diberikan mata pelajaran perspektif global",
+                "meningkatkan keterampilan mengajar perspektif global"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Dalam Era globalisasi diperlukan partisipasi dari ....",
+              "options": [
+                "pemerintah saja",
+                "aparat di tingkat pusat saja",
+                "seluruh masyarakat",
+                "guru"
+              ],
+              "correct": 2
+            },
+            {
+              "title": "Gelombang globalisasi melanda aspek berikut ....",
+              "options": [
+                "ekonomi",
+                "politik",
+                "budaya",
+                "seluruh aspek kehidupan"
+              ],
+              "correct": 3
+            },
+            {
+              "title": "Hal berikut ini merupakan landasan bagi berkembangnya globalisasi, terutama dalam bidang ekonomi ....",
+              "options": [
+                "regionalisasi ekonomi",
+                "konferensi AFTA",
+                "konferensi APEC",
+                "konferensi WTO"
+              ],
+              "correct": 0
+            },
+            {
+              "title": "Sistem ekonomi terbuka menguntungkan pihak-pihak ....",
+              "options": [
+                "negara maju",
+                "negara berkembang",
+                "negara Dunia III",
+                "semua negara"
+              ],
+              "correct": 3
+            },
+            {
+              "title": "Pasar bebas penting bagi negara-negara ....",
+              "options": [
+                "produsen",
+                "konsumen",
+                "produsen dan konsumen",
+                "negara yang membutuhkan bantuan dana"
+              ],
+              "correct": 2
+            },
+            {
+              "title": "Menurut Kuang-Sheng-Siao, yang dimaksud dengan model kerja sama ekonomi adalah sebagai berikut, kecuali ....",
+              "options": [
+                "zona perdagangan bebas",
+                "persetujuan tarif",
+                "pasar bersama",
+                "APEC"
+              ],
+              "correct": 3
+            },
+            {
+              "title": "Menurut Deklarasi Bogor, yang menjadi prinsip APEC adalah sebagai berikut, kecuali ....",
+              "options": [
+                "mengadopsi program untuk merealisasikan perdagangan bebas",
+                "mencapai program APEC dalam liberalisasi perdagangan tahun 2000",
+                "menjalankan liberalisasi ke seluruh kawasan tahun 2000",
+                "mempersatukan negara ASEAN dalam menghadapi monopoli perdagangan"
+              ],
+              "correct": 3
+            },
+            {
+              "title": "Masalah yang dihadapi guru dalam meningkatkan kesadaran global mahasiswa SD adalah, kecuali ....",
+              "options": [
+                "kurangnya buku sumber yang berkaitan dengan masalah global",
+                "siswa SD masih kecil, sulit untuk memahami dunia",
+                "dalam kurikulum SD tidak ada materi yang berhubungan dengan masalah global",
+                "guru belum memiliki bekal yang cukup tentang perspektif global"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Masalah global penting diberikan di SD, dengan alasan ....",
+              "options": [
+                "memberikan landasan bagi siswa untuk berpikir dan bersikap global",
+                "semua materi yang sifatnya nasional sudah diajarkan",
+                "siswa diarahkan ke masalah dunia, karena masalah lokal mereka ketahui dari kehidupan sehari-hari",
+                "untuk menguasai masalah dunia"
+              ],
+              "correct": 0
+            },
+            {
+              "title": "Perspektif global dalam pendidikan bertujuan untuk ....",
+              "options": [
+                "meningkatkan pemahaman lokal",
+                "membangun wawasan global siswa",
+                "menghapuskan budaya lokal",
+                "mempersempit lingkup pembelajaran"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Dalam konteks globalisasi, pendidikan memainkan peran utama sebagai ....",
+              "options": [
+                "media hiburan",
+                "alat propaganda",
+                "sarana membangun kesadaran global",
+                "penguat identitas lokal"
+              ],
+              "correct": 2
+            },
+            {
+              "title": "Dimensi utama perspektif global dalam pendidikan adalah ....",
+              "options": [
+                "aspek politik",
+                "hubungan antarbangsa",
+                "penyederhanaan masalah global",
+                "fokus pada masalah nasional"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Salah satu manfaat perspektif global dalam pendidikan adalah ....",
+              "options": [
+                "memperkaya wawasan budaya siswa",
+                "mengisolasi siswa dari pengaruh global",
+                "mengurangi keterampilan analitis",
+                "menanamkan rasa nasionalisme sempit"
+              ],
+              "correct": 0
+            },
+            {
+              "title": "Masalah global seperti kelaparan, pengungsi, dan perubahan iklim memiliki dampak pada ....",
+              "options": [
+                "komunitas lokal",
+                "seluruh dunia",
+                "ekonomi kecil",
+                "isu nasional saja"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Tantangan utama dalam mengintegrasikan perspektif global dalam pendidikan di Indonesia adalah ....",
+              "options": [
+                "kurangnya bahan ajar",
+                "kelebihan sumber daya",
+                "minimnya pengaruh budaya asing",
+                "keberadaan guru berkualitas tinggi"
+              ],
+              "correct": 0
+            },
+            {
+              "title": "Salah satu alasan pentingnya pendidikan global adalah ....",
+              "options": [
+                "mengembangkan pandangan sempit",
+                "mengurangi ketergantungan antarnegara",
+                "membantu siswa memahami saling ketergantungan global",
+                "menanamkan ideologi tertentu"
+              ],
+              "correct": 2
+            },
+            {
+              "title": "Perspektif global mengajarkan siswa untuk ....",
+              "options": [
+                "berpikir hanya pada konteks lokal",
+                "melihat hubungan global dalam kehidupan sehari-hari",
+                "memahami isu global tanpa tindakan",
+                "mengabaikan perbedaan budaya"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Globalisasi dalam bidang ekonomi ditandai oleh ....",
+              "options": [
+                "perdagangan bebas",
+                "persaingan antarnegara",
+                "isolasi pasar",
+                "penghapusan ekspor"
+              ],
+              "correct": 0
+            },
+            {
+              "title": "Pendekatan holistik dalam perspektif global menekankan pada ....",
+              "options": [
+                "masalah lokal",
+                "keterkaitan semua aspek kehidupan global",
+                "fokus pada aspek ekonomi",
+                "penghapusan budaya"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Salah satu isu utama dalam perspektif global adalah ....",
+              "options": [
+                "konflik politik lokal",
+                "masalah lintas budaya",
+                "perbedaan agama",
+                "kesenjangan teknologi"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Kemajuan teknologi informasi dan komunikasi mendukung perspektif global dengan cara ....",
+              "options": [
+                "meningkatkan akses informasi global",
+                "mempersulit pertukaran informasi",
+                "membatasi interaksi antarnegara",
+                "menyulitkan hubungan internasional"
+              ],
+              "correct": 0
+            },
+            {
+              "title": "Dalam perspektif global, pendekatan pembelajaran yang dianjurkan adalah ....",
+              "options": [
+                "teori semata",
+                "studi kasus nyata",
+                "hafalan materi",
+                "diskusi lokal saja"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Pendidikan global membantu siswa memahami ....",
+              "options": [
+                "identitas budaya lokal",
+                "hubungan mereka sebagai warga dunia",
+                "isu ekonomi nasional",
+                "pengaruh budaya lokal"
+              ],
+              "correct": 1
+            },
+            {
+              "title": "Salah satu prinsip perspektif global adalah ....",
+              "options": [
+                "melihat dunia sebagai komunitas yang saling bergantung",
+                "fokus hanya pada penguatan ekonomi negara",
+                "mengisolasi budaya tertentu",
+                "menghapuskan keragaman"
+              ],
+              "correct": 0
+            }
+          ]
+        }       
       
       
 }
