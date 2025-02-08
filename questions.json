@@ -1764,7 +1764,261 @@
               ],
               "correct": 0
             }
-          ]
+          ],
+
+          "1. Kemampuan Kognitif Anak Usia SD; 2. Bakat dan Kreativitas Anak Usia SD": [
+              {
+                "title": "Kognisi berkaitan dengan aktivitas mental seseorang, termasuk proses berpikir, memori, dan pemecahan masalah. Manakah pernyataan yang benar tentang kaitannya?",
+                "options": [
+                  "Kognisi hanya mencakup persepsi dan daya ingat tanpa melibatkan pemecahan masalah",
+                  "Kognisi melibatkan semua aktivitas mental, termasuk persepsi, kategorisasi, dan pemecahan masalah",
+                  "Kognisi hanya berlaku untuk anak-anak dalam tahap perkembangan tertentu",
+                  "Kognisi adalah konsep statis yang tidak berubah seiring perkembangan usia"
+                ],
+                "correct": 1
+              },
+              {
+                "title": "Menurut Piaget, dalam perkembangan kognitif, anak mengalami tahap-tahap berpikir yang berkembang dari konkret hingga abstrak. Manakah pernyataan berikut yang paling sesuai dengan teori ini?",
+                "options": [
+                  "Anak hanya berpikir secara konkret sepanjang hidupnya tanpa berkembang ke tahap lebih tinggi",
+                  "Anak berkembang dari berpikir konkret ke abstrak melalui empat tahap kognitif yang berbeda",
+                  "Pemikiran anak sudah abstrak sejak lahir tanpa melalui tahapan perkembangan",
+                  "Anak tidak memerlukan pengalaman dalam proses perkembangan kognitifnya"
+                ],
+                "correct": 1
+              },
+              {
+                "title": "Dalam teori perkembangan kognitif Piaget, bagaimana peran asimilasi dalam kehidupan seseorang?",
+                "options": [
+                  "Asimilasi memungkinkan seseorang menyesuaikan diri dengan lingkungan baru tanpa mengubah skema berpikirnya",
+                  "Asimilasi menyebabkan seseorang harus selalu mengganti skema berpikirnya setiap kali menghadapi pengalaman baru",
+                  "Asimilasi hanya terjadi pada anak-anak dan tidak relevan bagi orang dewasa",
+                  "Asimilasi adalah proses yang menghambat perkembangan kognitif karena tidak menerima perubahan"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Mengapa proses akomodasi penting dalam perkembangan kognitif seseorang?",
+                "options": [
+                  "Akomodasi membantu individu memperbarui skema berpikirnya ketika menghadapi pengalaman yang tidak sesuai dengan pemahaman sebelumnya",
+                  "Akomodasi hanya berguna bagi anak-anak dalam tahap perkembangan awal dan tidak berlaku bagi orang dewasa",
+                  "Akomodasi menyebabkan seseorang mengalami kebingungan karena harus selalu mengubah pemikirannya",
+                  "Akomodasi adalah proses yang bertentangan dengan asimilasi dan tidak diperlukan dalam perkembangan kognitif"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Kapan ekuilibrium dalam perkembangan kognitif anak tercapai?",
+                "options": [
+                  "Ketika anak dapat menyeimbangkan antara asimilasi dan akomodasi dalam memahami pengalaman baru",
+                  "Ketika anak terus-menerus mengalami kebingungan saat menghadapi informasi baru",
+                  "Ketika anak berhenti belajar karena merasa sudah cukup memahami dunia di sekitarnya",
+                  "Ketika anak menolak untuk mengubah pemikirannya meskipun menghadapi informasi baru"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Bagaimana proses ekuilibrium membantu perkembangan kognitif seseorang?",
+                "options": [
+                  "Dengan membantu individu menyusun kembali skema berpikirnya setelah mengalami ketidakseimbangan",
+                  "Dengan membuat individu tetap menggunakan pemikiran lama tanpa perlu menyesuaikan diri",
+                  "Dengan mencegah individu mengalami tantangan kognitif yang dapat mengganggu pemahaman mereka",
+                  "Dengan menghentikan proses belajar setelah seseorang merasa nyaman dengan pemikirannya"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Apa yang menjadi ciri utama perkembangan sensorimotor pada anak usia 0-2 tahun?",
+                "options": [
+                  "Anak belajar melalui gerakan fisik dan eksplorasi menggunakan inderanya",
+                  "Anak dapat berpikir abstrak dan menggunakan simbol dalam memahami dunia",
+                  "Anak mulai memahami konsep konservasi dan dapat mengurutkan objek berdasarkan ukuran",
+                  "Anak dapat membuat hipotesis dan berpikir secara deduktif"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Bagaimana anak mengembangkan skema kognitifnya dalam tahap sensorimotor?",
+                "options": [
+                  "Melalui interaksi langsung dengan lingkungan menggunakan refleks, koordinasi gerakan, dan eksplorasi objek",
+                  "Dengan mengandalkan bahasa dan simbol untuk merepresentasikan dunia di sekitarnya",
+                  "Dengan mengembangkan pemikiran logis tentang hubungan sebab-akibat tanpa perlu pengalaman nyata",
+                  "Dengan membuat strategi pemecahan masalah berbasis hipotesis sebelum menguji solusi di dunia nyata"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Apa perbedaan esensial antara pola pikir anak pada tahap konkret operasional dan formal operasional?",
+                "options": [
+                  "Anak pada tahap konkret operasional hanya dapat memahami konsep nyata, sedangkan anak pada tahap formal operasional dapat berpikir abstrak",
+                  "Anak pada tahap konkret operasional mampu berpikir abstrak dan logis, sedangkan anak pada tahap formal operasional hanya mengandalkan pengalaman langsung",
+                  "Anak pada tahap konkret operasional bisa memahami hipotesis tanpa perlu bukti konkret, sementara anak pada tahap formal operasional butuh pengalaman nyata",
+                  "Tidak ada perbedaan signifikan antara tahap konkret operasional dan formal operasional"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Bagaimana anak pada tahap formal operasional menyelesaikan masalah dibandingkan dengan anak pada tahap konkret operasional?",
+                "options": [
+                  "Anak pada tahap formal operasional menggunakan pemikiran deduktif dan hipotetis, sementara anak pada tahap konkret operasional masih bergantung pada pengalaman nyata",
+                  "Anak pada tahap formal operasional lebih mengandalkan pengalaman langsung dibandingkan dengan anak pada tahap konkret operasional",
+                  "Anak pada tahap konkret operasional dapat membuat eksperimen berbasis hipotesis, sedangkan anak pada tahap formal operasional hanya memahami hal konkret",
+                  "Anak pada tahap konkret operasional dapat berpikir lebih fleksibel dibandingkan dengan anak pada tahap formal operasional"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Bakat dapat diartikan sebagai ....",
+                "options": [
+                  "Kemampuan bawaan",
+                  "Potensi yang sudah dibawa sejak lahir",
+                  "Potensi yang harus dikembangkan",
+                  "Kecakapan yang sudah terberi"
+                ],
+                "correct": 2
+              },
+              {
+                "title": "Faktor dalam diri yang dapat mewujudkan bakat seseorang adalah ....",
+                "options": [
+                  "Dukungan",
+                  "Prestasi",
+                  "Motivasi",
+                  "Fisik"
+                ],
+                "correct": 2
+              },
+              {
+                "title": "Belahan otak sebelah kiri banyak berkaitan dengan ....",
+                "options": [
+                  "Nonverbal",
+                  "Imajinatif",
+                  "Analitis",
+                  "Holistik"
+                ],
+                "correct": 2
+              },
+              {
+                "title": "Hal-hal yang terpenting dalam kreativitas adalah ....",
+                "options": [
+                  "Pribadi",
+                  "Proses",
+                  "Produk",
+                  "Pendorong"
+                ],
+                "correct": 1
+              },
+              {
+                "title": "Teori ambang inteligensia kreativitas menunjukkan bahwa ....",
+                "options": [
+                  "Ada hubungan yang bermakna antara inteligensia dan kreativitas",
+                  "Inteligensia dan kreativitas adalah dua hal yang berbeda",
+                  "Kreativitas perlu dilatih agar berkembang sesuai tingkat inteligensinya",
+                  "Sampai tingkat inteligensia tertentu, ada hubungan antara inteligensia dan kreativitas"
+                ],
+                "correct": 3
+              },
+              {
+                "title": "Ciri kemampuan berpikir kreatif meliputi ....",
+                "options": [
+                  "Kelenturan",
+                  "Kecepatan",
+                  "Kerumitan",
+                  "Kebermaknaan"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Ciri afektif yang diperlukan dalam berpikir kreatif adalah ....",
+                "options": [
+                  "Kritis",
+                  "Mendorong",
+                  "Menghargai",
+                  "Tanggung jawab"
+                ],
+                "correct": 2
+              },
+              {
+                "title": "Berani menghadapi risiko sangat ditentukan dari apakah subjek ....",
+                "options": [
+                  "Percaya diri",
+                  "Tidak takut salah",
+                  "Bisa bersikap terus terang",
+                  "Mau menerima masukan"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Sumber kepribadian dalam mewujudkan kemampuan kreativitas seseorang adalah ....",
+                "options": [
+                  "Berani",
+                  "Cepat tanggap",
+                  "Mampu menemukan masalah",
+                  "Gaya berpikir inovatif"
+                ],
+                "correct": 3
+              },
+              {
+                "title": "Sumber lingkungan yang penting dalam mewujudkan kreativitas seseorang adalah ....",
+                "options": [
+                  "Fisik-mental",
+                  "Orang tua-sekolah",
+                  "Sosial ekonomi",
+                  "Teman-sekolah"
+                ],
+                "correct": 1
+              },
+              {
+                "title": "Mengapa kreativitas pada anak usia SD perlu dikembangkan?",
+                "options": [
+                  "Karena kreativitas adalah bakat bawaan yang tidak dapat berubah",
+                  "Karena kreativitas memungkinkan anak menemukan solusi baru dalam berbagai situasi",
+                  "Karena kreativitas hanya dibutuhkan dalam bidang seni dan musik",
+                  "Karena kreativitas tidak berhubungan dengan kecerdasan intelektual"
+                ],
+                "correct": 1
+              },
+              {
+                "title": "Faktor lingkungan yang paling berpengaruh dalam mengembangkan kreativitas anak adalah ....",
+                "options": [
+                  "Dukungan dari orang tua dan sekolah",
+                  "Faktor genetik dan biologis",
+                  "Motivasi internal anak saja tanpa faktor eksternal",
+                  "Jumlah buku yang dimiliki anak di rumah"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Salah satu ciri anak yang memiliki bakat kreatif adalah ....",
+                "options": [
+                  "Selalu mengikuti aturan dan tidak pernah mempertanyakan sesuatu",
+                  "Mampu menghasilkan ide-ide baru dan berbeda dari yang lain",
+                  "Memiliki daya ingat yang sangat kuat tetapi kurang tertarik pada eksplorasi",
+                  "Hanya unggul dalam bidang akademik tanpa keunikan dalam berpikir"
+                ],
+                "correct": 1
+              },
+              {
+                "title": "Apa yang dapat dilakukan guru untuk membantu mengembangkan kreativitas anak di kelas?",
+                "options": [
+                  "Memberikan kebebasan berekspresi dalam belajar dan menghargai ide siswa",
+                  "Mengajarkan anak untuk selalu mengikuti jawaban yang sudah ada",
+                  "Memberikan tugas yang hanya memiliki satu jawaban benar tanpa fleksibilitas",
+                  "Menyuruh anak menghafal teori tanpa praktik atau eksplorasi"
+                ],
+                "correct": 0
+              },
+              {
+                "title": "Bagaimana hubungan antara bakat dan kreativitas pada anak usia SD?",
+                "options": [
+                  "Bakat dan kreativitas adalah hal yang sama dan tidak dapat dibedakan",
+                  "Kreativitas adalah bagian dari bakat yang dapat dikembangkan melalui latihan dan stimulasi",
+                  "Kreativitas hanya muncul pada anak yang memiliki IQ tinggi",
+                  "Bakat adalah sesuatu yang tetap dan tidak dapat berubah sepanjang hidup"
+                ],
+                "correct": 1
+              }
+            ]
+          
               
       
       
