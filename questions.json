@@ -2017,8 +2017,222 @@
                 ],
                 "correct": 1
               }
-            ]
-          
+            ],
+      
+            
+              "Unsur Dasar dan Elemen Komposisi Tari; Unsur dan Prinsip Seni Rupa": [
+                {
+                  "title": "Elemen dasar komposisi tari ada ....",
+                  "options": [
+                    "10 elemen",
+                    "11 elemen",
+                    "12 elemen",
+                    "13 elemen"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "title": "Yang termasuk elemen utama artistik adalah ....",
+                  "options": [
+                    "Kostum",
+                    "Musik",
+                    "Desain lantai",
+                    "Tata Cahaya"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "title": "Gerak penari kelompok berurutan disebut desain ....",
+                  "options": [
+                    "Balance",
+                    "Sequence",
+                    "Cannon",
+                    "Proportion"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "title": "Gerak tari yang menggambarkan remaja sedang berhias termasuk jenis ....",
+                  "options": [
+                    "Gesture",
+                    "Feminine",
+                    "Maskulin",
+                    "Maknawi"
+                  ],
+                  "correct": 3
+                },
+                {
+                  "title": "Lapangan yang dapat digunakan untuk pentas tari rakyat dapat dikelompokkan dalam tempat pertunjukan yang disebut ....",
+                  "options": [
+                    "Proscenium",
+                    "Arena",
+                    "Terbuka",
+                    "Tapal Kuda"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "title": "Cerita Cut Nyak Dien bila diekspresikan dalam seni tari mempunyai materi tema ....",
+                  "options": [
+                    "Penjajahan",
+                    "Peperangan",
+                    "Perlawanan",
+                    "Permusuhan"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "title": "Dalam tari Malin Kundang, ada adegan Malin bersenang-senang sementara ibunya menangis di sudut panggung. Tata lampu dalam adegan ini digunakan untuk ....",
+                  "options": [
+                    "Memberi fokus",
+                    "Menciptakan jarak",
+                    "Menciptakan ruang yang berbeda",
+                    "Menciptakan tempat yang berbeda"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Apa yang dimaksud dengan gerak maknawi dalam tari?",
+                  "options": [
+                    "Gerakan yang memiliki makna atau simbol tertentu dalam tarian",
+                    "Gerakan yang dilakukan tanpa mempertimbangkan arti atau makna",
+                    "Gerakan tari yang hanya digunakan dalam tari tradisional",
+                    "Gerakan yang selalu dilakukan secara berulang dalam sebuah pertunjukan"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Apa fungsi utama dari desain lantai dalam komposisi tari?",
+                  "options": [
+                    "Menentukan pola gerakan penari di atas panggung",
+                    "Mengatur tata cahaya pada pertunjukan tari",
+                    "Menentukan pakaian yang sesuai dengan tema tarian",
+                    "Mengarahkan ekspresi wajah penari saat tampil"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Dalam elemen komposisi tari, apa yang dimaksud dengan desain atas?",
+                  "options": [
+                    "Pola pergerakan tangan, kepala, dan tubuh penari dalam ruang",
+                    "Urutan adegan dalam tarian berdasarkan alur cerita",
+                    "Tata rias dan kostum yang digunakan dalam pertunjukan tari",
+                    "Posisi lampu dan efek cahaya dalam tari"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Apa yang membedakan tari representasional dari tari nonrepresentasional?",
+                  "options": [
+                    "Tari representasional menggambarkan cerita atau peran, sementara tari nonrepresentasional tidak memiliki makna tertentu",
+                    "Tari representasional selalu dilakukan secara berpasangan, sementara tari nonrepresentasional dilakukan sendiri",
+                    "Tari representasional hanya ditemukan dalam budaya tradisional, sedangkan tari nonrepresentasional dalam budaya modern",
+                    "Tari representasional menggunakan properti, sementara tari nonrepresentasional tidak"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Apa tujuan utama dari tata cahaya dalam pertunjukan tari?",
+                  "options": [
+                    "Menciptakan efek visual dan mendukung suasana tarian",
+                    "Mempermudah pergerakan penari di atas panggung",
+                    "Mengatur suara musik pengiring tari",
+                    "Menyesuaikan kostum penari dengan warna panggung"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Keseimbangan yang bagiannya berbeda namun setara bobot unsurnya disebut keseimbangan ....",
+                  "options": [
+                    "Simetris",
+                    "Asimetris",
+                    "Sempurna",
+                    "Semu"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "title": "Keserasian yang diupayakan dengan menyusun warna tua, sedang, dan muda secara berdampingan disebut keserasian ....",
+                  "options": [
+                    "Satu warna",
+                    "Karib",
+                    "Tekstur",
+                    "Kontras"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "title": "Garis lengkung atau gelombang memiliki sifat ....",
+                  "options": [
+                    "Keras",
+                    "Tegas",
+                    "Kaku",
+                    "Lembut"
+                  ],
+                  "correct": 3
+                },
+                {
+                  "title": "Bidang dibatasi oleh ....",
+                  "options": [
+                    "Garis",
+                    "Tekstur",
+                    "Warna",
+                    "Ruang"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Manakah yang termasuk unsur dalam seni rupa di bawah ini ....",
+                  "options": [
+                    "Warna",
+                    "Lukisan",
+                    "Patung",
+                    "Irama"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Dalam warna sekunder, hijau dapat dihasilkan dari campuran dua warna, yaitu warna ....",
+                  "options": [
+                    "Merah dengan kuning",
+                    "Kuning dengan biru",
+                    "Merah dengan biru",
+                    "Ungu dengan oranye"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "title": "Warna sekunder ada tiga, yaitu warna ....",
+                  "options": [
+                    "Merah, biru, kuning",
+                    "Biru, kuning, oranye",
+                    "Merah, biru, oranye",
+                    "Oranye, ungu, hijau"
+                  ],
+                  "correct": 3
+                },
+                {
+                  "title": "Perbandingan bagian-bagian dari sebuah benda disebut ....",
+                  "options": [
+                    "Komposisi",
+                    "Proporsi",
+                    "Posisi",
+                    "Disposisi"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "title": "Apa fungsi utama prinsip kesatuan dalam seni rupa?",
+                  "options": [
+                    "Menggabungkan berbagai unsur dalam komposisi yang harmonis",
+                    "Menentukan warna utama dalam karya seni",
+                    "Menghindari penggunaan warna yang kontras dalam desain",
+                    "Membatasi jumlah elemen yang digunakan dalam karya seni"
+                  ],
+                  "correct": 0
+                }
+              ]
+            
               
       
       
