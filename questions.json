@@ -2230,7 +2230,48 @@
                     "Membatasi jumlah elemen yang digunakan dalam karya seni"
                   ],
                   "correct": 0
+                },
+                {
+                  "title": "Dalam seni rupa, proporsi berfungsi untuk ....",
+                  "options": [
+                    "Menciptakan keseimbangan antara berbagai bagian dalam suatu karya seni",
+                    "Mengatur intensitas cahaya dalam lukisan",
+                    "Mengukur ketebalan garis dalam desain",
+                    "Menentukan arah garis dalam sebuah komposisi"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Apa yang membedakan tekstur nyata dan tekstur semu dalam seni rupa?",
+                  "options": [
+                    "Tekstur nyata bisa dirasakan dengan indera peraba, sedangkan tekstur semu hanya terlihat melalui efek visual",
+                    "Tekstur nyata selalu digunakan dalam seni lukis, sedangkan tekstur semu hanya ada dalam seni patung",
+                    "Tekstur semu digunakan dalam seni tiga dimensi, sedangkan tekstur nyata digunakan dalam seni dua dimensi",
+                    "Tekstur nyata dan tekstur semu tidak memiliki perbedaan dalam karya seni"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Unsur garis dalam seni rupa dapat berfungsi untuk ....",
+                  "options": [
+                    "Membentuk batas bidang dan menciptakan struktur dalam karya seni",
+                    "Mengatur keseimbangan warna dalam suatu komposisi",
+                    "Menentukan ketebalan objek dalam karya seni tiga dimensi",
+                    "Mengatur kontras antara elemen-elemen seni rupa"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "title": "Mengapa irama penting dalam seni rupa?",
+                  "options": [
+                    "Karena menciptakan pergerakan visual yang mengarahkan mata penonton melalui karya seni",
+                    "Karena menentukan proporsi warna dalam karya seni",
+                    "Karena mengatur perspektif dalam gambar tiga dimensi",
+                    "Karena menghilangkan keseimbangan dalam desain agar lebih dinamis"
+                  ],
+                  "correct": 0
                 }
+                        
               ]
             
               
