@@ -2272,7 +2272,211 @@
                   "correct": 0
                 }
                         
-              ]
+              ],
+              
+                "Pendidikan, Martabat, dan Hak Asasi Manusia": [
+                  {
+                    "title": "Suatu upaya dalam rangka membantu manusia (peserta didik) agar mampu hidup sesuai dengan martabat kemanusiaannya adalah definisi pendidikan sebagai...",
+                    "options": [
+                      "Self realization",
+                      "Humanisasi",
+                      "Moralisasi",
+                      "Idealisasi"
+                    ],
+                    "correct": 1
+                  },
+                  {
+                    "title": "“Manusia menjadi manusia yang sebenarnya jika dapat merealisasikan hakikatnya secara total” (Henderson, 1959). Hal tersebut dapat terwujud jika menyadari dan memahami eksistensi manusia yang memiliki aspek sebagai berikut, kecuali...",
+                    "options": [
+                      "Enkulturasi",
+                      "Moralitas",
+                      "Individualitas",
+                      "Sosialitas"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Sebagai humanisasi pendidikan, antara lain berarti sebagai upaya pengembangan potensi manusia (sudut pandang psikologis), dalam pengertian tersebut berbagai potensi yang harus dikembangkan antara lain agar manusia senang berkomunikasi, berteman, menolong, membuat orang lain bahagia, dan bekerja sama. Potensi tersebut dinamakan juga...",
+                    "options": [
+                      "Spiritual Quotient",
+                      "Social Quotient",
+                      "Emotional Quotient",
+                      "Intelligence Quotient"
+                    ],
+                    "correct": 1
+                  },
+                  {
+                    "title": "Mengapa hak asasi adalah hak dasar atau pokok (KBBI, 1995)?",
+                    "options": [
+                      "Sebab hak asasi menunjukkan eksistensi manusia untuk menunjukkan identitasnya",
+                      "Sebab hak asasi mampu memanusiakan manusia sehingga dapat merealisasikan hakikatnya secara total",
+                      "Sebab hak asasi merupakan hak-hak alamiah yang tidak dapat dicabut karena itu adalah karunia Tuhan",
+                      "Sebab hak asasi menjadi pelindung manusia untuk menjadi dirinya yang seutuhnya"
+                    ],
+                    "correct": 2
+                  },
+                  {
+                    "title": "Kecenderungan kalangan organisasi internasional untuk memperluas daftar hak asasi manusia antara lain hak atas pendidikan. Pernyataan hak tersebut ditulis dalam United States Information Agency (1991), yang berbunyi...",
+                    "options": [
+                      "“Kesempatan pendidikan yang memadai harus menjadi hak bawaan setiap anak”",
+                      "“Tujuan pokok pendidikan nasional, dan dilihat dari segi ini pendidikan merupakan tugas pemerintah yang adil”",
+                      "“Makna yang paling penting dalam dari persamaan sosial adalah kualitas kehidupan yang sama bagi manusia, yang menuntut kualitas penyekolahan yang sama bagi semua”",
+                      "“Pendidikan sebagai upaya agar manusia memperoleh hak-haknya yang asasi”"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Dalam sejarah sebelum munculnya Hak Asasi sebagai Dasar Demokrasi Pendidikan, terdapat gagasan bahwa “Tanpa pendidikan kemerdekaan menjadi tidak mungkin”, Gagasan tersebut dikemukakan oleh...",
+                    "options": [
+                      "John Locke",
+                      "Condorcet",
+                      "Mortimer J. Adler",
+                      "Thomas Jefferson"
+                    ],
+                    "correct": 3
+                  },
+                  {
+                    "title": "Pendidikan juga berarti personalisasi atau individualisasi, ini memiliki arti...",
+                    "options": [
+                      "Agar manusia menjadi pribadi atau individu yang mantap",
+                      "Agar manusia menjadi dirinya sendiri",
+                      "Manusia memiliki potensi yang berbeda-beda",
+                      "Agar manusia dapat dipahami satu sama lain"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Manusia lahir dengan potensi, ia lahir belum terspesialisasi, seperti hewan atau binatang dan bahwa perkembangannya bersifat...",
+                    "options": [
+                      "Absolut",
+                      "Bebas",
+                      "Terbuka",
+                      "Hierarki"
+                    ],
+                    "correct": 2
+                  },
+                  {
+                    "title": "Tujuan pendidikan sewajarnya diupayakan dengan tujuan untuk membantu mengembangkan berbagai potensi yang ada pada manusia, contohnya dengan mengembangkan berbagai potensi sebagai berikut, kecuali...",
+                    "options": [
+                      "Potensi untuk mampu beriman dan bertakwa kepada Tuhan Yang Maha Esa",
+                      "Potensi untuk hidup sehat",
+                      "Potensi cipta, rasa, karsa, dan karyanya",
+                      "Potensi untuk mampu melakukan keinginannya"
+                    ],
+                    "correct": 3
+                  },
+                  {
+                    "title": "Pasal 31 UUD RI 1945 berisi tentang...",
+                    "options": [
+                      "Hak asasi sebagai dasar demokrasi pendidikan",
+                      "Pendidikan sebagai hak setiap warga negara",
+                      "Pendidikan sebagai upaya agar manusia memperoleh hak-haknya",
+                      "Pendidikan merupakan upaya menjadikan manusia menjadi manusia"
+                    ],
+                    "correct": 1
+                  },
+                  {
+                    "title": "Pendidikan sebagai hak asasi manusia harus diberikan kepada semua individu tanpa diskriminasi. Hal ini menekankan prinsip...",
+                    "options": [
+                      "Egalitarianisme",
+                      "Eksklusivitas",
+                      "Privatisasi",
+                      "Individualisme"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Mengapa pendidikan dianggap sebagai proses humanisasi?",
+                    "options": [
+                      "Karena membantu manusia menjadi lebih unggul dibandingkan makhluk lain",
+                      "Karena membentuk manusia menjadi individu yang beradab dan bermoral",
+                      "Karena memungkinkan manusia mendapatkan pekerjaan yang layak",
+                      "Karena memberikan kesempatan bagi manusia untuk mengeksploitasi potensi ekonomi"
+                    ],
+                    "correct": 1
+                  },
+                  {
+                    "title": "Faktor utama yang membedakan pendidikan manusia dengan pelatihan hewan adalah...",
+                    "options": [
+                      "Pendidikan berorientasi pada pengembangan akal dan moral",
+                      "Pelatihan hewan lebih sistematis daripada pendidikan manusia",
+                      "Pendidikan manusia hanya berfokus pada keterampilan teknis",
+                      "Pendidikan manusia tidak memiliki tujuan jangka panjang"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Apa yang dimaksud dengan pendidikan sepanjang hayat?",
+                    "options": [
+                      "Pendidikan hanya diberikan di usia anak-anak dan remaja",
+                      "Pendidikan dilakukan dalam jangka waktu tertentu dan berakhir di sekolah",
+                      "Pendidikan berlangsung terus-menerus sepanjang kehidupan manusia",
+                      "Pendidikan hanya diperlukan jika seseorang ingin bekerja"
+                    ],
+                    "correct": 2
+                  },
+                  {
+                    "title": "Mengapa pendidikan harus berbasis pada hak asasi manusia?",
+                    "options": [
+                      "Karena pendidikan membantu seseorang mendapatkan kekuasaan",
+                      "Karena pendidikan menjamin pemenuhan kebutuhan ekonomi individu",
+                      "Karena pendidikan membantu seseorang memahami dan menjalankan hak dan kewajibannya",
+                      "Karena pendidikan hanya diberikan bagi mereka yang mampu secara finansial"
+                    ],
+                    "correct": 2
+                  },
+                  {
+                    "title": "Pendidikan sebagai humanisasi berhubungan dengan aspek berikut, kecuali...",
+                    "options": [
+                      "Pengembangan potensi intelektual",
+                      "Peningkatan kecakapan sosial",
+                      "Dominasi individu atas yang lain",
+                      "Peningkatan kesadaran moral"
+                    ],
+                    "correct": 2
+                  },
+                  {
+                    "title": "Bagaimana pendidikan dapat membantu seseorang dalam menjalankan kehidupan demokratis?",
+                    "options": [
+                      "Dengan memberikan pemahaman tentang hak dan kewajiban warga negara",
+                      "Dengan melatih seseorang untuk menerima semua keputusan tanpa kritik",
+                      "Dengan membatasi kebebasan individu agar tidak melampaui batas",
+                      "Dengan hanya memberikan pendidikan kepada kelompok tertentu"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Mengapa hak atas pendidikan sangat penting dalam pembangunan suatu bangsa?",
+                    "options": [
+                      "Karena pendidikan meningkatkan daya saing sumber daya manusia",
+                      "Karena pendidikan hanya diperlukan dalam ekonomi berbasis industri",
+                      "Karena pendidikan hanya berguna bagi individu tertentu",
+                      "Karena pendidikan dapat menggantikan seluruh peran budaya"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Hak pendidikan dalam hak asasi manusia mengacu pada prinsip...",
+                    "options": [
+                      "Kesetaraan dan non-diskriminasi",
+                      "Hak eksklusif bagi kelompok elit",
+                      "Kebebasan tanpa batas dalam pendidikan",
+                      "Pendidikan sebagai layanan komersial semata"
+                    ],
+                    "correct": 0
+                  },
+                  {
+                    "title": "Apa hubungan antara pendidikan dan martabat manusia?",
+                    "options": [
+                      "Pendidikan membantu manusia menyadari nilai dirinya dan orang lain",
+                      "Pendidikan bertujuan untuk menjadikan seseorang lebih unggul dari yang lain",
+                      "Pendidikan hanya berperan dalam aspek ekonomi individu",
+                      "Pendidikan lebih penting daripada hak-hak lainnya"
+                    ],
+                    "correct": 0
+                  }
+                ]
+                       
             
               
       
