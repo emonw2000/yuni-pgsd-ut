@@ -2475,7 +2475,212 @@
                     ],
                     "correct": 0
                   }
-                ]
+                ],
+
+                
+                  "Teori-Teori Perkembangan Kognitif dari Perspektif Sosial Budaya": [
+                    {
+                      "title": "Berikut ini yang bukan termasuk pemikiran dasar manusia adalah ....",
+                      "options": [
+                        "ruang",
+                        "waktu",
+                        "proses",
+                        "kuantitas"
+                      ],
+                      "correct": 2
+                    },
+                    {
+                      "title": "Menurut ..., pengetahuan bukan merupakan kondisi, melainkan proses.",
+                      "options": [
+                        "Vygotsky",
+                        "Freud",
+                        "Erickson",
+                        "Piaget"
+                      ],
+                      "correct": 3
+                    },
+                    {
+                      "title": "Kondisi yang sesuai antara pemahaman anak dan lingkungannya disebut....",
+                      "options": [
+                        "keseimbangan ekuilibrium",
+                        "ketidakseimbangan ekuilibrium",
+                        "asimilasi",
+                        "akomodasi"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Representasi yang dimiliki anak tentang hal di lingkungannya disebut dengan ....",
+                      "options": [
+                        "modifikasi",
+                        "ekuilibrium",
+                        "organisasi",
+                        "skemata"
+                      ],
+                      "correct": 3
+                    },
+                    {
+                      "title": "Menurut Piaget, tahap operasional konkret umumnya ditemukan pada anak berusia ....",
+                      "options": [
+                        "11—15 tahun",
+                        "7—11 tahun",
+                        "0—2 tahun",
+                        "2—7 tahun"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Sensor dan motor banyak digunakan anak dalam tahap ....",
+                      "options": [
+                        "sensorimotor",
+                        "preoperasional",
+                        "operasional konkret",
+                        "operasional formal"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Berikut adalah ciri-ciri yang ditemukan pada tahap perkembangan preoperasional, kecuali ....",
+                      "options": [
+                        "egosentris",
+                        "semilogis",
+                        "mampu berpikir abstrak",
+                        "sosiokognitif yang terbatas"
+                      ],
+                      "correct": 2
+                    },
+                    {
+                      "title": "Menurut Vygotsky, perkembangan kognitif anak terjadi ketika ada ....",
+                      "options": [
+                        "isu sosial",
+                        "refleks",
+                        "stimulus",
+                        "interaksi sosial"
+                      ],
+                      "correct": 3
+                    },
+                    {
+                      "title": "Bantuan belajar yang diberikan kepada anak dalam proses belajar disebut....",
+                      "options": [
+                        "representasi",
+                        "scaffolding",
+                        "ZPD",
+                        "asimilasi"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Berikut adalah ciri perkembangan menurut teori Piaget, kecuali ....",
+                      "options": [
+                        "peran orang dewasa penting untuk membantu proses belajar",
+                        "secara umum bersifat universal",
+                        "perkembangan kognitif sangat dipengaruhi oleh eksplorasi mandiri",
+                        "proses individual yang anak alami menjadi proses sosial"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Apa yang dimaksud dengan skemata dalam teori perkembangan kognitif Piaget?",
+                      "options": [
+                        "Proses mengingat kembali informasi",
+                        "Struktur mental dasar yang digunakan untuk memahami dunia",
+                        "Bentuk komunikasi dalam interaksi sosial",
+                        "Teori yang menjelaskan perkembangan moral"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Apa yang dimaksud dengan konsep asimilasi dalam teori Piaget?",
+                      "options": [
+                        "Memodifikasi skemata untuk memahami pengalaman baru",
+                        "Mengintegrasikan informasi baru ke dalam skemata yang sudah ada",
+                        "Menciptakan skemata baru untuk menyesuaikan diri dengan lingkungan",
+                        "Meningkatkan kemampuan sosial melalui interaksi"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Zona Perkembangan Proksimal (ZPD) dalam teori Vygotsky mengacu pada...",
+                      "options": [
+                        "Kemampuan anak yang sudah dikuasai secara mandiri",
+                        "Batas antara apa yang bisa dilakukan anak sendiri dan dengan bantuan",
+                        "Tahapan perkembangan kognitif dalam proses informasi",
+                        "Bentuk refleksi dalam pembelajaran"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Apa yang menjadi perbedaan utama antara teori Piaget dan Vygotsky?",
+                      "options": [
+                        "Piaget menekankan eksplorasi mandiri, sedangkan Vygotsky menekankan interaksi sosial",
+                        "Piaget lebih fokus pada memori, sedangkan Vygotsky pada kecerdasan",
+                        "Piaget percaya perkembangan terjadi secara acak, sedangkan Vygotsky memiliki tahap-tahap tertentu",
+                        "Vygotsky menolak konsep perkembangan kognitif"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Apa fungsi utama scaffolding dalam pembelajaran menurut Vygotsky?",
+                      "options": [
+                        "Membantu anak dengan memberikan dukungan sementara",
+                        "Meningkatkan daya ingat melalui latihan berulang",
+                        "Mempercepat perkembangan tanpa bantuan eksternal",
+                        "Menjadikan anak lebih mandiri sejak awal"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Pada tahap preoperasional, anak cenderung menunjukkan sifat...",
+                      "options": [
+                        "Mampu berpikir abstrak",
+                        "Egosentris",
+                        "Mampu memahami sudut pandang orang lain",
+                        "Menggunakan logika deduktif"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Mengapa anak pada tahap sensorimotor menggunakan eksplorasi fisik?",
+                      "options": [
+                        "Karena mereka sudah bisa berpikir abstrak",
+                        "Karena mereka belum memiliki skemata yang kompleks",
+                        "Karena mereka sudah memahami konsep kausalitas",
+                        "Karena mereka dapat menggunakan bahasa dengan lancar"
+                      ],
+                      "correct": 1
+                    },
+                    {
+                      "title": "Apa yang dimaksud dengan pemikiran konservasi dalam tahap operasional konkret?",
+                      "options": [
+                        "Pemahaman bahwa jumlah benda tidak berubah meskipun bentuknya berubah",
+                        "Kemampuan mengingat informasi dalam jangka panjang",
+                        "Kecenderungan anak untuk mengutamakan logika deduktif",
+                        "Pemahaman bahwa benda mati memiliki karakteristik seperti manusia"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Apa yang menjadi ciri utama dari tahap operasional formal?",
+                      "options": [
+                        "Anak mulai menggunakan pemikiran abstrak dan logis",
+                        "Anak hanya bisa memahami dunia melalui eksplorasi fisik",
+                        "Anak sangat bergantung pada pengalaman konkret",
+                        "Anak masih menunjukkan pemikiran egosentris"
+                      ],
+                      "correct": 0
+                    },
+                    {
+                      "title": "Mengapa teori Vygotsky menekankan peran budaya dalam perkembangan kognitif?",
+                      "options": [
+                        "Karena perkembangan kognitif anak sangat dipengaruhi oleh interaksi sosial dan budaya",
+                        "Karena semua anak berkembang dengan cara yang sama tanpa pengaruh eksternal",
+                        "Karena teori Vygotsky tidak mempertimbangkan faktor sosial dalam pembelajaran",
+                        "Karena perkembangan kognitif hanya dipengaruhi oleh faktor genetis"
+                      ],
+                      "correct": 0
+                    }
+                  ]
+                
                        
             
               
