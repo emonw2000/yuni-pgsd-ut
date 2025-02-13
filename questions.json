@@ -2679,8 +2679,112 @@
                       ],
                       "correct": 0
                     }
-                  ]
-                
+                  ],
+
+                  
+                    "PPerspektif Global dari Visi Geografi, Sejarah, dan Ekonomi": [
+                      {
+                        "title": "Dari sudut pandang geografi, perspektif global adalah perspektif keruangan. Hal itu berarti bahwa cara memandang suatu proses dan peristiwa selalu dalam konteks ....",
+                        "options": [
+                          "Tempat dan ruangan tertentu",
+                          "Ruangan yang besarnya tidak terbatas",
+                          "Hubungan di permukaan bumi sebagai suatu ruang",
+                          "Ruangan tertentu tempat terjadinya suatu peristiwa"
+                        ],
+                        "correct": 2
+                      },
+                      {
+                        "title": "Dalam lingkup perspektif lokal, kita lebih mudah mengamati dan menghayati suatu perkembangan serta perubahan berbagai aspek kehidupan, karena ....",
+                        "options": [
+                          "Sesuai dengan pengalaman sehari-hari",
+                          "Proses perubahan dan perkembangan sifatnya sederhana",
+                          "Tanpa pengetahuan apa pun kita dapat menarik kesimpulan",
+                          "Jarak jangkau dan luas ruangnya relatif terbatas"
+                        ],
+                        "correct": 3
+                      },
+                      {
+                        "title": "Preston E. James mengungkapkan bahwa geografi adalah induk ilmu, dengan alasan ....",
+                        "options": [
+                          "Kajian geografi adalah juga kajian ilmu lain",
+                          "Perspektif geografi, juga menjadi perspektif ilmu lain",
+                          "Kajian ilmu apa pun tidak terlepas dari permukaan bumi sebagai lokasi objeknya",
+                          "Ilmu-ilmu pada umumnya berakar dari kajian geografi"
+                        ],
+                        "correct": 2
+                      },
+                      {
+                        "title": "Perspektif sejarah adalah perspektif waktu, yang berarti bahwa kajian sejarah secara perspektif terfokus pada ....",
+                        "options": [
+                          "Perkembangan sesuatu dari waktu ke waktu",
+                          "Kajian peristiwa masa lampau terkait dengan hari ini dan terarah ke masa yang datang",
+                          "Waktu sebagai satu-satunya dimensi",
+                          "Peristiwa yang tidak terlepas dari dimensi waktu"
+                        ],
+                        "correct": 1
+                      },
+                      {
+                        "title": "Dari sudut pandang sejarah, perspektif global itu merupakan landasan kajian ....",
+                        "options": [
+                          "Peristiwa masa lampau berdampak luas pada kehidupan manusia di dunia masa yang akan datang",
+                          "Masalah dunia berdasarkan dimensi waktunya",
+                          "Dimensi waktu di dunia sangat berpengaruh terhadap kehidupan umat manusia",
+                          "Hubungan waktu peristiwa lokasi kejadian"
+                        ],
+                        "correct": 0
+                      },
+                      {
+                        "title": "Tokoh-tokoh sejarah seperti para nabi, rasul, dan orang-orang pada zamannya, ditinjau dari perspektif global, memiliki makna ....",
+                        "options": [
+                          "Perilaku yang dikenal umat seluruh dunia",
+                          "Pola perilaku teladan bagi umat seluruh dunia",
+                          "Ketokohan yang tidak mungkin terulang lagi",
+                          "Peristiwa yang tercatat dengan tinta emas"
+                        ],
+                        "correct": 1
+                      },
+                      {
+                        "title": "Dari sudut pandang ekonomi berkenaan dengan faktor masalah yang perspektif globalnya sangat mendasar, terutama terletak pada aspek ....",
+                        "options": [
+                          "Sumber daya",
+                          "Penerapan IPTEK",
+                          "Penduduk",
+                          "Proses produksi"
+                        ],
+                        "correct": 0
+                      },
+                      {
+                        "title": "Menurut David Turney, sebagai akibat dilematis dari penerapan dan pemanfaatan teknologi, kebutuhan manusia menjadi tiga kali lipat. Salah satu kebutuhan itu adalah stabilitas penduduk, yang berarti ...",
+                        "options": [
+                          "Mengekang daya konsumtif penduduk terhadap pemanfaatan sumber daya",
+                          "Mengekang produksi kebutuhan sesuai dengan kebutuhan penduduk",
+                          "Penggalakan program dan gerakan program keluarga berencana dalam upaya mengekang pertumbuhan penduduk yang pesat",
+                          "Menyeimbangkan antara daya konsumtif penduduk dengan produksi kebutuhannya"
+                        ],
+                        "correct": 3
+                      },
+                      {
+                        "title": "Dari perspektif global, pemanfaatan alternatif sumber daya alam, mempercepat pengurasan persediaan sumber daya yang tak terbarukan. Pemanfaatan alternatif sumber daya tersebut, berarti ....",
+                        "options": [
+                          "Pemanfaatan sumber daya pengganti bagi sumber daya yang hampir terkuras",
+                          "Penganekaragaman penggunaan sumber daya akibat kemajuan IPTEK",
+                          "Penganekaragaman jenis sumber daya dalam suatu kebutuhan",
+                          "Diversifikasi penggunaan sumber daya sebagai bahan bakar"
+                        ],
+                        "correct": 0
+                      },
+                      {
+                        "title": "Dalam era ekonomi global dan pasar bebas, sangat dituntut SDM yang bersikap mental wirausaha yang salah satu cirinya memiliki kemandirian yang tercermin pada perilaku ....",
+                        "options": [
+                          "Berusaha sendiri dan menghindarkan kerja sama dengan pihak lain",
+                          "Mengisolasi diri dalam melakukan usaha",
+                          "Berusaha sendiri dan sekaligus bekerja sama dengan pihak lain",
+                          "Menjauhkan diri dari bantuan pihak lain dalam berusaha"
+                        ],
+                        "correct": 2
+                      }
+                    ]
+                  
                        
             
               
