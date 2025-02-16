@@ -2783,8 +2783,312 @@
                         ],
                         "correct": 2
                       }
-                    ]
-                  
+                    ],
+
+            
+  "Kemampuan Dasar Anak Sekolah Dasar; Karakteristik Seni Anak Sekolah Dasar": [
+    {
+      "title": "Kemampuan berpikir anak Sekolah Dasar itu sesungguhnya",
+      "options": [
+        "Berbeda satu dengan yang lain",
+        "Sama satu dengan yang lain",
+        "Anak perempuan lebih pintar daripada anak laki-laki",
+        "Anak laki-laki lebih pintar daripada anak perempuan"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Pemilihan materi pembelajaran seni yang baik untuk anak Sekolah Dasar sebaiknya dimulai dari yang bersifat:",
+      "options": [
+        "Nasional",
+        "Kedaerahan",
+        "Populer",
+        "Klasik"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Materi pembelajaran untuk anak SD yang sifatnya abstrak perlu dikemas menjadi materi yang ...",
+      "options": [
+        "Konkret melalui contoh-contoh dan alat peraga",
+        "Menarik dengan penjelasan yang rinci",
+        "Sederhana namun menarik",
+        "Mudah dipraktekkan"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Emosi anak mudah dikenali dari ciri-cirinya seperti",
+      "options": [
+        "Tidak mudah hilang",
+        "Jarang terjadi",
+        "Datang tiba-tiba",
+        "Perilaku dan fisiknya"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Materi pembelajaran seni yang baik adalah yang bersifat ...",
+      "options": [
+        "Kelompok",
+        "Individual",
+        "Massal",
+        "Campuran ketiga"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Anak usia Sekolah Dasar lebih menyukai aktivitas yang bersifat ...",
+      "options": [
+        "Keterampilan",
+        "Mental",
+        "Kompetisi",
+        "Individual"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Dunia anak-anak adalah dunia bermain, oleh karena itu proses belajar dikemas dalam bentuk ...",
+      "options": [
+        "Perlombaan",
+        "Di kelas",
+        "Di luar kelas",
+        "Permainan"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Agar perkembangan sosial anak berlangsung dengan baik, guru dapat mengemas pembelajaran musik dengan ...",
+      "options": [
+        "Bermain musik bersama",
+        "Bermain musik tunggal",
+        "Mendengarkan musik",
+        "Bernyanyi bergantian"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Secara alamiah anak-anak sudah membawa kemampuan menangkap getar keindahan sejak lahir dengan kualitas yang ...",
+      "options": [
+        "Sama antara anak laki-laki dengan perempuan",
+        "Berbeda antara anak laki-laki dengan perempuan",
+        "Anak perempuan lebih besar",
+        "Anak laki-laki lebih besar"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Ekspresi seni bagi anak di samping berfungsi sebagai media aktualisasi diri juga sebagai ...",
+      "options": [
+        "Keberanian anak untuk tampil",
+        "Pengalaman berdiri di depan orang banyak",
+        "Curahan gagasan dan perasaan",
+        "Sarana mengasah potensi seni"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa yang menjadi faktor utama dalam perkembangan berpikir anak SD menurut Peaget?",
+      "options": [
+        "Lingkungan",
+        "Aktivitas",
+        "Kematangan",
+        "Interaksi sosial"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Mengapa anak SD membutuhkan alat peraga dalam pembelajaran?",
+      "options": [
+        "Mereka lebih mudah memahami konsep konkret",
+        "Mereka lebih suka bermain daripada belajar",
+        "Mereka tidak suka membaca buku teori",
+        "Mereka sulit fokus dalam kelas"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Perkembangan emosi anak SD umumnya bersifat ...",
+      "options": [
+        "Stabil",
+        "Fluktuatif",
+        "Sulit dikendalikan",
+        "Tidak dapat diprediksi"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Bagaimana perkembangan sosial anak SD menurut modul?",
+      "options": [
+        "Mereka mulai menyadari keberadaan orang lain",
+        "Mereka masih sangat egois",
+        "Mereka tidak membutuhkan teman dekat",
+        "Mereka hanya bermain dengan orang dewasa"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Bagaimana cara terbaik mendukung kreativitas anak SD dalam pembelajaran seni?",
+      "options": [
+        "Memberikan kebebasan berekspresi",
+        "Mengajarkan teknik menggambar yang benar",
+        "Meminta anak meniru gambar guru",
+        "Memberikan tugas yang sama untuk semua anak"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Suara cambiata terjadi pada anak ....",
+      "options": [
+        "Laki-laki usia 8 - 9 tahun",
+        "Perempuan usia 8 - 9 tahun",
+        "Laki-laki usia 10 - 12 tahun",
+        "Perempuan usia 10 - 12 tahun"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Mengamati karya seni rupa anak dapat dilihat dari aspek-aspek berikut, kecuali ....",
+      "options": [
+        "Lingkungan anak",
+        "Tipologi seni rupa anak",
+        "Periodisasi anak",
+        "Karakteristik seni rupa anak"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Anak usia SD yang mampu menggambar objek sesuai dengan proporsi, perspektif dan detailnya termasuk dalam tipe ....",
+      "options": [
+        "Haptik",
+        "Visual",
+        "Bagan",
+        "Prabagan"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Sesuai dengan istilahnya, maka ketika anak menggambar secara realistik, anak ....",
+      "options": [
+        "Mengandalkan keterampilan koordinasi mata dan jari serta tangannya",
+        "Menggunakan perasaan dan emosinya",
+        "Mengabaikan detail objek yang dipilihnya",
+        "Mengabaikan emosi dan menggenggam rasionya"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Suara menjadi banyak mengandung udara terjadi pada ....",
+      "options": [
+        "Anak perempuan menjelang dewasa",
+        "Anak laki-laki menjelang usia dewasa",
+        "Anak laki-laki di rentang usia 6-10 tahun",
+        "Anak perempuan di rentang usia 6 - 10 tahun"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Perkembangan psikomotorik baik halus maupun kasar dianggap telah terkendali pada anak usia ....",
+      "options": [
+        "4 tahun",
+        "5 tahun",
+        "6 tahun",
+        "7 tahun"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Ciri gambar di mana antara objek yang satu dengan yang lain tidak saling mendukung terjadi pada karya seni rupa anak di rentang usia ....",
+      "options": [
+        "9-10 tahun",
+        "4-7 tahun",
+        "7-9 tahun",
+        "Sebelum usia 4 tahun"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Kesadaran anak akan adanya hubungan antar gerakan-gerakan anggota tubuh muncul ketika anak ....",
+      "options": [
+        "Mulai menyadari adanya konsep ruang dalam menggambar",
+        "Mengenal detail-detail gambar yang menjadi fokus perhatiannya",
+        "Ketika mereka mulai menyadari adanya garis pijak",
+        "Menyadari adanya batas langit"
+      ],
+      "correct": 0
+    },
+    {
+      "title": "Berikut adalah bukan salah satu karakteristik musik anak SD yakni ....",
+      "options": [
+        "Ritme melodi sederhana dan pendek",
+        "Melodi lagu pendek dan sederhana",
+        "Teks lagu mudah diingat",
+        "Tema lagu dapat beragam"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Lagu yang sesuai untuk anak usia SD salah satunya adalah ....",
+      "options": [
+        "Dapat dinyanyikan dengan 4 suara",
+        "Harus selalu diiringi alat musik",
+        "Yang laku terjual di pasaran",
+        "Dapat memberi keleluasaan anak bergerak"
+      ],
+      "correct": 3
+    },
+    {
+      "title": "Apa yang membedakan karakteristik suara anak dengan orang dewasa dalam bernyanyi?",
+      "options": [
+        "Suara anak lebih berat dan tebal",
+        "Suara anak lebih ringan dan jernih",
+        "Suara anak memiliki vibrato alami",
+        "Suara anak sama dengan suara orang dewasa tetapi dengan volume lebih kecil"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Mengapa musik anak-anak sebaiknya memiliki pola melodi yang sederhana?",
+      "options": [
+        "Agar anak dapat berlatih menyanyikan lagu yang lebih kompleks",
+        "Agar lebih mudah dihafal dan dinyanyikan",
+        "Agar bisa digunakan dalam berbagai genre musik",
+        "Agar lebih menarik bagi orang dewasa"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Karakteristik seni rupa anak usia SD cenderung memiliki ...",
+      "options": [
+        "Warna dan perspektif yang realistis",
+        "Pola garis yang abstrak",
+        "Bentuk yang ekspresif dan simbolik",
+        "Detail gambar yang sangat rinci"
+      ],
+      "correct": 2
+    },
+    {
+      "title": "Apa manfaat utama dari pembelajaran tari bagi anak SD?",
+      "options": [
+        "Melatih anak agar menjadi penari profesional",
+        "Mengembangkan koordinasi motorik dan ekspresi diri",
+        "Membantu anak dalam memahami teori musik",
+        "Meningkatkan daya ingat anak"
+      ],
+      "correct": 1
+    },
+    {
+      "title": "Bagaimana cara terbaik untuk meningkatkan kreativitas anak dalam seni rupa?",
+      "options": [
+        "Meminta anak meniru lukisan seniman terkenal",
+        "Mengajarkan anak menggambar dengan teknik yang baku",
+        "Membiarkan anak menggambar bebas sesuai imajinasi mereka",
+        "Menggunakan alat bantu seperti template gambar"
+      ],
+      "correct": 2
+    }
+  ]
+     
                        
             
               
