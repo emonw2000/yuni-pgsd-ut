@@ -3087,9 +3087,161 @@
       ],
       "correct": 2
     }
-  ]
-     
-                       
+  ],
+  
+    "Landasan Yuridis dan Landasan Filosofis Pendidikan": [
+      {
+        "title": "Lingkungan pendidikan tripusat pendidikan terdiri dari ....",
+        "options": [
+          "sekolah, tempat kursus, dan masyarakat",
+          "masyarakat, keluarga, dan tetangga",
+          "keluarga, tempat kursus, dan tetangga",
+          "keluarga, sekolah, dan masyarakat"
+        ],
+        "correct": 3
+      },
+      {
+        "title": "Lingkungan dalam komponen sistem pendidikan dibagi menjadi dua, yakni",
+        "options": [
+          "lingkungan alam dan lingkungan sosial budaya",
+          "lingkungan alami dan lingkungan buatan",
+          "lingkungan manusia dan lingkungan hewan",
+          "lingkungan hewani dan lingkungan nabati"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Dalam arti sempit, keluarga dapat diartikan sebagai ....",
+        "options": [
+          "anak, ibu, ayah, dan nenek",
+          "ayah, ibu, dan anak",
+          "ayah, ibu, dan mertua",
+          "mertua, anak, dan ibu"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Kekuasaan yang didominasi oleh pihak ayah disebut dengan keluarga ....",
+        "options": [
+          "keluarga matriarchal",
+          "extended family",
+          "nuclear family",
+          "keluarga patriarchal"
+        ],
+        "correct": 3
+      },
+      {
+        "title": "Ada empat fungsi keluarga, salah satunya adalah ....",
+        "options": [
+          "sebagai pranata yang membenarkan hubungan seksual antara pria dan wanita dewasa berdasarkan pernikahan",
+          "mengembangkan keturunan",
+          "melaksanakan pendidikan",
+          "sebagai kesatuan ekonomi"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Adanya empat fungsi keluarga, dikemukakan oleh ....",
+        "options": [
+          "M.I. Soelaeman",
+          "George Peter Murdock",
+          "Adler",
+          "Ki Hadjar Dewantara"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Ada 2 fungsi sekolah sebagai pendidikan formal, yaitu ....",
+        "options": [
+          "fungsi inovasi dan fungsi kreatif",
+          "fungsi konservasi dan fungsi inovasi",
+          "fungsi konsultasi dan fungsi komunikasi",
+          "fungsi sosialisasi dan fungsi nasionalisasi"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Berikut ini hal-hal yang harus dimuat dalam kurikulum pendidikan dasar dan menengah berdasarkan pasal 37 UU RI NO. 20 Tahun 2003, kecuali ....",
+        "options": [
+          "pendidikan agama, Pkn, bahasa, matematika",
+          "IPS, IPA, Seni budaya",
+          "pendidikan jasmani dan olah raga, keterampilan kejuruan dan MULOK",
+          "pendidikan akhlak dan moral"
+        ],
+        "correct": 3
+      },
+      {
+        "title": "Di bawah ini yang termasuk karakteristik sekolah adalah ....",
+        "options": [
+          "lebih menekankan pada pengembangan intelektual",
+          "peserta didik bersifat heterogen",
+          "isi pendidikannya tidak terprogram",
+          "evaluasi pendidikan dilakukan tidak sistematis"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Masyarakat pedesaan sering juga disebut ....",
+        "options": [
+          "rural community",
+          "plural community",
+          "cultural community",
+          "urban community"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Apa yang menjadi dasar utama pendidikan nasional Indonesia?",
+        "options": [
+          "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan Pancasila",
+          "Keputusan Menteri Pendidikan dan Kebudayaan",
+          "Keputusan Presiden mengenai pendidikan",
+          "Peraturan Pemerintah tentang pendidikan tinggi"
+        ],
+        "correct": 0
+      },
+      {
+        "title": "Landasan yuridis pendidikan mencakup peraturan perundang-undangan yang berhubungan dengan...",
+        "options": [
+          "Keuangan dan ekonomi negara",
+          "Hak dan kewajiban pemerintah dalam bidang politik",
+          "Dasar dan tujuan pendidikan nasional serta tanggung jawab pemerintah",
+          "Hubungan antara pendidikan dengan budaya daerah"
+        ],
+        "correct": 2
+      },
+      {
+        "title": "Apa yang dimaksud dengan landasan filosofis pendidikan?",
+        "options": [
+          "Prinsip-prinsip yang mengatur sistem pendidikan secara administratif",
+          "Asumsi-asumsi pendidikan yang berasal dari filsafat",
+          "Peraturan yang mengatur anggaran pendidikan di setiap daerah",
+          "Aturan yang ditetapkan oleh organisasi pendidikan internasional"
+        ],
+        "correct": 1
+      },
+      {
+        "title": "Mengapa pendidikan harus berlandaskan hukum yang jelas?",
+        "options": [
+          "Agar pendidikan dapat menghasilkan keuntungan finansial",
+          "Agar semua guru memiliki hak yang sama dalam mengajar",
+          "Agar pendidikan sesuai dengan perkembangan teknologi",
+          "Agar ada regulasi untuk membatasi jumlah sekolah"
+        ],
+        "correct": 2
+      },
+      {
+        "title": "Dalam konteks pendidikan, Pancasila berperan sebagai...",
+        "options": [
+          "Pedoman teknis dalam pembelajaran di sekolah",
+          "Dasar konstitusional dalam sistem pendidikan",
+          "Landasan etis dan moral bagi kebijakan pendidikan",
+          "Landasan sosiologis dalam pendidikan"
+        ],
+        "correct": 2
+      }
+    ]
+                      
             
               
       
