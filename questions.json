@@ -3397,157 +3397,160 @@
       
       
         "Perspektif Global dari Visi Politik, Sosiologi, dan Antropologi": [
-          {
-            "title": "Keberhasilan politik luar negeri Indonesia bebas aktif, berdampak global terhadap ....",
-            "options": {
-              "a": "berakhirnya perang dingin",
-              "b": "kemenangan sistem demokrasi terhadap sistem komunis",
-              "c": "pengakuan negara Adikuasa terhadap politik luar negeri Indonesia",
-              "d": "bantuan ekonomi negara maju terhadap Indonesia"
+          
+            {
+              "title": "Keberhasilan politik luar negeri Indonesia bebas aktif, berdampak global terhadap ....",
+              "options": [
+                "Berakhirnya perang dingin",
+                "Kemenangan sistem demokrasi terhadap sistem komunis",
+                "Pengakuan negara Adikuasa terhadap politik luar negeri Indonesia",
+                "Bantuan ekonomi negara maju terhadap Indonesia"
+              ],
+              "correct": 2
             },
-            "answer": "C"
-          },
-          {
-            "title": "Dampak glasnots dan perestroika dari Gorbachev menyebabkan terjadinya perubahan peta politik dunia yang tercermin pada ....",
-            "options": {
-              "a": "berakhirnya perang dingin",
-              "b": "transformasi politik Blok Timur dari sistem komunis ke sistem demokrasi",
-              "c": "runtuhnya Tembok Berlin",
-              "d": "bergesernya kekuasaan politik ke kekuasaan ekonomi"
+            {
+              "title": "Dampak glasnots dan perestroika dari Gorbachev menyebabkan terjadinya perubahan peta politik dunia yang tercermin pada ....",
+              "options": [
+                "Berakhirnya perang dingin",
+                "Transformasi politik Blok Timur dari sistem komunis ke sistem demokrasi",
+                "Runtuhnya Tembok Berlin",
+                "Bergesernya kekuasaan politik ke kekuasaan ekonomi"
+              ],
+              "correct": 1
             },
-            "answer": "B"
-          },
-          {
-            "title": "Setelah berakhirnya Perang Dunia II, terjadi perubahan global di permukaan bumi yang tercermin dari ....",
-            "options": {
-              "a": "kebangkitan Jepang sebagai kekuatan ekonomi baru",
-              "b": "bergesernya kekuasaan politik negara besar ke kekuasaan ekonomi",
-              "c": "munculnya negara-negara merdeka baru",
-              "d": "pengakuan politik negara besar terhadap negara bekas jajahan"
+            {
+              "title": "Setelah berakhirnya Perang Dunia II, terjadi perubahan global di permukaan bumi yang tercermin dari ....",
+              "options": [
+                "Kebangkitan Jepang sebagai kekuatan ekonomi baru",
+                "Bergesernya kekuasaan politik negara besar ke kekuasaan ekonomi",
+                "Munculnya negara-negara merdeka baru",
+                "Pengakuan politik negara besar terhadap negara bekas jajahan"
+              ],
+              "correct": 3
             },
-            "answer": "D"
-          },
-          {
-            "title": "Interaksi sosial antarumat manusia, merupakan salah satu dasar terjadinya interaksi global manusia yang bersangkutan yang tercermin pada ....",
-            "options": {
-              "a": "pertandingan olah raga antarbangsa",
-              "b": "kunjungan wisatawan mancanegara",
-              "c": "pertemuan dan pertukaran pelajar dan pemuda antarnegara",
-              "d": "kebiasaan dan gaya hidup orang asing merambah dari perkotaan ke pedesaan"
+            {
+              "title": "Interaksi sosial antarumat manusia, merupakan salah satu dasar terjadinya interaksi global manusia yang bersangkutan yang tercermin pada ....",
+              "options": [
+                "Pertandingan olahraga antarbangsa",
+                "Kunjungan wisatawan mancanegara",
+                "Pertemuan dan pertukaran pelajar dan pemuda antarnegara",
+                "Kebiasaan dan gaya hidup orang asing merambah dari perkotaan ke pedesaan"
+              ],
+              "correct": 2
             },
-            "answer": "C"
-          },
-          {
-            "title": "Interaksi sosial antarkelompok dan antarbangsa berlandaskan motif-motif tertentu, Interaksi sosial antara Indonesia dengan Jepang lebih mencerminkan motif ....",
-            "options": {
-              "a": "politik",
-              "b": "budaya",
-              "c": "ekonomi",
-              "d": "sejarah"
+            {
+              "title": "Interaksi sosial antarkelompok dan antarbangsa berlandaskan motif-motif tertentu, Interaksi sosial antara Indonesia dengan Jepang lebih mencerminkan motif ....",
+              "options": [
+                "Politik",
+                "Budaya",
+                "Ekonomi",
+                "Sejarah"
+              ],
+              "correct": 2
             },
-            "answer": "C"
-          },
-          {
-            "title": "Perkembangan, kemajuan, dan pemanfaatan IPTEK khususnya media elektronik, berdampak positif terutama dalam hal ....",
-            "options": {
-              "a": "penyebaran iklan berbagai kebutuhan",
-              "b": "hiburan yang mengasyikkan",
-              "c": "pengenalan budaya asing",
-              "d": "berita dunia"
+            {
+              "title": "Perkembangan, kemajuan, dan pemanfaatan IPTEK khususnya media elektronik, berdampak positif terutama dalam hal ....",
+              "options": [
+                "Penyebaran iklan berbagai kebutuhan",
+                "Hiburan yang mengasyikkan",
+                "Pengenalan budaya asing",
+                "Berita dunia"
+              ],
+              "correct": 3
             },
-            "answer": "D"
-          },
-          {
-            "title": "Secara menyeluruh proses globalisasi kehidupan umat manusia lebih mencerminkan perspektif .....",
-            "options": {
-              "a": "budaya",
-              "b": "politik",
-              "c": "ekonomi",
-              "d": "sejarah"
+            {
+              "title": "Secara menyeluruh proses globalisasi kehidupan umat manusia lebih mencerminkan perspektif .....",
+              "options": [
+                "Budaya",
+                "Politik",
+                "Ekonomi",
+                "Sejarah"
+              ],
+              "correct": 0
             },
-            "answer": "A"
-          },
-          {
-            "title": "Proses dan arus globalisasi dalam bidang IPTEK, meningkatkan apresiasi masyarakat terhadap pendidikan yang dampaknya juga meningkatkan harga diri. Kenyataan yang demikian itu menunjukkan perspektif ....",
-            "options": {
-              "a": "budaya",
-              "b": "politik",
-              "c": "ekonomi",
-              "d": "psikologi"
+            {
+              "title": "Proses dan arus globalisasi dalam bidang IPTEK, meningkatkan apresiasi masyarakat terhadap pendidikan yang dampaknya juga meningkatkan harga diri. Kenyataan yang demikian itu menunjukkan perspektif ....",
+              "options": [
+                "Budaya",
+                "Politik",
+                "Ekonomi",
+                "Psikologi"
+              ],
+              "correct": 3
             },
-            "answer": "D"
-          },
-          {
-            "title": "Menurut Marshall McCluhan, perkembangan, kemajuan, dan pemanfaatan IPTEK khususnya media elektronik, menciptakan terjadinya global village yang mencerminkan ....",
-            "options": {
-              "a": "hilangnya batas-batas negara",
-              "b": "tertembusnya batas-batas budaya",
-              "c": "kedekatan jarak relatif antarruang di permukaan bumi",
-              "d": "tempat tinggal manusia makin merapat"
+            {
+              "title": "Menurut Marshall McCluhan, perkembangan, kemajuan, dan pemanfaatan IPTEK khususnya media elektronik, menciptakan terjadinya global village yang mencerminkan ....",
+              "options": [
+                "Hilangnya batas-batas negara",
+                "Tertembusnya batas-batas budaya",
+                "Kedekatan jarak relatif antarruang di permukaan bumi",
+                "Tempat tinggal manusia makin merapat"
+              ],
+              "correct": 2
             },
-            "answer": "C"
-          },
-          {
-            "title": "Proses globalisasi kehidupan umat manusia yang positif menjadi kebutuhan, sehingga secara sengaja dilakukan melalui ....",
-            "options": {
-              "a": "kesepakatan dalam perekonomian pasar bebas",
-              "b": "penghentian percobaan nuklir",
-              "c": "peristiwa olah raga dunia",
-              "d": "berbagai pengalaman sosial-budaya dalam bentuk kontak berbagai pakar IPTEK"
+            {
+              "title": "Proses globalisasi kehidupan umat manusia yang positif menjadi kebutuhan, sehingga secara sengaja dilakukan melalui ....",
+              "options": [
+                "Kesepakatan dalam perekonomian pasar bebas",
+                "Penghentian percobaan nuklir",
+                "Peristiwa olahraga dunia",
+                "Berbagai pengalaman sosial-budaya dalam bentuk kontak berbagai pakar IPTEK"
+              ],
+              "correct": 3
             },
-            "answer": "D"
-          },
-          {
-            "title": "Apa dampak utama dari politik luar negeri Indonesia yang bebas aktif?",
-            "options": {
-              "a": "Mengisolasi diri dari negara lain",
-              "b": "Menjadi negara pelopor dalam Gerakan Non-Blok",
-              "c": "Mengikuti kebijakan politik negara adikuasa",
-              "d": "Menghindari hubungan diplomasi internasional"
+            {
+              "title": "Apa dampak utama dari politik luar negeri Indonesia yang bebas aktif?",
+              "options": [
+                "Mengisolasi diri dari negara lain",
+                "Menjadi negara pelopor dalam Gerakan Non-Blok",
+                "Mengikuti kebijakan politik negara adikuasa",
+                "Menghindari hubungan diplomasi internasional"
+              ],
+              "correct": 1
             },
-            "answer": "B"
-          },
-          {
-            "title": "Salah satu faktor utama yang mempercepat globalisasi sosial adalah ....",
-            "options": {
-              "a": "Kemajuan teknologi komunikasi",
-              "b": "Penutupan akses informasi",
-              "c": "Pengurangan interaksi antarbangsa",
-              "d": "Kebijakan isolasi negara berkembang"
+            {
+              "title": "Salah satu faktor utama yang mempercepat globalisasi sosial adalah ....",
+              "options": [
+                "Kemajuan teknologi komunikasi",
+                "Penutupan akses informasi",
+                "Pengurangan interaksi antarbangsa",
+                "Kebijakan isolasi negara berkembang"
+              ],
+              "correct": 0
             },
-            "answer": "A"
-          },
-          {
-            "title": "Apa dampak utama dari runtuhnya Tembok Berlin dalam konteks globalisasi?",
-            "options": {
-              "a": "Meningkatnya ketegangan politik dunia",
-              "b": "Penyebaran ideologi demokrasi secara luas",
-              "c": "Kembali ke sistem pemerintahan otoriter",
-              "d": "Pembatasan migrasi internasional"
+            {
+              "title": "Apa dampak utama dari runtuhnya Tembok Berlin dalam konteks globalisasi?",
+              "options": [
+                "Meningkatnya ketegangan politik dunia",
+                "Penyebaran ideologi demokrasi secara luas",
+                "Kembali ke sistem pemerintahan otoriter",
+                "Pembatasan migrasi internasional"
+              ],
+              "correct": 1
             },
-            "answer": "B"
-          },
-          {
-            "title": "Bagaimana interaksi sosial berkontribusi dalam globalisasi budaya?",
-            "options": {
-              "a": "Mempercepat penyebaran nilai dan norma antarbangsa",
-              "b": "Membatasi adaptasi budaya asing",
-              "c": "Menyebabkan stagnasi budaya lokal",
-              "d": "Menghapus budaya tradisional sepenuhnya"
+            {
+              "title": "Bagaimana interaksi sosial berkontribusi dalam globalisasi budaya?",
+              "options": [
+                "Mempercepat penyebaran nilai dan norma antarbangsa",
+                "Membatasi adaptasi budaya asing",
+                "Menyebabkan stagnasi budaya lokal",
+                "Menghapus budaya tradisional sepenuhnya"
+              ],
+              "correct": 0
             },
-            "answer": "A"
-          },
-          {
-            "title": "Salah satu tantangan globalisasi dalam bidang politik adalah ....",
-            "options": {
-              "a": "Meningkatnya kesenjangan ekonomi antarnegara",
-              "b": "Menguatnya demokrasi dan transparansi pemerintahan",
-              "c": "Berkurangnya peran organisasi internasional",
-              "d": "Meningkatnya intervensi asing dalam kebijakan domestik"
-            },
-            "answer": "D"
-          }
-        ]
+            {
+              "title": "Salah satu tantangan globalisasi dalam bidang politik adalah ....",
+              "options": [
+                "Meningkatnya kesenjangan ekonomi antarnegara",
+                "Menguatnya demokrasi dan transparansi pemerintahan",
+                "Berkurangnya peran organisasi internasional",
+                "Meningkatnya intervensi asing dalam kebijakan domestik"
+              ],
+              "correct": 3
+            }
+          ]
+          
+        
      
       
     
