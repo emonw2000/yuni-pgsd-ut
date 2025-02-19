@@ -3240,7 +3240,161 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    
+      "Perkembangan Kognitif dari Perspektif Proses Informasi": [
+        {
+          "title": "Dalam model sistem informasi, informasi yang masuk pertama kali akan masuk dalam sistem ....",
+          "options": [
+            "short-term store",
+            "sensory State",
+            "event memory",
+            "long-term store"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Working memory adalah sebutan lain untuk ...",
+          "options": [
+            "strategic memory",
+            "sensory state",
+            "short-term store",
+            "long-term store"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Proses menyimpan dan mengingat kembali sebuah informasi disebut dengan ....",
+          "options": [
+            "memori",
+            "event memory",
+            "strategic memory",
+            "cognitive memory"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Berikut adalah contoh event memory ....",
+          "options": [
+            "materi untuk ujian sekolah",
+            "arah jalan menuju kantor baru",
+            "nomor telepon restoran",
+            "tempat yang pernah Anda kunjungi"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Memori autobiografi termasuk dalam ....",
+          "options": [
+            "cued memory",
+            "scripted memory",
+            "event memory",
+            "strategic memory"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Strategi mengingat dengan mengulang informasi disebut juga dengan ....",
+          "options": [
+            "free call",
+            "organisasi",
+            "cued call",
+            "rehearsal"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Pengelompokan kata-kata sendok, pisau, garpu ke dalam kategori alat makan disebut dengan ....",
+          "options": [
+            "retrieval process",
+            "rehearsal",
+            "organisasi",
+            "memori"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Mengingat kembali informasi yang disertai dengan instruksi spesifik disebut juga dengan ....",
+          "options": [
+            "rehearsal",
+            "cued call",
+            "free call",
+            "organisasi"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Berikut yang tidak termasuk komponen triarkis teori kecerdasan, yaitu ....",
+          "options": [
+            "kontekstual",
+            "prosedural",
+            "pengalaman",
+            "proses informasi"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Pencetus teori kecerdasan majemuk adalah ....",
+          "options": [
+            "Jean Piaget",
+            "Lev Vygotsky",
+            "Robert Sternberg",
+            "Howard Gardner"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Apa yang menjadi dasar utama pendidikan nasional Indonesia?",
+          "options": [
+            "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan Pancasila",
+            "Keputusan Menteri Pendidikan dan Kebudayaan",
+            "Keputusan Presiden mengenai pendidikan",
+            "Peraturan Pemerintah tentang pendidikan tinggi"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Landasan yuridis pendidikan mencakup peraturan perundang-undangan yang berhubungan dengan...",
+          "options": [
+            "Keuangan dan ekonomi negara",
+            "Hak dan kewajiban pemerintah dalam bidang politik",
+            "Dasar dan tujuan pendidikan nasional serta tanggung jawab pemerintah",
+            "Hubungan antara pendidikan dengan budaya daerah"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Apa yang dimaksud dengan landasan filosofis pendidikan?",
+          "options": [
+            "Prinsip-prinsip yang mengatur sistem pendidikan secara administratif",
+            "Asumsi-asumsi pendidikan yang berasal dari filsafat",
+            "Peraturan yang mengatur anggaran pendidikan di setiap daerah",
+            "Aturan yang ditetapkan oleh organisasi pendidikan internasional"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Mengapa pendidikan harus berlandaskan hukum yang jelas?",
+          "options": [
+            "Agar pendidikan dapat menghasilkan keuntungan finansial",
+            "Agar semua guru memiliki hak yang sama dalam mengajar",
+            "Agar pendidikan sesuai dengan perkembangan teknologi",
+            "Agar ada regulasi untuk membatasi jumlah sekolah"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Dalam konteks pendidikan, Pancasila berperan sebagai...",
+          "options": [
+            "Pedoman teknis dalam pembelajaran di sekolah",
+            "Dasar konstitusional dalam sistem pendidikan",
+            "Landasan etis dan moral bagi kebijakan pendidikan",
+            "Landasan sosiologis dalam pendidikan"
+          ],
+          "correct": 2
+        }
+      ]
+    
                       
             
               

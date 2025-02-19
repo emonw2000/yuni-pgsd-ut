@@ -286,14 +286,18 @@
           <td>Selasa</td>
           <td>Perkembangan Peserta Didik</td>
           <td>Modul 02</td>
-          <td>Perkembangan Kognitif dari Perspektif Proses Informasi</td>
+          <td>
+            <span data-category="Perkembangan Kognitif dari Perspektif Proses Informasi" onclick="handleCategoryClick(event)">Perkembangan Kognitif dari Perspektif Proses Informasi</span>
+          </td>
         </tr>
         <tr>
           <td>2025-02-19</td>
           <td>Rabu</td>
           <td>Perspektif Global</td>
           <td>Modul 02</td>
-          <td>Perspektif Global dari Visi Politik, Sosiologi, dan Antropologi</td>
+          <td>
+            <span data-category="Perspektif Global dari Visi Politik, Sosiologi, dan Antropologi" onclick="handleCategoryClick(event)">Perspektif Global dari Visi Politik, Sosiologi, dan Antropologi</span>
+          </td>
         </tr>
         <tr>
           <td>2025-02-20</td>
@@ -1096,27 +1100,7 @@
   
 
   <script src="jadwal.js"></script>
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    highlightTodaySchedule();
-  });
-  
-  function highlightTodaySchedule() {
-    const today = new Date();
-    const todayStr = today.toISOString().split('T')[0]; // Format YYYY-MM-DD
-  
-    // Ambil semua baris dalam tabel
-    const rows = document.querySelectorAll("tbody tr");
-  
-    rows.forEach(row => {
-      const dateCell = row.querySelector("td:first-child"); // Ambil kolom tanggal
-  
-      if (dateCell && dateCell.textContent.trim() === todayStr) {
-        row.style.backgroundColor = "#ffff99"; // Warna kuning
-        row.style.fontWeight = "bold"; // Membuat teks lebih tebal
-      }
-    });
-  }
+
   
 </body>
 </html>
