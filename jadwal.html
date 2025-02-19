@@ -1096,5 +1096,27 @@
   
 
   <script src="jadwal.js"></script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    highlightTodaySchedule();
+  });
+  
+  function highlightTodaySchedule() {
+    const today = new Date();
+    const todayStr = today.toISOString().split('T')[0]; // Format YYYY-MM-DD
+  
+    // Ambil semua baris dalam tabel
+    const rows = document.querySelectorAll("tbody tr");
+  
+    rows.forEach(row => {
+      const dateCell = row.querySelector("td:first-child"); // Ambil kolom tanggal
+  
+      if (dateCell && dateCell.textContent.trim() === todayStr) {
+        row.style.backgroundColor = "#ffff99"; // Warna kuning
+        row.style.fontWeight = "bold"; // Membuat teks lebih tebal
+      }
+    });
+  }
+  
 </body>
 </html>
